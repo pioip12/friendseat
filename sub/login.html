@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인페이지</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+  </head>
+  <body>
+    
+      <header>
+        <div class="headerwrap">
+          <div class="header_wrapper">
+            <!-- 로고 -->
+            <h1>
+              <a href="/">
+                <img src="../img/common/FRIENDSEAT.png" alt="로고" />
+              </a>
+            </h1>
+            <!-- 메뉴 -->
+            <nav>
+              <ul>
+                <li class="first_menu">
+                  <a href="#">맞춤레시피</a>
+                  <ul class="submenu">
+                    <li><a href="#">건강정보</a></li>
+                    <li><a href="#">인기레시피</a></li>
+                    <li><a href="#">맞춤레시피</a></li>
+                  </ul>
+                </li>
+                <li class="second_menu">
+                  <a href="#">건강마켓</a>
+                  <ul class="submenu">
+                    <li><a href="#">베스트</a></li>
+                    <li><a href="#">신상품</a></li>
+                    <li><a href="#">건강반찬</a></li>
+                    <li><a href="#">식사대용</a></li>
+                    <li><a href="#">영양간식</a></li>
+                    <li><a href="#">맞춤식단</a></li>
+                  </ul>
+                </li>
+                <li class="3rd_menu">
+                  <a href="#">커뮤니티</a>
+                  <ul class="submenu">
+                    <li><a href="#">전체</a></li>
+                    <li><a href="#">전문가의QnA</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">이벤트</a></li>
+              </ul>
+            </nav>
+            <!-- 아이콘 -->
+            <div class="icons">
+              <a href="#"><div class="login"></div></a>
+              <a href="#"><div class="search"></div></a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+    <!-- 로그인페이지 -->
+    <section class="login_wrap">
+        
+      <div class="login_box">
+        <h2>로그인</h2>
+        <form action="#" method="post" name="login">
+          <label for="user_id"></label>
+            <input type="text" id="user_id" name="user_id" placeholder="아이디 또는 이메일 주소"
+          /></label>
+          <label for="user_pw">
+            <input type="password" id="user_pw" name="user_pw" placeholder="비밀번호"
+          /></label>
+          <div class="under_txt">
+            <label for="check_login">
+                <input type="checkbox" name="check_login" id="check_login">
+                <span>아이디 저장</span>
+            </label>
+            <div class="login_search">
+             <div class="join" >회원가입</div>
+             <div class="search_id">아이디 찾기</div>
+             <div class="search_pw">비밀번호 찾기</div>
+          </div>
+          </div>
+          <label for="login_btn">
+            <input type="submit" value="로그인" name="login_btn" id="login_btn">
+            </label>
+      
+          <a>
+            <button type="submit" class="kakao_btn">카카오 계정으로 로그인</button>
+          </a>
+          <a>
+            <button type="submit" class="naver_btn">네이버 계정으로 로그인</button>
+          </a>
+           
+        </form>
+      </div>
+    </section>
+    <!-- 푸터 -->
+    <footer>
+      <div class="footer_wrapper">
+        <img src="../img/common/footerlogo.png" alt="logo_black" />
+        <p>
+          사업자등록번호 102-61-43486 TEL 02-4155-1234 <br />
+          ADD 서울특별시 서초구 반포대로
+        </p>
+        <div class="bottom_txt">
+          <div class="txt_h4">
+            <h4>회사정보</h4>
+            <h4>이용약관</h4>
+            <h4>개인정보</h4>
+            <h4>처리방침</h4>
+            <h4>청소년 보호정책</h4>
+            <h4>통신판매업신고번호</h4>
+          </div>
+          <p>Copyright &copy; friendseat.All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

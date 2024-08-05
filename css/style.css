@@ -386,9 +386,9 @@ span {
 .box_wrapper {
   width: 84%;
   overflow: hidden;
-  background-image: url(../img/main/recipe_photo.jpg);
-  background-position: -5px -310px;
-  background-size: 100%;
+  background-image: url(../img/main/main_recipe.png);
+  background-position: -14px -310px;
+  background-size: 98%;
   background-repeat: no-repeat;
   border-radius: 20px 0 0 20px;
 }
@@ -402,6 +402,7 @@ span {
   font-weight: bold;
   margin-top: 98px;
   margin-bottom: 26px;
+  line-height: 36px;
 }
 .txt_wrapper h4 {
   font-size: 24px;
