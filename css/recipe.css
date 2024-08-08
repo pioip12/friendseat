@@ -63,7 +63,7 @@ nav > ul::after {
   content: "메뉴배경";
   font-size: 0;
   display: block;
-  width: 125%;
+  width: 128%;
   height: 0;
   overflow: hidden;
   background-color: #fff;
@@ -90,14 +90,14 @@ nav > ul:hover::after {
 .login {
   width: 20px;
   height: 20px;
-  background-image: url(../img/sprite.png);
-  background-position: -672px -538px;
+  background-image: url(../img/common/css_sprites_1.png);
+  background-position: -2211px -499px;
 }
 .search {
   width: 20px;
   height: 20px;
-  background-image: url(../img/sprite.png);
-  background-position: -632px -538px;
+  background-image: url(../img/common/css_sprites_1.png);
+  background-position: -1293px -628px;
 }
 
 /*2차메뉴*/
@@ -409,18 +409,26 @@ section {
   background-image: url(../img/recipe/recipe1.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: 0px -37px;
+  background-position: 0px -82px;
   border-radius: 20px;
   margin-bottom: 17px;
+  transition: 0.2s;
 }
+.photo_box:hover .photo1 {
+  background-size: 102%;
+  filter: saturate(1.1);
+}
+
 .photo_box p {
   font-size: 16px;
   color: #000000;
   margin-bottom: 12px;
+  transition: 0.2s;
 }
 .photo_box h3 {
   font-size: 24px;
   color: #000000;
+  transition: 0.2s;
 }
 .photo2 {
   width: 480px;
@@ -431,6 +439,11 @@ section {
   background-position: 0px -84px;
   border-radius: 20px;
   margin-bottom: 17px;
+  transition: 0.2s;
+}
+.photo_box:hover .photo2 {
+  background-size: 102%;
+  filter: saturate(1.1);
 }
 .photo3 {
   width: 480px;
@@ -441,6 +454,11 @@ section {
   background-position: 0px -84px;
   border-radius: 20px;
   margin-bottom: 17px;
+  transition: 0.2s;
+}
+.photo_box:hover .photo3 {
+  background-size: 102%;
+  filter: saturate(1.1);
 }
 .photo4 {
   width: 480px;
@@ -451,6 +469,11 @@ section {
   background-position: -22px 0px;
   border-radius: 20px;
   margin-bottom: 17px;
+  transition: 0.2s;
+}
+.photo_box:hover .photo4 {
+  background-size: 117%;
+  filter: saturate(1.1);
 }
 .photo5 {
   width: 480px;
@@ -461,6 +484,11 @@ section {
   background-position: -20px -2px;
   border-radius: 20px;
   margin-bottom: 17px;
+  transition: 0.2s;
+}
+.photo_box:hover .photo5 {
+  background-size: 117%;
+  filter: saturate(1.1);
 }
 .photo6 {
   width: 480px;
@@ -471,6 +499,11 @@ section {
   background-position: 0px -242px;
   border-radius: 20px;
   margin-bottom: 17px;
+  transition: 0.2s;
+}
+.photo_box:hover .photo6 {
+  background-size: 102%;
+  filter: saturate(1.1);
 }
 .photo7 {
   width: 480px;
@@ -481,6 +514,10 @@ section {
   background-position: 0px -84px;
   border-radius: 20px;
   margin-bottom: 17px;
+  transition: 0.2s;
+}
+.photo_box:hover .photo7 {
+  background-size: 101%;
 }
 .photo8 {
   width: 480px;
@@ -491,6 +528,11 @@ section {
   background-position: 0px -84px;
   border-radius: 20px;
   margin-bottom: 17px;
+  transition: 0.2s;
+}
+.photo_box:hover .photo8 {
+  background-size: 102%;
+  filter: saturate(1.1);
 }
 .photo9 {
   width: 480px;
@@ -501,6 +543,17 @@ section {
   background-position: -18px 1px;
   border-radius: 20px;
   margin-bottom: 17px;
+  transition: 0.2s;
+}
+.photo_box:hover .photo9 {
+  background-size: 117%;
+  filter: saturate(1.1);
+}
+.photo_box:hover h3 {
+  font-size: 25px;
+}
+.photo_box:hover p {
+  font-size: 17px;
 }
 .recipe_number {
   width: 1600px;
@@ -538,6 +591,7 @@ section {
   font-size: 17px;
   font-weight: 500;
 }
+
 /* 네번째 섹션 */
 .sec04_wrap {
   width: 1920px;
