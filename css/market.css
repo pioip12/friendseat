@@ -1,0 +1,673 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #383838;
+}
+.page_wrap {
+  width: 100%;
+}
+header {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #eeeeee;
+
+  position: fixed;
+  z-index: 999;
+}
+.headerwrap {
+  width: 100%;
+  height: 80px;
+
+  background-color: transparent;
+  transition: 0.3s;
+}
+.headerwrap:hover {
+  background-color: #fff;
+}
+.header_wrapper {
+  width: 84%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+h1 {
+  width: 140px;
+  height: 20px;
+  padding: 30px 0;
+}
+nav {
+  width: 36%;
+  height: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+nav > ul {
+  display: flex;
+  justify-content: space-between;
+  line-height: 80px;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+nav > ul::after {
+  position: absolute;
+  top: 80px;
+  left: -80px;
+  content: "메뉴배경";
+  font-size: 0;
+  display: block;
+  width: 128%;
+  height: 0;
+  overflow: hidden;
+  background-color: #fff;
+  box-sizing: border-box;
+  border: 1px solid #f5f5f5;
+
+  border-top: none;
+  transition: 0.3s;
+  border-radius: 0px 0px 20px 20px;
+}
+
+nav > ul:hover::after {
+  height: 240px;
+}
+.submenu:not(:hover) > li > a {
+  color: #797979;
+}
+.icons {
+  display: flex;
+  padding: 30px 0;
+  column-gap: 20px;
+}
+
+.login {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/common/css_sprites_1.png);
+  background-position: -2211px -499px;
+}
+.search {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/common/css_sprites_1.png);
+  background-position: -1293px -628px;
+}
+
+/*2차메뉴*/
+nav > ul > li {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.submenu {
+  width: 156%;
+  height: 0;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 80px;
+  left: -18px;
+  line-height: 32px;
+  transition: 0.5s;
+  column-gap: 70px;
+  color: #575757;
+  text-align: center;
+  z-index: 55;
+  transition: 0.3s;
+}
+.submenu li {
+  padding-top: 20px;
+}
+nav > ul:hover .submenu {
+  height: 210px;
+}
+nav > ul > li:hover > a {
+  color: #88b14b;
+}
+.submenu > li:hover > a {
+  color: #88b14b;
+}
+/* 메뉴 애니메이션 */
+nav > ul > li:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 45px;
+  height: 4px;
+  display: block;
+  background-color: #237b22;
+  transform: scaleX(0);
+  transition: 0.3s;
+}
+nav > ul > li:nth-child(2):after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 1px;
+  width: 45px;
+  height: 4px;
+  display: block;
+  background-color: #237b22;
+  transform: scaleX(0);
+  transition: 0.3s;
+}
+nav > ul > li:nth-child(2):after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 1px;
+  width: 45px;
+  height: 4px;
+  display: block;
+  background-color: #237b22;
+  transform: scaleX(0);
+  transition: 0.3s;
+}
+nav > ul > li:nth-child(3):after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 1px;
+  width: 45px;
+  height: 4px;
+  display: block;
+  background-color: #237b22;
+  transform: scaleX(0);
+  transition: 0.3s;
+}
+nav > ul > li:nth-child(4):after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 2px;
+  width: 45px;
+  height: 4px;
+  display: block;
+  background-color: #237b22;
+  transform: scaleX(0);
+  transition: 0.3s;
+}
+nav ul li:nth-child(1):hover::after {
+  width: 78px;
+  transform: scaleX(1);
+}
+nav ul li:nth-child(2):hover::after {
+  width: 63px;
+  transform: scaleX(1);
+}
+nav ul li:nth-child(3):hover::after {
+  width: 63px;
+  transform: scaleX(1);
+}
+nav ul li:nth-child(4):hover::after {
+  width: 45px;
+  transform: scaleX(1);
+}
+section {
+  margin: 0 auto;
+  margin-bottom: 125px;
+  width: 100%;
+}
+/* 섹션1 */
+.sec01_wrap {
+  width: 100%;
+  height: 478px;
+  background-image: url(../img/recipe/recipe_main.png);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+.visual_box {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 250px 120px;
+}
+/* 섹션2 */
+.sec02_wrap {
+  width: 1920px;
+  height: 542px;
+  margin-top: 125px;
+}
+.sec02_wrap > h3 {
+  box-sizing: border-box;
+  padding: 0 160px;
+  font-size: 36px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 42px;
+  text-align: center;
+}
+.sec02_box {
+  margin: 0 auto;
+  width: 1600px;
+  height: 100%;
+  display: flex;
+  column-gap: 50px;
+  justify-content: space-between;
+}
+
+.sec02_photo {
+  width: 100%;
+  height: 476px;
+  cursor: pointer;
+}
+.sec02_photo_1 {
+  width: 500px;
+  height: 354px;
+
+  border-radius: 20px;
+}
+.sec02_photo_01 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/market/pasta.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transition: 0.2s;
+  border-radius: 20px;
+}
+.sec02_photo_02 {
+  width: 500px;
+  height: 354px;
+  background-image: url(../img/market/bread.jpeg);
+  background-repeat: no-repeat;
+  background-size: 110%;
+  transition: 0.2s;
+  border-radius: 20px;
+}
+.sec02_photo_03 {
+  width: 500px;
+  height: 354px;
+  background-image: url(../img/market/salad.jpg);
+  background-repeat: no-repeat;
+  background-size: 110%;
+  transition: 0.2s;
+  border-radius: 20px;
+  background-position: 0 -2px;
+}
+.sec02_photo:hover .sec02_photo_01 {
+  background-size: 102%;
+}
+.sec02_photo:hover .sec02_photo_02,
+.sec02_photo:hover .sec02_photo_03 {
+  background-size: 112%;
+}
+.sec02_phototxt {
+  width: 100%;
+  height: fit-content;
+  padding: 32px 0 0;
+}
+.sec02_photo h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 18px;
+  transition: 0.2s;
+}
+.sec02_photo p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #525252;
+  transition: 0.2s;
+}
+.sec02_photo:hover h3 {
+  font-size: 23px;
+  transition: 0.2s;
+}
+.sec02_photo:hover p {
+  font-size: 19px;
+}
+
+/* 세번째 섹션 */
+.sec03_wrap {
+  width: 1600px;
+  height: 230px;
+  margin: 0 auto;
+  background-image: url(../img/market/ad.png);
+  background-repeat: no-repeat;
+  margin-bottom: 125px;
+}
+.ad_wrap {
+  width: 1600px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.sec03_wrap .ad {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 4px 400px;
+}
+.sec03_wrap h2 {
+  margin-top: 85px;
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.sec03_wrap p {
+  font-size: 18px;
+  color: #fff;
+}
+/* 네번째 섹션 */
+.sec04_wrap {
+  width: 1600px;
+  height: fit-content;
+
+  display: flex;
+  justify-content: space-between;
+}
+.sec04_wrap .market_nav {
+  width: 340px;
+  height: fit-content;
+}
+
+.sec04_wrap .market_nav h2 {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 48px;
+  font-weight: 700;
+}
+.sec04_wrap .market_nav > h2::after {
+  content: "";
+  display: block;
+  width: 310px;
+  height: 3px;
+  background-color: #939393;
+
+  position: relative;
+  top: 24px;
+}
+
+.sec04_wrap .market_nav ul li {
+  font-size: 16px;
+  line-height: 32px;
+  color: #939393;
+}
+
+.market_box h2 {
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 48px;
+  font-weight: 700;
+  padding-left: 42px;
+}
+
+.market_box h2::after {
+  content: "";
+  display: block;
+  width: 1240px;
+  height: 3px;
+  background-color: #939393;
+  position: relative;
+  top: 24px;
+}
+.list_search {
+  margin-bottom: 24px;
+  float: right;
+}
+
+.photo_box {
+  width: 1280px;
+  height: 2175px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  column-gap: 20px;
+}
+
+.photobox1 {
+  width: 400px;
+  height: 480px;
+}
+
+.photobox1 .market_photobox1 {
+  width: 400px;
+  height: 390px;
+  overflow: hidden;
+  border-radius: 20px;
+  background-image: url(../img/market/market1.jpg);
+  background-repeat: no-repeat;
+  background-size: 125%;
+  background-position: -40px -3px;
+  margin-bottom: 36px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.photobox1:hover .market_photobox1 {
+  background-size: 127%;
+}
+
+.photobox1 .market_photobox2 {
+  width: 400px;
+  height: 390px;
+  overflow: hidden;
+  border-radius: 20px;
+  background-image: url(../img/market/market2.jpeg);
+  background-repeat: no-repeat;
+  background-size: 149%;
+  background-position: -101px -2px;
+  margin-bottom: 36px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.photobox1:hover .market_photobox2 {
+  background-size: 151%;
+}
+.photobox1 .market_photobox3 {
+  width: 400px;
+  height: 390px;
+  overflow: hidden;
+  border-radius: 20px;
+  background-image: url(../img/market/market3.jpg);
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: -112px -5px;
+  margin-bottom: 36px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.photobox1:hover .market_photobox3 {
+  background-size: 151%;
+}
+.photobox1 .market_photobox4 {
+  width: 400px;
+  height: 390px;
+  overflow: hidden;
+  border-radius: 20px;
+  background-image: url(../img/market/market4.jpg);
+  background-repeat: no-repeat;
+  background-size: 105%;
+  background-position: -10px -120px;
+  margin-bottom: 36px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.photobox1:hover .market_photobox4 {
+  background-size: 107%;
+}
+.photobox1 .market_photobox5 {
+  width: 400px;
+  height: 390px;
+  overflow: hidden;
+  border-radius: 20px;
+  background-image: url(../img/market/market5.jpg);
+  background-repeat: no-repeat;
+  background-size: 148%;
+  background-position: -162px -4px;
+  margin-bottom: 36px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.photobox1:hover .market_photobox5 {
+  background-size: 151%;
+}
+.photobox1 .market_photobox6 {
+  width: 400px;
+  height: 390px;
+  overflow: hidden;
+  border-radius: 20px;
+  background-image: url(../img/market/market6.jpeg);
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: -70px -9px;
+  margin-bottom: 36px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.photobox1:hover .market_photobox6 {
+  background-size: 151%;
+}
+.photobox1 .market_photobox7 {
+  width: 400px;
+  height: 390px;
+  overflow: hidden;
+  border-radius: 20px;
+  background-image: url(../img/market/market7.jpg);
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: -176px 0px;
+  margin-bottom: 36px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.photobox1:hover .market_photobox7 {
+  background-size: 152%;
+}
+.photobox1 .market_photobox8 {
+  width: 400px;
+  height: 390px;
+  overflow: hidden;
+  border-radius: 20px;
+  background-image: url(../img/market/market8.jpeg);
+  background-repeat: no-repeat;
+  background-size: 180%;
+  background-position: -150px -4px;
+  margin-bottom: 36px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.photobox1:hover .market_photobox8 {
+  background-size: 182%;
+}
+.photobox1 .market_photobox9 {
+  width: 400px;
+  height: 390px;
+  overflow: hidden;
+  border-radius: 20px;
+  background-image: url(../img/market/market9.jpg);
+  background-repeat: no-repeat;
+  background-size: 102%;
+  background-position: 4px -144px;
+  margin-bottom: 36px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.photobox1:hover .market_photobox9 {
+  background-size: 104%;
+}
+.photobox1 .market_photobox10 {
+  width: 400px;
+  height: 390px;
+  overflow: hidden;
+  border-radius: 20px;
+  background-image: url(../img/market/market10.PNG);
+  background-repeat: no-repeat;
+  background-size: 180%;
+  background-position: -180px -20px;
+  margin-bottom: 36px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.photobox1:hover .market_photobox10 {
+  background-size: 182%;
+}
+.photobox1 .market_photobox11 {
+  width: 400px;
+  height: 390px;
+  overflow: hidden;
+  border-radius: 20px;
+  background-image: url(../img/market/market11.jpeg);
+  background-repeat: no-repeat;
+  background-size: 125%;
+  background-position: -40px -3px;
+  margin-bottom: 36px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.photobox1:hover .market_photobox11 {
+  background-size: 127%;
+}
+.photobox1 .market_photobox12 {
+  width: 400px;
+  height: 390px;
+  overflow: hidden;
+  border-radius: 20px;
+  background-image: url(../img/market/market12.png);
+  background-repeat: no-repeat;
+  background-size: 106%;
+  background-position: -22px -180px;
+  margin-bottom: 36px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.photobox1:hover .market_photobox12 {
+  background-size: 108%;
+}
+.photobox1 p {
+  font-size: 18px;
+  color: #000;
+  font-weight: 400;
+  transition: 0.2s;
+  margin-bottom: 18px;
+}
+.photobox1:hover p {
+  font-size: 19px;
+}
+.photobox1 h3 {
+  font-size: 24px;
+  color: #e00000;
+  font-weight: 700;
+  transition: 0.2s;
+}
+.photobox1:hover h3 {
+  font-size: 25px;
+}
+
+/* 푸터 */
+footer {
+  width: 1600px;
+  height: fit-content;
+  margin: 0 auto;
+  margin-top: 48px;
+}
+footer img {
+  margin-bottom: 32px;
+}
+footer p {
+  font-size: 16px;
+  color: #b6b6b6;
+  margin-bottom: 32px;
+  line-height: 24px;
+}
+.bottom_txt {
+  display: flex;
+  justify-content: space-between;
+}
+.txt_h4 {
+  display: flex;
+  column-gap: 20px;
+}
+.bottom_txt h4 {
+  color: #797979;
+  font-size: 16px;
+}
