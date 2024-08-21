@@ -11,10 +11,10 @@ body {
   color: #383838;
 }
 body::-webkit-scrollbar {
-  width: 16px;
+  width: 10px;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #c9c9c9;
+  background-color: #5f5f5f;
   border-radius: 20px;
 }
 .page_wrap {
@@ -32,7 +32,7 @@ header {
   width: 100%;
   height: 80px;
 
-  background-color: transparent;
+  background-color: #fff;
   transition: 0.3s;
 }
 .headerwrap:hover {
@@ -96,16 +96,39 @@ nav > ul:hover::after {
 }
 
 .login {
-  width: 20px;
-  height: 20px;
+  width: 21px;
+  height: 21px;
   background-image: url(../img/common/css_sprites_1.png);
   background-position: -2211px -499px;
+}
+.login:hover {
+  background-repeat: no-repeat;
+  background-image: url(../img/icon/login_green.png);
+  background-position: 1px 0px;
+  background-size: 90%;
 }
 .search {
   width: 20px;
   height: 20px;
   background-image: url(../img/common/css_sprites_1.png);
   background-position: -1293px -628px;
+}
+.close {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/icon/close.png);
+  background-repeat: no-repeat;
+  position: relative;
+  left: -20px;
+  top: 1px;
+  display: none;
+}
+
+.search:hover {
+  background-image: url(../img/icon/search_green.png);
+
+  background-position: 1px 20px;
+  background-size: 102%;
 }
 
 /*2차메뉴*/
@@ -137,10 +160,10 @@ nav > ul:hover .submenu {
   height: 210px;
 }
 nav > ul > li:hover > a {
-  color: #88b14b;
+  color: #237b22;
 }
 .submenu > li:hover > a {
-  color: #88b14b;
+  color: #237b22;
 }
 /* 메뉴 애니메이션 */
 nav > ul > li:after {
@@ -155,12 +178,12 @@ nav > ul > li:after {
   transform: scaleX(0);
   transition: 0.3s;
 }
-nav > ul > li:nth-child(2):after {
+nav > ul > li:nth-child(1):after {
   content: "";
   position: absolute;
   bottom: 0;
   left: 1px;
-  width: 45px;
+  width: 72px;
   height: 4px;
   display: block;
   background-color: #237b22;
@@ -172,7 +195,7 @@ nav > ul > li:nth-child(2):after {
   position: absolute;
   bottom: 0;
   left: 1px;
-  width: 45px;
+  width: 56px;
   height: 4px;
   display: block;
   background-color: #237b22;
@@ -184,7 +207,7 @@ nav > ul > li:nth-child(3):after {
   position: absolute;
   bottom: 0;
   left: 1px;
-  width: 45px;
+  width: 56px;
   height: 4px;
   display: block;
   background-color: #237b22;
@@ -196,7 +219,7 @@ nav > ul > li:nth-child(4):after {
   position: absolute;
   bottom: 0;
   left: 2px;
-  width: 45px;
+  width: 56px;
   height: 4px;
   display: block;
   background-color: #237b22;
@@ -204,19 +227,19 @@ nav > ul > li:nth-child(4):after {
   transition: 0.3s;
 }
 nav ul li:nth-child(1):hover::after {
-  width: 78px;
+  width: 72px;
   transform: scaleX(1);
 }
 nav ul li:nth-child(2):hover::after {
-  width: 63px;
+  width: 56px;
   transform: scaleX(1);
 }
 nav ul li:nth-child(3):hover::after {
-  width: 63px;
+  width: 56px;
   transform: scaleX(1);
 }
 nav ul li:nth-child(4):hover::after {
-  width: 45px;
+  width: 56px;
   transform: scaleX(1);
 }
 
@@ -236,6 +259,7 @@ section {
   display: flex;
   margin: 0 auto;
   justify-content: center;
+  opacity: 0;
 }
 .top_searchbar form {
   width: 100%;
@@ -359,13 +383,13 @@ span {
   margin-top: 32px;
 }
 .photo_box > img {
-  max-width: 100%;
+  max-width: 101%;
   overflow: hidden;
 }
 .photo_2rd {
   position: relative;
   top: -110px;
-  left: -10px;
+  left: -3px;
 }
 
 .txt_box h3 {
@@ -423,6 +447,7 @@ span {
   position: relative;
   left: -40px;
 }
+/* 섹션4 */
 
 .sec04 {
   width: 100%;

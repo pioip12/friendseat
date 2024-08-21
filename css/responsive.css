@@ -1,0 +1,7 @@
+/*노트북*/
+
+@media screen and (min-width: 1440px) and (max-width: 1600px) {
+  .page_wrap {
+    width: 84%;
+  }
+}
