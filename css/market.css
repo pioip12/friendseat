@@ -10,6 +10,13 @@ body {
   font-family: "Noto Sans KR", sans-serif;
   color: #383838;
 }
+body::-webkit-scrollbar {
+  width: 16px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #c9c9c9;
+  border-radius: 20px;
+}
 .page_wrap {
   width: 100%;
 }
@@ -246,6 +253,20 @@ section {
   margin-bottom: 42px;
   text-align: center;
 }
+.sec02_wrapper {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 60px;
+}
+.left_grey {
+  position: relative;
+  top: -60px;
+}
+.right_grey {
+  position: relative;
+  top: -60px;
+}
 .sec02_box {
   margin: 0 auto;
   width: 1600px;
@@ -318,13 +339,6 @@ section {
   font-weight: 300;
   color: #525252;
   transition: 0.2s;
-}
-.sec02_photo:hover h3 {
-  font-size: 23px;
-  transition: 0.2s;
-}
-.sec02_photo:hover p {
-  font-size: 19px;
 }
 
 /* 세번째 섹션 */
@@ -630,17 +644,12 @@ section {
   transition: 0.2s;
   margin-bottom: 18px;
 }
-.photobox1:hover p {
-  font-size: 19px;
-}
+
 .photobox1 h3 {
   font-size: 24px;
   color: #e00000;
   font-weight: 700;
   transition: 0.2s;
-}
-.photobox1:hover h3 {
-  font-size: 25px;
 }
 
 /* 푸터 */

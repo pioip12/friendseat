@@ -9,6 +9,13 @@ body {
   font-family: "Noto Sans KR", sans-serif;
   color: #383838;
 }
+body::-webkit-scrollbar {
+  width: 16px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #c9c9c9;
+  border-radius: 20px;
+}
 .page_wrap {
   width: 100%;
 }
@@ -473,13 +480,13 @@ section {
   margin-right: 116px;
   text-align: center;
   box-sizing: border-box;
-  padding: 140px 0;
+  padding: 137px 0;
 }
 .sec05_wrap div h2 {
   font-size: 36px;
   color: #fff;
   font-weight: bold;
-  margin-bottom: 36px;
+  margin-bottom: 44px;
 }
 .sec05_wrap div a {
   font-size: 16px;

@@ -9,6 +9,13 @@ body {
   font-family: "Noto Sans KR", sans-serif;
   color: #383838;
 }
+body::-webkit-scrollbar {
+  width: 16px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #c9c9c9;
+  border-radius: 20px;
+}
 .page_wrap {
   width: 100%;
 }
@@ -318,11 +325,15 @@ section {
   border: 1px solid #b6b6b6;
   border-radius: 20px;
   margin-bottom: 42px;
+  transition: 0.3s;
 }
 .community_photo .photo_box {
   width: 360px;
   height: 430px;
   overflow: hidden;
+}
+.community_photo > a:hover {
+  border: 1px solid #237b22;
 }
 .photo1 {
   width: 360px;
@@ -337,19 +348,31 @@ section {
 }
 .txt_community {
   box-sizing: border-box;
-  padding: 18px;
+  padding: 0 24px;
+}
+.txt_community span {
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  background-color: #8f8f8f;
+  position: relative;
+  top: 4px;
+  left: 1px;
+  margin: 2px;
 }
 .photo_box p {
   font-size: 14px;
   color: #000;
   font-weight: 300;
-  line-height: 18px;
+  line-height: 24px;
+  margin-top: 20px;
 }
+
 .photo_box h3 {
   font-size: 14px;
   font-weight: 400;
   color: #8f8f8f;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   margin-top: 4px;
 }
 .photo_box h2 {
@@ -362,14 +385,17 @@ section {
 .photo_box h2::after {
   content: "";
   display: block;
-  width: 324px;
+  width: 300px;
   height: 1px;
   background-color: #8f8f8f;
   position: relative;
   top: 12px;
   margin-bottom: 24px;
 }
-
+.txt_nonephoto {
+  box-sizing: border-box;
+  padding: 32px 24px;
+}
 .photo2 {
   width: 360px;
   height: 220px;
@@ -471,18 +497,40 @@ section {
   background-color: #404040;
   margin: 0 auto;
   margin-top: 65px;
-  background-image: url(../img/community/health_information.png);
+  background-image: url(../img/community/community_card.png);
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 74px 220px;
 }
 .sec03_wrap .info_txt {
   width: 100%;
   height: 100%;
-  box-sizing: border-box;
-  padding: 100px 270px;
-  text-align: end;
+  text-align: start;
+  line-height: 36px;
 }
 .sec03_wrap .info_txt h2 {
-  font-size: 28px;
+  font-size: 36px;
   color: #fff;
   font-weight: 500;
+}
+.sec03_wrap .info_txt p {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 400;
+}
+.info_btn {
+  width: 127px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 15px 30px;
+  text-align: center;
+  color: #fff;
+  transition: 0.3s;
+}
+.sec03_wrap a:hover .info_btn {
+  background-color: #fff;
+  color: #237b22;
 }

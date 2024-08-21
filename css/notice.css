@@ -9,6 +9,13 @@ body {
   font-family: "Noto Sans KR", sans-serif;
   color: #383838;
 }
+body::-webkit-scrollbar {
+  width: 16px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #c9c9c9;
+  border-radius: 20px;
+}
 .page_wrap {
   width: 100%;
 }
@@ -383,10 +390,46 @@ section {
 .list_search {
   width: 120px;
   height: 25px;
-  border: 1px solid #6d6d6d;
+  border: 1px solid #dcdcdc;
   outline: none;
 }
+.recipe_number {
+  width: 1600px;
+  height: fit-content;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 65px;
+}
+.recipe_number a {
+  font-size: 16px;
+  margin-left: 25px;
+  color: #a4a4a4;
+  display: inline-block;
+  transition: 0.3s;
+}
+.recipe_number a:first-child {
+  width: 8px;
+  height: 16px;
+  position: relative;
+  top: 2px;
+  background-image: url(../img/icon/sprite.png);
+  background-position: -2277px 1px;
+  background-repeat: no-repeat;
+}
+.recipe_number a:last-child {
+  width: 8px;
+  height: 16px;
+  position: relative;
+  top: 2px;
+  background-image: url(../img/icon/sprite.png);
+  background-position: -2285px 1px;
+  background-repeat: no-repeat;
+}
+.recipe_number a:hover {
+  color: #237b22;
 
+  font-weight: 500;
+}
 /* footer */
 footer {
   width: 1600px;
