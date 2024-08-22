@@ -1,7 +1,37 @@
 /*노트북*/
 
 @media screen and (min-width: 1440px) and (max-width: 1600px) {
-  .page_wrap {
-    width: 84%;
+  .best1 > .photo_box {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1439px) {
+  /* 푸터 */
+  .bottom_txt {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* 푸터 */
+  .bottom_txt {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* 푸터 */
+  .bottom_txt {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* 푸터 */
+  .bottom_txt {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
   }
 }

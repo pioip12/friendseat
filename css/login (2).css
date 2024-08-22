@@ -1,0 +1,389 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: #383838;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid #eeeeee;
+
+  position: fixed;
+  z-index: 999;
+}
+.headerwrap {
+  width: 100%;
+  height: 80px;
+
+  background-color: transparent;
+  transition: 0.3s;
+}
+.headerwrap:hover {
+  background-color: #fff;
+}
+.header_wrapper {
+  width: 84%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+h1 {
+  width: 140px;
+  height: 20px;
+  padding: 30px 0;
+}
+nav {
+  width: 36%;
+  height: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+nav > ul {
+  display: flex;
+  justify-content: space-between;
+  line-height: 80px;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+nav > ul::after {
+  position: absolute;
+  top: 80px;
+  left: -80px;
+  content: "메뉴배경";
+  font-size: 0;
+  display: block;
+  width: 128%;
+  height: 0;
+  overflow: hidden;
+  background-color: #fff;
+  box-sizing: border-box;
+  border: 1px solid #f5f5f5;
+
+  border-top: none;
+  transition: 0.3s;
+  border-radius: 0px 0px 20px 20px;
+}
+
+nav > ul:hover::after {
+  height: 240px;
+}
+.submenu:not(:hover) > li > a {
+  color: #797979;
+}
+.icons {
+  display: flex;
+  padding: 30px 0;
+  column-gap: 20px;
+}
+
+.login {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/icon/);
+  background-position: -672px -538px;
+}
+.search {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/sprite.png);
+  background-position: -632px -538px;
+}
+
+/*2차메뉴*/
+nav > ul > li {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.submenu {
+  width: 156%;
+  height: 0;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 80px;
+  left: -18px;
+  line-height: 32px;
+  transition: 0.5s;
+  column-gap: 70px;
+  color: #575757;
+  text-align: center;
+  z-index: 55;
+  transition: 0.3s;
+}
+.submenu li {
+  padding-top: 20px;
+}
+nav > ul:hover .submenu {
+  height: 210px;
+}
+nav > ul > li:hover > a {
+  color: #88b14b;
+}
+.submenu > li:hover > a {
+  color: #88b14b;
+}
+/* 메뉴 애니메이션 */
+nav > ul > li:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 45px;
+  height: 4px;
+  display: block;
+  background-color: #237b22;
+  transform: scaleX(0);
+  transition: 0.3s;
+}
+nav > ul > li:nth-child(2):after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 1px;
+  width: 45px;
+  height: 4px;
+  display: block;
+  background-color: #237b22;
+  transform: scaleX(0);
+  transition: 0.3s;
+}
+nav > ul > li:nth-child(2):after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 1px;
+  width: 45px;
+  height: 4px;
+  display: block;
+  background-color: #237b22;
+  transform: scaleX(0);
+  transition: 0.3s;
+}
+nav > ul > li:nth-child(3):after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 1px;
+  width: 45px;
+  height: 4px;
+  display: block;
+  background-color: #237b22;
+  transform: scaleX(0);
+  transition: 0.3s;
+}
+nav > ul > li:nth-child(4):after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 2px;
+  width: 45px;
+  height: 4px;
+  display: block;
+  background-color: #237b22;
+  transform: scaleX(0);
+  transition: 0.3s;
+}
+nav ul li:nth-child(1):hover::after {
+  width: 78px;
+  transform: scaleX(1);
+}
+nav ul li:nth-child(2):hover::after {
+  width: 63px;
+  transform: scaleX(1);
+}
+nav ul li:nth-child(3):hover::after {
+  width: 63px;
+  transform: scaleX(1);
+}
+nav ul li:nth-child(4):hover::after {
+  width: 45px;
+  transform: scaleX(1);
+}
+
+/* 로그인 폼 */
+section {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.login_wrap {
+  width: 100%;
+  height: 820px;
+  box-sizing: border-box;
+  padding: 120px;
+}
+.login_box {
+  width: 900px;
+  height: 500px;
+  margin: 125px auto;
+  background-color: #fff;
+}
+.login_box h2 {
+  font-size: 32px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 36px;
+  font-weight: bold;
+}
+form {
+  width: 452px;
+  height: fit-content;
+  margin: 0 auto;
+}
+input {
+  display: block;
+  width: 450px;
+  height: 47px;
+  border-radius: 8px;
+  margin: 0 auto;
+  margin-bottom: 26px;
+  font-size: 16px;
+  outline: none;
+  border: 1px solid #9c9c9c;
+}
+.under_txt {
+  display: flex;
+  justify-content: space-between;
+}
+.under_txt .login_search {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  column-gap: 20px;
+}
+
+.join {
+  cursor: pointer;
+}
+.search_id {
+  cursor: pointer;
+}
+.search_pw {
+  cursor: pointer;
+}
+.join::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  background-color: #484848;
+  position: relative;
+  left: 10px;
+  top: 1px;
+}
+.search_id::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  background-color: #484848;
+  position: relative;
+  left: 10px;
+  top: 1px;
+}
+
+.under_txt input {
+  display: inline-block;
+  width: 16px;
+  height: 14px;
+}
+#login_btn {
+  background-color: #484848;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.login_box a {
+  width: 450px;
+  height: 47px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+a .naver_btn,
+.kakao_btn {
+  width: 100%;
+  height: 47px;
+  border-radius: 8px;
+  margin: 0 auto;
+  border: none;
+  color: #efefef;
+  font-size: 16px;
+  line-height: 36px;
+  margin-bottom: 26px;
+  cursor: pointer;
+}
+a .kakao_btn {
+  background-color: #fee500;
+  color: #484848;
+}
+a .naver_btn {
+  background-color: #4bd688;
+}
+.kakao_btn::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 28px;
+
+  position: relative;
+  top: 9px;
+  left: -11px;
+  background-image: url(../img/icon/kakao.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+.naver_btn::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 28px;
+
+  position: relative;
+  top: 9px;
+  left: -11px;
+  background-image: url(../img/icon/naver.png);
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+}
+
+/* footer */
+footer {
+  width: 1600px;
+  height: fit-content;
+  margin: 0 auto;
+  margin-top: 48px;
+}
+footer img {
+  margin-bottom: 32px;
+}
+footer p {
+  font-size: 16px;
+  color: #b6b6b6;
+  margin-bottom: 32px;
+  line-height: 24px;
+}
+.bottom_txt {
+  display: flex;
+  justify-content: space-between;
+}
+.txt_h4 {
+  display: flex;
+  column-gap: 20px;
+}
+.bottom_txt h4 {
+  color: #797979;
+  font-size: 16px;
+}

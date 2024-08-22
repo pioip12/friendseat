@@ -297,6 +297,8 @@ section {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  position: relative;
+  top: 0;
 }
 .back_box .top_txt .text_box {
   margin-top: 200px;
@@ -332,9 +334,24 @@ section {
 .partners_img {
   width: fit-content;
   height: fit-content;
-  position: relative;
-  top: 151px;
-  right: 0;
+  position: absolute;
+  bottom: -100px;
+  right: 10px;
+  animation: moving_illust 1s linear 0s 1;
+}
+
+@keyframes moving_illust {
+  from {
+    bottom: -150px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  to {
+    bottom: -100px;
+    opacity: 1;
+  }
 }
 
 .bottom_txt {
@@ -356,28 +373,41 @@ section {
   font-weight: 500;
   line-height: 24px;
   position: relative;
+  animation: moving_btn 1s linear 0s 1;
+}
+
+@keyframes moving_btn {
+  from {
+    top: 330px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  to {
+    top: 280px;
+    opacity: 1;
+  }
+}
+.green_btn {
+  width: 160px;
+  height: 150px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 51px 45px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 24px;
+  position: absolute;
   top: 280px;
+  left: 500px;
+  background-color: #316d30;
+  border-radius: 100%;
 }
 .green_btn a {
-  display: block;
-  width: 172px;
-  height: 172px;
-  border-radius: 200px;
-  background-color: #8dc075;
   color: #fff;
-  box-sizing: border-box;
-  padding: 50px 0;
 }
-.green_btn a::after {
-  content: "";
-  display: block;
-  width: 16px;
-  height: 16px;
-  background-image: url(../img/icon/bottom.png);
-  position: relative;
-  top: 12px;
-  left: 76px;
-}
+
 /* 두번째 섹션 */
 .sec02_wrap {
   width: 1920px;

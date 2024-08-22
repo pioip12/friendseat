@@ -277,7 +277,7 @@ section {
 
 /* 섹션1 */
 .sec01_wrap {
-  width: 100%;
+  width: 1920px;
   height: 478px;
   background-image: url(../img/recipe/recipe_main.png);
   background-repeat: no-repeat;

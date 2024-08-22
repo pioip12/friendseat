@@ -24,7 +24,6 @@ header {
   width: 100%;
   height: auto;
   /* border-bottom: 1px solid #eeeeee; */
-
   position: fixed;
   z-index: 999;
 }
@@ -287,26 +286,22 @@ section {
 }
 /* section01 */
 .sec01 {
-  width: 100%;
-  height: 747px;
+  max-width: 100%;
+  height: 65vh;
   background-image: url(../img/main/main.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  margin-top: 0;
+  margin: 0 auto;
 }
 .sec01_wrap {
   width: 100%;
   height: 100%;
-
-  box-sizing: border-box;
-  padding-top: 260px;
-  padding-left: 160px;
 }
 .txt_sec01 {
-  width: fit-content;
-  height: fit-content;
-  padding: 10px;
+  width: 70%;
+  box-sizing: border-box;
+  padding: 22vh 160px;
 }
 .sec01_wrap h2 {
   font-size: 48px;
@@ -326,10 +321,7 @@ span {
 }
 
 /* section02 */
-.sec02_wrap {
-  width: 100%;
-  height: auto;
-}
+
 .sec02 {
   width: 100%;
   height: auto;
@@ -341,160 +333,171 @@ span {
   box-sizing: border-box;
   padding: 0 60px;
 }
-.left_grey,
-.right_grey {
-  position: relative;
-  top: -60px;
-}
+
 .sec02 h2 {
   text-align: center;
   font-size: 32px;
   color: #383838;
   font-weight: bold;
-
   margin-bottom: 40px;
 }
 .bottom_box {
+  width: 100%;
+  height: fit-content;
   display: flex;
   justify-content: center;
   column-gap: 60px;
   align-items: center;
-  width: 100%;
   box-sizing: border-box;
   padding: 0px 30px;
+  position: relative;
+  top: 0;
+}
+.left_grey {
+  position: absolute;
+  left: 2vw;
+  z-index: 999;
+  top: 35%;
+}
+.right_grey {
+  position: absolute;
+  right: 2vw;
+  z-index: 999;
+  top: 35%;
 }
 .best1 {
-  width: 480px;
-  height: 560px;
+  width: 25vw;
+  height: 48vh;
 }
 .best1 > .photo_box {
-  width: 475px;
-  height: 463px;
-
+  width: 100%;
+  height: 90%;
   overflow: hidden;
   margin: 0 auto;
   border-radius: 20px;
-}
-.lunch_box {
-  position: relative;
-  top: -110px;
-}
-.txt_box {
-  margin-top: 32px;
+  margin-bottom: 30px;
 }
 .photo_box > img {
-  max-width: 101%;
+  max-width: 100%;
+  height: auto;
   overflow: hidden;
-}
-.photo_2rd {
-  position: relative;
-  top: -110px;
-  left: -3px;
 }
 
 .txt_box h3 {
-  color: #7c7c7c;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 16px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 18px;
+  transition: 0.2s;
 }
 .txt_box p {
-  color: #88b14b;
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 24px;
+  color: #e00000;
+  font-weight: 700;
+  transition: 0.2s;
 }
 
 /* section3 */
+.sec03 {
+  width: 100%;
+}
 .sec03_wrap {
   width: 100%;
-  height: 495px;
+  height: 496px;
   margin: 0 auto;
   background-image: url(../img/main/main_banner.png);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position: 0px 0px;
   opacity: 0.8;
   box-sizing: border-box;
-  padding: 224px 150px;
+  padding: 13% 10%;
 }
 
 .sec03_wrap .txt_wrap1 {
-  width: 1600px;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .sec03_wrap h2 {
+  width: 300px;
   color: #fffdf6;
   font-size: 48px;
   font-weight: bold;
+  margin-right: 50px;
 }
 .sec03_wrap p {
   color: #fffdf6;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 24px;
+  margin-right: 50px;
 }
 .line {
-  margin-left: 80px;
-  width: 220px;
+  width: 11vw;
   height: 2px;
   border-radius: 50px;
   background-color: #fff;
   padding: 0 50px;
-  position: relative;
-  left: -40px;
+  margin-right: 50px;
 }
 /* 섹션4 */
 
 .sec04 {
   width: 100%;
-  height: fit-content;
+  height: auto;
   overflow: hidden;
+}
+.sec04_wrapper {
+  width: 83%;
+  height: 55vh;
+  margin: 0 auto;
 }
 .sec04 h2 {
   color: #475049;
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 42px;
-  margin-left: 160px;
 }
 .sec04_box {
-  width: 1600px;
-  height: 483px;
+  width: 100%;
+  height: 45vh;
   display: flex;
   margin: 0 auto;
   border-radius: 20px;
-
   background-color: #fbf6ee;
 }
 .box_wrapper {
-  width: 84%;
+  width: 50%;
+  height: 100%;
   overflow: hidden;
-  background-image: url(../img/main/main_recipe.png);
-  background-position: -14px -310px;
-  background-size: 98%;
+  background-image: url(../img/main/recipe0.png);
+  background-position: 0px -70px;
+  background-size: cover;
   background-repeat: no-repeat;
   border-radius: 20px 0 0 20px;
+  flex: 1;
 }
 .txt_wrapper {
-  width: 50%;
-  padding: 0 67px;
+  flex: 1;
+  box-sizing: border-box;
+  padding: 72px 64px;
 }
 .txt_wrapper h3 {
   font-size: 32px;
   color: #383838;
   font-weight: bold;
-  margin-top: 98px;
   margin-bottom: 26px;
   line-height: 40px;
 }
 .txt_wrapper h4 {
   font-size: 24px;
   color: #b7b7b7;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 108px;
 }
 .txt_wrapper p {
@@ -502,7 +505,6 @@ span {
   color: #7a857c;
   font-weight: 400;
   margin-bottom: 20px;
-  margin-left: 5px;
 }
 .txt_wrapper p::before {
   content: "";
@@ -511,6 +513,7 @@ span {
   height: 20px;
   background-image: url(../img/common/css_sprites_1.png);
   background-position: -2131px -499px;
+  background-image: 100%;
   position: relative;
   top: 2px;
 }
@@ -518,25 +521,25 @@ span {
   box-sizing: border-box;
   padding: 16px 40px;
   border-radius: 50px;
-  border: 1px solid #696969;
+  border: 1px solid #9d9d9d;
   outline: none;
-
   background-color: transparent;
   font-weight: bold;
   font-size: 16px;
   cursor: pointer;
   color: #696969;
+  transition: 0.3s;
 }
 .sec04 button:hover {
-  background-color: #88b14b;
+  background-color: #9d9d9d;
   color: #fff;
-  border: none;
 }
 
 /* section5 */
 .sec05 {
   width: 100%;
   height: fit-content;
+  box-sizing: border-box;
 }
 .sec05 > h2 {
   color: #475049;
@@ -545,31 +548,74 @@ span {
   margin-left: 160px;
   font-weight: bold;
 }
-.slide_box {
+/* 슬라이드 전체 */
+.community_slide {
   width: 100%;
+  position: relative;
   height: 464px;
+}
+/* 슬라이드1세트  */
+.slide_box1 {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
-  column-gap: 12px;
+
+  position: absolute;
+  top: 0;
+  animation: slide1 12s linear infinite;
+  width: max-content;
 }
-.slide_box .recipe_box {
-  width: 563px;
+.community_slide:hover .slide_box1,
+.community_slide:hover .slide_box2 {
+  animation-play-state: paused;
+}
+.slide_box2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  position: absolute;
+  top: 0;
+  width: max-content;
+  animation: slide2 12s linear infinite;
+}
+
+/* @keyframes slide1{
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+@keyframes slide2{
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+} */
+.community_slide .recipe_box {
+  width: 560px;
   overflow: hidden;
   margin: 0 auto;
   border-radius: 20px;
   border: 1px solid #d3d3d3;
+  margin-right: 12px;
 }
 .img1 {
-  width: 563px;
+  max-width: 100%;
   height: 288px;
   background-image: url(../img/main/community1.jpg);
   background-size: 105%;
   background-repeat: no-repeat;
-  background-position: -32px -44px;
+  background-position: -20px -44px;
 }
-
 .img2 {
-  width: 563px;
+  max-width: 100%;
   height: 288px;
   background-image: url(../img/main/community2.jpg);
   background-size: 100%;
@@ -577,16 +623,15 @@ span {
   background-position: -3px -100px;
 }
 .img3 {
-  width: 563px;
+  max-width: 100%;
   height: 288px;
   background-image: url(../img/main/community3.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
 }
 .img4 {
-  width: 563px;
+  max-width: 100%;
   height: 288px;
-
   background-image: url(../img/main/community1.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -633,7 +678,6 @@ span {
   padding: 16px 40px;
   color: #797979;
   cursor: pointer;
-
   font-size: 16px;
   border: 1px solid #525252;
   border-radius: 50px;
@@ -644,20 +688,21 @@ span {
 /* section06 */
 .sec06 {
   width: 100%;
-  height: 495px;
+  height: 45vh;
   background-color: #eeeeee;
 }
-.sec06 .sec06_wrapper {
-  width: 100%;
-  height: 495px;
+.sec06_wrapper {
+  max-width: 100%;
+  height: 100%;
   background-image: url(../img/main/mall01.png);
   background-repeat: no-repeat;
   background-size: 100%;
 }
 .txt_mall {
+  height: 100%;
   float: right;
-  margin-top: 167px;
-  margin-right: 110px;
+  box-sizing: border-box;
+  padding: 10% 5%;
   text-align: center;
 }
 .txt_mall h2 {
@@ -674,54 +719,66 @@ span {
   box-sizing: border-box;
   padding: 16px 40px;
   font-size: 16px;
-  font-weight: bold;
-
-  margin-top: 75px;
+  font-weight: 600;
+  margin-top: 60px;
   border-radius: 50px;
-  border: 1px solid #696969;
-  color: #818181;
+  border: 1px solid #9d9d9d;
+  color: #5f5f5f;
   background-color: transparent;
   cursor: pointer;
+  transition: 0.3s;
 }
-/* section06 */
+.txt_mall button:hover {
+  background-color: #9d9d9d;
+  color: #fff;
+}
+/* section07 */
 .sec07 {
   width: 100%;
-  height: 380px;
+  height: 40vh;
   background-image: url(../img/icon/logo.png);
-  background-position: 70px 10px;
+  background-position: 10px -90px;
   background-repeat: no-repeat;
+  background-size: cover;
   border-bottom: 1px solid #c2c2c2;
 }
-.sec07_wrapper {
-  width: fit-content;
+.sec07_text {
+  width: 100%;
   height: fit-content;
   float: right;
-  padding: 40px 85px;
+  box-sizing: border-box;
+  padding: 100px 120px;
   text-align: center;
 }
-.sec07_wrapper h2 {
+.sec07_text h2 {
   font-size: 48px;
-  color: #7b7b7b;
+  color: #000000;
   font-weight: bold;
 }
-.sec07_wrapper button {
+.sec07_text button {
   box-sizing: border-box;
   padding: 16px 40px;
   font-size: 16px;
-  font-weight: bold;
-  margin-top: 75px;
+  font-weight: 600;
+  margin-top: 60px;
   border-radius: 50px;
-  border: 1px solid #818181;
+  border: 1px solid #9d9d9d;
   background-color: transparent;
   cursor: pointer;
-  color: #818181;
+  color: #5f5f5f;
+  transition: 0.3s;
+}
+.sec07_text button:hover {
+  background-color: #9d9d9d;
+  color: #fff;
 }
 /* footer */
 footer {
-  width: 1600px;
+  width: 83%;
   height: fit-content;
   margin: 0 auto;
   margin-top: 48px;
+  margin-bottom: 48px;
 }
 footer img {
   margin-bottom: 32px;
