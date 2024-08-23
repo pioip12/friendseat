@@ -6,10 +6,17 @@
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/partners.css" />
     <script src="../js/index.js"></script>
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"">
+
+    <!-- 애니메이션 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   </head>
   <body>
+    <!-- 애니메이션 -->
+    <script>
+      AOS.init();
+    </script>
     <header>
       <div class="headerwrap">
         <div class="header_wrapper">
@@ -70,78 +77,76 @@
     <!-- 섹션1 -->
     <div class="section_wrapper">
       <section class="sec01_wrap">
-        <div class="back_box">
-          <div class="top_txt">
-            <div class="text_box">
-              <h4 class="animate__animated animate__fadeInUp">
-                언제 어디서나 간편하게 수익창출
-              </h4>
-              <h2 class="animate__animated animate__fadeInUp">
-                프렌즈잇 파트너스
-              </h2>
-              <h4 class="animate__animated animate__fadeInUp">
-                프렌즈잇 파트너스란?
-              </h4>
-              <p class="animate__animated animate__fadeInUp">
-                적은 수수료로 정성껏 만든 건강식품과 건강반찬을 쉽게 판매할
-                수있는<br />
-                온라인 플랫폼입니다.
-              </p>
+        <div data-aos="fade-up" data-aos-duration="3000">
+          <div class="back_box">
+            <div class="top_txt">
+              <div class="text_box">
+                <h4>언제 어디서나 간편하게 수익창출</h4>
+                <h2>프렌즈잇 파트너스</h2>
+                <h4>프렌즈잇 파트너스란?</h4>
+                <p>
+                  적은 수수료로 정성껏 만든 건강식품과 건강반찬을 쉽게 판매할
+                  수있는<br />
+                  온라인 플랫폼입니다.
+                </p>
+              </div>
+              <div class="green_btn">
+                <a href="#">파트너스<br />시작하기</a>
+              </div>
+              <div class="partners_img">
+                <img src="../img/partners/parterns_icon.png" alt="파트너스" />
+              </div>
             </div>
-            <div class="green_btn">
-              <a href="#">파트너스<br />시작하기</a>
+            <div class="bottom_txt">
+              <h3 class="animate__animated animate__fadeInUp">
+                파트너스 가입하면 누구나 수익창출 가능! <br />프랜즈잇에서
+                식품을 손쉽게 판매하고 더 많은 고객과 만나보세요.
+              </h3>
             </div>
-            <div class="partners_img">
-              <img src="../img/partners/parterns_icon.png" alt="파트너스" />
-            </div>
-          </div>
-          <div class="bottom_txt">
-            <h3 class="animate__animated animate__fadeInUp">
-              파트너스 가입하면 누구나 수익창출 가능! <br />프랜즈잇에서 식품을
-              손쉽게 판매하고 더 많은 고객과 만나보세요.
-            </h3>
           </div>
         </div>
       </section>
       <!-- 두번째 섹션 -->
       <section class="sec02_wrap">
-        <div class="partners_info">
-          <h2>파트너스는 나날이 성장하고 있습니다.</h2>
-          <div class="partners_box">
-            <div class="icon_box">
-              <div class="icon_box1">
-                <img
-                  src="../img/icon/partners_icon1.png"
-                  alt="파트너스아이콘1"
-                />
+        <div data-aos="fade-up" data-aos-duration="2000">
+          <div class="partners_info">
+            <h2>파트너스는 나날이 성장하고 있습니다.</h2>
+            <div class="partners_box">
+              <div class="icon_box">
+                <div class="icon_box1">
+                  <img
+                    src="../img/icon/partners_icon1.png"
+                    alt="파트너스아이콘1"
+                  />
+                </div>
+                <div class="icon_bottom_txt">
+                  <h2>4,850명</h2>
+                  <p>앱 다운로드</p>
+                </div>
               </div>
-              <div class="icon_bottom_txt">
-                <h2>4,850명</h2>
-                <p>앱 다운로드</p>
+              <div class="icon_box">
+                <div class="icon_box2">
+                  <img
+                    src="../img/icon/partners_icon2.png"
+                    alt="파트너스아이콘2"
+                  />
+                </div>
+                <div class="icon_bottom_txt">
+                  <h2>1,820억원</h2>
+                  <p>누적 거래액</p>
+                </div>
               </div>
-            </div>
-            <div class="icon_box">
-              <div class="icon_box2">
-                <img
-                  src="../img/icon/partners_icon2.png"
-                  alt="파트너스아이콘2"
-                />
-              </div>
-              <div class="icon_bottom_txt">
-                <h2>1,820억원</h2>
-                <p>누적 거래액</p>
-              </div>
-            </div>
-            <div class="icon_box">
-              <div class="icon_box3">
-                <img
-                  src="../img/icon/partners_icon3.png"
-                  alt="파트너스아이콘3"
-                />
-              </div>
-              <div class="icon_bottom_txt">
-                <h2>5,320명</h2>
-                <p>입점 파트너스</p>
+              <div class="icon_box">
+                <div class="icon_box3">
+                  <img
+                    src="../img/icon/partners_icon3.png"
+                    alt="파트너스아이콘3"
+                  />
+                </div>
+                <div class="icon_bottom_txt">
+                  <h2>5,320명</h2>
+                  <p>입점 파트너스</p>
+                </div>
               </div>
             </div>
           </div>
@@ -169,44 +174,46 @@
       </section>
       <!-- 네번째 섹션 -->
       <section class="sec04_wrap">
-        <div class="partners_info">
-          <h2>파트너스만의 특별한 혜택</h2>
-          <div class="partners_box">
-            <div class="icon_box">
-              <div class="icon_box1">
-                <img src="../img/partners/benefit1.png" alt="혜택1" />
+        <div data-aos="fade-up" data-aos-duration="2000">
+          <div class="partners_info">
+            <h2>파트너스만의 특별한 혜택</h2>
+            <div class="partners_box">
+              <div class="icon_box">
+                <div class="icon_box1">
+                  <img src="../img/partners/benefit1.png" alt="혜택1" />
+                </div>
+                <div class="icon_bottom_txt">
+                  <h2>홍보 및 마케팅 지원</h2>
+                  <p>
+                    소셜 미디어, 뉴스레터, 웹사이트 배너<br />
+                    등을 통한 무료 홍보 지원.
+                  </p>
+                </div>
               </div>
-              <div class="icon_bottom_txt">
-                <h2>홍보 및 마케팅 지원</h2>
-                <p>
-                  소셜 미디어, 뉴스레터, 웹사이트 배너<br />
-                  등을 통한 무료 홍보 지원.
-                </p>
+              <div class="icon_box">
+                <div class="icon_box2">
+                  <img src="../img/partners/benefit2.png" alt="혜택2" />
+                </div>
+                <div class="icon_bottom_txt">
+                  <h2>교육 및 컨설팅</h2>
+                  <p>
+                    판매 전략, 온라인 마케팅, 고객 서비스 등<br />
+                    다양한 분야에 대한 무료 교육 및<br />
+                    컨설팅 제공.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div class="icon_box">
-              <div class="icon_box2">
-                <img src="../img/partners/benefit2.png" alt="혜택2" />
-              </div>
-              <div class="icon_bottom_txt">
-                <h2>교육 및 컨설팅</h2>
-                <p>
-                  판매 전략, 온라인 마케팅, 고객 서비스 등<br />
-                  다양한 분야에 대한 무료 교육 및<br />
-                  컨설팅 제공.
-                </p>
-              </div>
-            </div>
-            <div class="icon_box">
-              <div class="icon_box3">
-                <img src="../img/partners/benefit3.png" alt="혜택3" />
-              </div>
-              <div class="icon_bottom_txt">
-                <h2>택배서비스 제휴</h2>
-                <p>
-                  할인된 배송 요금 제공.<br />
-                  (한진택배, 편의점 택배)
-                </p>
+              <div class="icon_box">
+                <div class="icon_box3">
+                  <img src="../img/partners/benefit3.png" alt="혜택3" />
+                </div>
+                <div class="icon_bottom_txt">
+                  <h2>택배서비스 제휴</h2>
+                  <p>
+                    할인된 배송 요금 제공.<br />
+                    (한진택배, 편의점 택배)
+                  </p>
+                </div>
               </div>
             </div>
           </div>

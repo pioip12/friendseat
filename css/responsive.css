@@ -1,30 +1,197 @@
 /*노트북*/
 
 @media screen and (min-width: 1440px) and (max-width: 1600px) {
-  .best1 > .photo_box {
-    width: 100%;
+  /* 섹션1 */
+  .sec01_wrap h2 {
+    font-size: 3.5rem;
+    color: #252525;
+    font-weight: bold;
+    margin-bottom: 2.5vh;
+    line-height: 3.5vw;
   }
-}
-@media screen and (min-width: 1025px) and (max-width: 1439px) {
-  /* 푸터 */
-  .bottom_txt {
-    display: block;
-    margin-bottom: 10px;
+  .sec01_wrap b {
+    font-size: 2.5rem;
+    color: #252525;
+    font-weight: 500;
+    margin-bottom: 2.8vh;
+    line-height: 3vw;
   }
-}
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  /* 푸터 */
-  .bottom_txt {
-    display: block;
-    margin-bottom: 10px;
+  .txt_sec01 {
+    width: 70%;
+    box-sizing: border-box;
+    padding: 25vh 10vw;
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 1175px) and (max-width: 1439px) {
+  /* 섹션1 */
+  .sec01_wrap h2 {
+    font-size: 2.9rem;
+    color: #252525;
+    font-weight: bold;
+    margin-bottom: 2.5vh;
+    line-height: 4vw;
+  }
+  .sec01_wrap b {
+    font-size: 2.3rem;
+    color: #252525;
+    font-weight: 500;
+    margin-bottom: 2.8vh;
+    line-height: 3vw;
+  }
+  .txt_sec01 {
+    width: 70%;
+    box-sizing: border-box;
+    padding: 25vh 6vw;
+  }
   /* 푸터 */
   .bottom_txt {
     display: block;
     margin-bottom: 10px;
+  }
+}
+/* 노트북 medium */
+@media screen and (min-width: 1025px) and (max-width: 1174px) {
+  /* 섹션1 */
+  .sec01_wrap h2 {
+    font-size: 2.7rem;
+    color: #252525;
+    font-weight: bold;
+    margin-bottom: 2.5vh;
+    line-height: 4.2vw;
+  }
+  .sec01_wrap b {
+    font-size: 2rem;
+    color: #252525;
+    font-weight: 500;
+    margin-bottom: 2.8vh;
+    line-height: 3vw;
+  }
+  .txt_sec01 {
+    width: 70%;
+    box-sizing: border-box;
+    padding: 25vh 7vw;
+  }
+  sec01_wrap p {
+    line-height: 1.8vw;
+  }
+  /* 푸터 */
+  .bottom_txt {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+/* 태블릿 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* 섹션1 */
+  .sec01 {
+    background-position: 90% center;
+  }
+
+  .sec01_wrap h2 {
+    font-size: 2.5rem;
+    color: #252525;
+    font-weight: bold;
+    margin-bottom: 2vh;
+    line-height: 4.2vw;
+  }
+  .sec01_wrap b {
+    font-size: 1.8rem;
+    color: #252525;
+    font-weight: 500;
+    margin-bottom: 2.8vh;
+    line-height: 4.5vw;
+  }
+
+  .txt_sec01 {
+    width: 70%;
+    box-sizing: border-box;
+    padding: 28vh 5vw;
+  }
+  .sec01_wrap p {
+    display: none;
+  }
+
+  /* 푸터 */
+  .bottom_txt {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+/* 모바일 large */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* 섹션1 */
+  .sec01 {
+    /* max-width: 99%; */
+    height: 70vh;
+    background-image: url(../img/main/main.png);
+    background-size: cover;
+    background-position: 80% 0;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+  }
+  .txt_sec01 {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12vh 3vw;
+  }
+
+  .sec01_wrap h2 {
+    font-size: 3.2rem;
+    color: #252525;
+    font-weight: bold;
+    margin-bottom: 2.5vh;
+    line-height: 8vw;
+  }
+  .sec01_wrap b {
+    font-size: 1.2rem;
+    color: #5a5a5a;
+    font-weight: 600;
+    margin-bottom: 2.5vh;
+    line-height: 4.5vw;
+  }
+  .sec01_wrap p {
+    display: none;
+  }
+  /* 푸터 */
+  .bottom_txt {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 624px) {
+  /* 섹션1 */
+  .sec01 {
+    /* max-width: 99%; */
+    height: 70vh;
+    background-image: url(../img/main/main.png);
+    background-size: cover;
+    background-position: 80% 0;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+  }
+  .txt_sec01 {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12vh 3vw;
+  }
+
+  .sec01_wrap h2 {
+    font-size: 3.2rem;
+    color: #252525;
+    font-weight: bold;
+    margin-bottom: 2.5vh;
+    line-height: 8vw;
+  }
+  .sec01_wrap b {
+    font-size: 1.2rem;
+    color: #5a5a5a;
+    font-weight: 600;
+    margin-bottom: 2.5vh;
+    line-height: 6vw;
+  }
+  .sec01_wrap p {
+    display: none;
   }
 }
 @media screen and (max-width: 480px) {
