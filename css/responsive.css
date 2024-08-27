@@ -33,13 +33,15 @@
   .sec04 {
     width: 90%;
   }
-  /* section07 */
-  .sec07 {
+  /* 섹션 6 */
+  .sec06_wrapper {
+    background-position: 12%;
+  }
+  /* 섹션7 */
+  .sec07::before {
+    content: "";
     background-image: url(../img/icon/logo.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 110%;
-    border-bottom: 1px solid #c2c2c2;
+    background-position: center 2vw;
   }
 }
 
@@ -112,7 +114,22 @@
   .txt_wrapper h3 {
     font-size: 1.7rem;
   }
-
+  /* 섹션 6 */
+  .sec06_wrapper::before {
+    background-position: 12% center;
+  }
+  /* 섹션7 */
+  .sec07::before {
+    content: "";
+    background-image: url(../img/icon/logo.png);
+    background-position: center 5vw;
+  }
+  .sec07_text {
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 14vw 10vh;
+  }
   /* 푸터 */
   .bottom_txt {
     display: block;
@@ -160,7 +177,7 @@
     box-sizing: border-box;
     padding: 25vh 7vw;
   }
-  sec01_wrap p {
+  .sec01_wrap p {
     line-height: 1.8vw;
   }
   /* 섹션 2 */
@@ -189,6 +206,22 @@
   }
   .txt_wrapper h3 {
     font-size: 1.7rem;
+  }
+  /* 섹션6 */
+  .sec06_wrapper::before {
+    background-position: 12% center;
+  }
+  /* 섹션7 */
+  .sec07::before {
+    content: "";
+    background-image: url(../img/icon/logo.png);
+    background-position: center 6vw;
+  }
+  .sec07_text {
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 16vw 10vh;
   }
   /* 푸터 */
   .bottom_txt {
@@ -297,8 +330,23 @@
   .txt_wrapper h4 {
     font-size: 18px;
   }
-  .txt_wrapper p {
-    font-size: 16px;
+  /* 여섯번째 섹션 */
+
+  .sec06_wrapper::before {
+    background-position: 12% center;
+  }
+
+  /* 섹션7 */
+  .sec07::before {
+    content: "";
+    background-image: url(../img/icon/logo.png);
+    background-position: center 8vw;
+  }
+  .sec07_text {
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 18vw 10vh;
   }
   /* 푸터 */
   .bottom_txt {
@@ -327,6 +375,7 @@
     left: -10px;
     top: 1px;
   }
+
   /* 섹션1 */
   .sec01 {
     /* max-width: 99%; */
@@ -392,10 +441,7 @@
     width: 100%;
   }
 
-  /* 섹션4 */
-
   .sec04 {
-    width: 90%;
     padding: 10px;
   }
   .sec04 h2 {
@@ -411,11 +457,13 @@
   .box_wrapper {
     border-radius: 20px 20px 0 0;
     flex: 2;
-    min-height: 300px;
   }
   .txt_wrapper {
     padding: 1vh 1vw;
     flex: 1;
+  }
+  .txt_wrapper h3 {
+    font-size: 1.58rem;
   }
 
   .txt_wrapper h4 {
@@ -424,10 +472,37 @@
   .txt_wrapper p {
     font-size: 14px;
   }
-  .txt_wrapper h3 {
-    font-size: 1.6rem;
+  /* 섹션6 */
+  .sec06_wrapper::before {
+    content: "";
+    background-image: url(../img/main/mall01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 12%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 1;
+    transition: 0.3s;
+    background-color: #fff;
   }
-
+  /* 섹션7 */
+  .sec07::before {
+    content: "";
+    background-image: url(../img/icon/logo.png);
+    background-position: center 10vw;
+  }
+  .sec07_text {
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 24vw 10vh;
+  }
+  .sec07_text h2 {
+    font-size: 2.5rem;
+  }
   /* 푸터 */
   .bottom_txt {
     display: block;
@@ -510,7 +585,7 @@
 
   .box_wrapper {
     border-radius: 20px 20px 0 0;
-    flex: 1;
+    flex: 2;
   }
   .txt_wrapper {
     padding: 1vh 1vw;
@@ -525,6 +600,41 @@
   }
   .txt_wrapper p {
     font-size: 14px;
+  }
+  /* 섹션6 */
+  .sec06_wrapper::before {
+    content: "";
+    background-image: url(../img/main/mall01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 13%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    opacity: 1;
+    transition: 0.3s;
+    background-color: #fff;
+  }
+  .txt_mall {
+    text-align: center;
+  }
+
+  /* 섹션7 */
+  .sec07::before {
+    content: "";
+    background-image: url(../img/icon/logo.png);
+    background-position: center 10vw;
+  }
+  .sec07_text {
+    width: 100%;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 24vw 10vh;
+  }
+  .sec07_text h2 {
+    font-size: 2rem;
   }
 }
 @media screen and (max-width: 480px) {
@@ -544,7 +654,7 @@
 
   .box_wrapper {
     border-radius: 20px 20px 0 0;
-    flex: 1;
+    flex: 2;
   }
   .txt_wrapper {
     padding: 1vh 1vw;
@@ -558,6 +668,10 @@
   }
   .txt_wrapper p {
     font-size: 14px;
+  }
+  /* 섹션7 */
+  .sec07_text h2 {
+    font-size: 2rem;
   }
   /* 푸터 */
   .bottom_txt {
