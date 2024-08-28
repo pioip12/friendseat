@@ -601,6 +601,18 @@
   .txt_wrapper p {
     font-size: 14px;
   }
+  /* 섹션5 */
+  .sec05 > h2 {
+    width: 83%;
+    color: #475049;
+    font-size: 28px;
+    font-weight: bold;
+    width: 1600px;
+    text-align: start;
+    margin: 0 auto;
+    margin-left: 5vw;
+    margin-bottom: 40px;
+  }
   /* 섹션6 */
   .sec06_wrapper::before {
     content: "";

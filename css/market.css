@@ -308,63 +308,53 @@ section {
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  padding: 0 60px;
 }
 .left_grey {
-  position: relative;
-  top: -60px;
+  cursor: pointer;
 }
 .right_grey {
-  position: relative;
-  top: -60px;
+  cursor: pointer;
 }
+
 .sec02_box {
   margin: 0 auto;
   width: 1600px;
   height: 100%;
-  display: flex;
-  column-gap: 50px;
-  justify-content: space-between;
+  gap: 30px;
 }
 
 .sec02_photo {
-  width: 100%;
-  height: 476px;
-  cursor: pointer;
+  flex: 1 1 calc(33.33%);
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 0 20px;
+  margin-right: 20px;
 }
 .sec02_photo_1 {
-  width: 500px;
+  width: 465px;
   height: 354px;
-
+  border-radius: 20px;
+}
+.sec02_photo_01,
+.sec02_photo_02,
+.sec02_photo_03 {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.2s;
   border-radius: 20px;
 }
 .sec02_photo_01 {
-  width: 100%;
-  height: 100%;
   background-image: url(../img/market/pasta.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  transition: 0.2s;
-  border-radius: 20px;
 }
+
 .sec02_photo_02 {
-  width: 500px;
-  height: 354px;
   background-image: url(../img/market/bread.jpeg);
-  background-repeat: no-repeat;
-  background-size: 110%;
-  transition: 0.2s;
-  border-radius: 20px;
 }
 .sec02_photo_03 {
-  width: 500px;
-  height: 354px;
   background-image: url(../img/market/salad.jpg);
-  background-repeat: no-repeat;
-  background-size: 110%;
-  transition: 0.2s;
-  border-radius: 20px;
-  background-position: 0 -2px;
 }
 .sec02_photo:hover .sec02_photo_01 {
   background-size: 102%;
