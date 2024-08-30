@@ -379,7 +379,7 @@
   /* 섹션1 */
   .sec01 {
     /* max-width: 99%; */
-    height: 70vh;
+    height: 45vh;
     background-image: url(../img/main/main.png);
     background-size: cover;
     background-position: 80% 0;
@@ -389,7 +389,7 @@
   .txt_sec01 {
     width: 100%;
     box-sizing: border-box;
-    padding: 12vh 3vw;
+    padding: 17vh 3vw;
   }
 
   .sec01_wrap h2 {
