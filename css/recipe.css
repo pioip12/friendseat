@@ -380,7 +380,7 @@ section {
   transition: 0.3s;
 }
 .sec02_wrap button:hover {
-  background-color: #88b14b;
+  background-color: #000000;
   color: #fff;
   border: none;
 }
@@ -505,6 +505,7 @@ section {
   color: #a5a4a4;
   transition: 0.3s;
 }
+
 .top_title .recipe_menu a:hover {
   color: #237b22;
   font-size: 16px;
