@@ -326,7 +326,7 @@ section {
   max-width: 100%;
   height: 775px;
   object-fit: cover;
-  object-position: center;
+  object-position: 60%;
 }
 .sec01_wrap .txt_sec01 {
   position: absolute;
