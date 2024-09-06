@@ -314,7 +314,7 @@ section {
 }
 .sec01_wrap {
   width: 100%;
-  height: 775px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -322,24 +322,30 @@ section {
   top: 0;
   left: 0;
 }
+.sec01_wrap img {
+  max-width: 100%;
+  height: 775px;
+  object-fit: cover;
+  object-position: center;
+}
 .sec01_wrap .txt_sec01 {
   position: absolute;
-  top: 300px;
-  left: 160px;
+  top: 25vh;
+  left: 5vw;
 }
 .sec01_wrap h2 {
   font-size: 3.5rem;
   color: #252525;
   font-weight: bold;
-  margin-bottom: 2rem;
-  line-height: 3.5vw;
+  margin-bottom: 48px;
+  line-height: 64px;
 }
 .sec01_wrap b {
   font-size: 2.5rem;
   color: #252525;
   font-weight: 500;
   margin-bottom: 2.8vh;
-  line-height: 3vw;
+  line-height: 48px;
 }
 span {
   color: #237b22;
@@ -366,40 +372,51 @@ span {
   color: #252525;
   font-weight: bold;
   margin-bottom: 1rem;
-  line-height: 1.5vw;
+  line-height: 48px;
 }
 .sec01_wrap.main2 > .txt_sec02 p {
-  font-size: 1.5rem;
+  font-size: 18px;
   color: #717171;
   font-weight: 400;
   margin-bottom: 2rem;
-  line-height: 3.5vw;
+  line-height: 24px;
 }
 
 .sec01_wrap p {
   color: #464646;
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 1.2vw;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+}
+.main_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  top: -70px;
 }
 
 /* 섹션2 */
 .sec02_wrap {
   width: 100%;
-  height: 542px;
+  max-width: 1920px;
+  height: 660px;
+  margin: 0 auto;
   margin-top: 12rem;
+  margin-bottom: 12rem;
 }
 .sec02_wrap > h3 {
   box-sizing: border-box;
-  padding: 0 160px;
-  font-size: 36px;
+  padding: 0 10%;
+  font-size: 32px;
   color: #000;
   font-weight: bold;
   margin-bottom: 42px;
   text-align: center;
 }
 .sec02_wrapper {
-  width: 1920px;
+  width: 95%;
   display: flex;
   align-items: center;
   box-sizing: border-box;
@@ -412,76 +429,66 @@ span {
   cursor: pointer;
 }
 
-.sec02_box {
+.sec02_all_box {
   margin: 0 auto;
   width: 83%;
-  height: 100%;
-  gap: 30px;
+  height: 600px;
 }
-
-.sec02_photo {
-  flex: 1 1 calc(33.33%);
+.sec02_box {
+  width: calc(33.3% - 20px);
+  min-height: 300px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: left;
-  margin: 0 1vw;
-  cursor: pointer;
+  align-items: flex-start;
+  margin-right: 20px;
+  flex: 1 1 calc(33.3% - 20px);
 }
-.sec02_photo_1 {
+.sec02_box:last-child {
+  margin-right: 0;
+}
+.img_box {
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+.txt_box {
+  width: 80%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+}
+.img_box img {
   width: 100%;
-  height: 32vh;
-  border-radius: 20px;
 }
-.sec02_photo_01,
-.sec02_photo_02,
-.sec02_photo_03 {
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center center;
-  transition: 0.2s;
-  border-radius: 20px;
+.txt_box_txt {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
 }
-.sec02_photo_01 {
-  background-image: url(../img/main/best01.png);
+.txt_box_icon {
+  width: 20%;
+  box-sizing: border-box;
+  padding: 0 3.5rem;
 }
-
-.sec02_photo_02 {
-  background-image: url(../img/main/best02.png);
-}
-.sec02_photo_03 {
-  background-image: url(../img/main/best03.png);
-}
-.sec02_photo:hover .sec02_photo_01 {
-  background-size: 101%;
-}
-.sec02_photo:hover .sec02_photo_02,
-.sec02_photo:hover .sec02_photo_03 {
-  background-size: 101%;
-}
-.sec02_phototxt {
-  width: 100%;
-  height: fit-content;
-  padding: 32px 0 0;
-}
-.sec02_phototxt h3 {
+.txt_box h3 {
   font-size: 20px;
   font-weight: 400;
   color: #000;
   margin-bottom: 18px;
   transition: 0.2s;
-  line-height: 20px;
+  line-height: 1.2;
 }
-.sec02_phototxt > p {
+.txt_box p {
   font-size: 24px;
   font-weight: bold;
   color: #000;
   margin-bottom: 12px;
   transition: 0.2s;
-  line-height: 20px;
+  line-height: 1.2;
 }
-.sec02_phototxt h4 {
+.txt_box h4 {
   font-size: 18px;
   font-weight: 400;
   color: #ff1f1f;
@@ -501,54 +508,89 @@ span {
 
 .sec03 {
   width: 100%;
-  height: 37vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 420px;
   min-height: 360px;
   box-sizing: border-box;
   text-align: center;
 }
 .sec03_wrap {
   width: 100%;
-  height: 495px;
-  height: 496px;
+  height: 450px;
   margin: 0 auto;
-  background-image: url(../img/main//new_banner.png);
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.sec03_wrap::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  opacity: 0.9;
+  background-image: url(../img/main/mall3.png);
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
   background-size: cover;
-  background-position: 0px 0px;
-  opacity: 0.8;
-  box-sizing: border-box;
-  padding: 10% 0;
+  opacity: 1;
 }
 
-.sec03_wrap .txt_wrap1 {
-  width: 1600px;
-  width: 100%;
-  box-sizing: border-box;
-  text-align: start;
+.txt_wrap1 {
+  width: 50%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: end;
+  text-align: end;
+  position: absolute;
+  top: 120px;
+  right: 8rem;
 }
 .sec03_wrap h2 {
-  color: #000000;
-  font-size: 2.4rem;
   font-weight: 600;
-  margin-bottom: 1.5vh;
+  margin-bottom: 24px;
+  color: #000000;
+  font-size: 36px;
+  font-weight: 600;
+  margin-right: 50px;
+  line-height: 32px;
 }
 .sec03_wrap p {
-  color: #141414;
-  font-size: 0.9rem;
+  color: #5e5e5e;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.5rem;
   margin-right: 50px;
 }
+.txt_wrap1 a {
+  width: 240px;
+  height: 45px;
+  box-sizing: border-box;
+  padding: 1vh 2vw;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-top: 48px;
+  border-radius: 50px;
+  border: 1px solid #9d9d9d;
+  outline: none;
+  background-color: transparent;
+  font-weight: bold;
+  cursor: pointer;
+  color: #696969;
+  text-align: center;
+  transition: 0.3s;
+  position: relative;
+  left: -3rem;
+}
+.txt_wrap1 a:hover {
+  background-color: #000000;
+  color: #fff;
+  border: 1px solid #000000;
+}
 
 /* 섹션4 */
-
 .sec04 {
   width: 100%;
   height: auto;
@@ -639,7 +681,9 @@ span {
 }
 .sec04 button {
   box-sizing: border-box;
-  padding: 16px 40px;
+  padding: 10px 2vw;
+  width: 180px;
+  height: 45px;
   border-radius: 50px;
   border: 1px solid #9d9d9d;
   outline: none;
@@ -806,7 +850,8 @@ span {
 }
 .recipe_box .txt_2 button {
   box-sizing: border-box;
-  padding: 16px 40px;
+  width: 180px;
+  height: 45px;
   color: #797979;
   cursor: pointer;
   font-size: 16px;
@@ -929,10 +974,8 @@ span {
 .sec07_text {
   width: 100%;
   height: fit-content;
-
   box-sizing: border-box;
-  padding: 12vh 10vw;
-  padding: 12vh 10vw;
+  padding: 9rem 10vh;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -948,8 +991,11 @@ span {
   font-weight: bold;
 }
 .sec07_text button {
+  width: 240px;
+  height: 45px;
   box-sizing: border-box;
-  padding: 16px 40px;
+  padding: 10px 2vw;
+  box-sizing: border-box;
   font-size: 16px;
   font-weight: 600;
   margin-top: 32px;
@@ -960,6 +1006,7 @@ span {
   color: #5f5f5f;
   transition: 0.3s;
 }
+
 .sec07_text button:hover {
   background-color: #000000;
   color: #fff;
@@ -970,14 +1017,18 @@ span {
 .sec08 {
   width: 100%;
   height: 37vh;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
   background-color: #eee;
   box-sizing: border-box;
-  padding: 8% 10%;
+  padding: 10rem 10%;
+  margin-bottom: 0;
+}
+.sec08_wrapper {
+  margin-bottom: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sec08:hover.sec07::before {
@@ -985,7 +1036,7 @@ span {
 }
 
 .sec08_text {
-  width: 100%;
+  width: 50%;
   height: fit-content;
   box-sizing: border-box;
   text-align: left;
@@ -993,10 +1044,11 @@ span {
   flex-direction: column;
   position: relative;
   justify-content: center;
+  flex: 2;
 }
 
 .sec08_text h2 {
-  font-size: 48px;
+  font-size: 3rem;
   color: #000000;
   font-weight: bold;
   margin-bottom: 10px;
@@ -1005,40 +1057,33 @@ span {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 1.2rem;
   font: inherit;
   vertical-align: baseline;
   margin-bottom: 10px;
 }
-.sec08_text button {
-  padding: 16px 40px;
-  font-size: 16px;
-  font-weight: 600;
-  margin-top: 32px;
-  border-radius: 50px;
-  border: 1px solid #9d9d9d;
-  background-color: transparent;
-  cursor: pointer;
-  color: #5f5f5f;
-  transition: 0.3s;
-}
+
 .sec08_text button:hover {
   background-color: #000000;
   color: #fff;
-  border: 1px solid #000000;
+  border: 2px solid #000000;
 }
 .sec_8_btn {
-  width: 40%;
+  width: 50%;
   display: flex;
-  gap: 48px;
+  gap: 36px;
   justify-content: center;
+  flex: 1;
+  align-items: center;
 }
 .sec_8_btn button {
+  width: 240px;
+  height: 45px;
   box-sizing: border-box;
-  padding: 16px 40px;
+  padding: 1vh 2vw;
   font-size: 16px;
   font-weight: 600;
-  margin-top: 32px;
+
   border-radius: 50px;
   border: 1px solid #9d9d9d;
   background-color: transparent;
@@ -1046,6 +1091,20 @@ span {
   color: #ffffff;
   background-color: #000;
   transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Google::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 20px;
+  background-image: url(../img/icon/google.png);
+  background-position: -1px 0px;
+  position: relative;
+  top: 0px;
+  left: -6px;
 }
 .app::before {
   content: "";
@@ -1053,16 +1112,16 @@ span {
   width: 16px;
   height: 20px;
   background-image: url(../img/icon/app.png);
-  background-color: #237b22;
   background-position: 0px -1px;
   position: relative;
-  top: 3px;
-  left: -5px;
+  top: 0px;
+  left: -6px;
 }
 .sec_8_btn button:hover {
   background-color: #000;
   color: #fff;
   border: 1px solid #000;
+  font-weight: bold;
 }
 /* footer */
 footer {
@@ -1079,12 +1138,15 @@ footer p {
   font-size: 16px;
   color: #b6b6b6;
   margin-bottom: 32px;
+  line-height: 24px;
 }
 .bottom_txt {
   display: flex;
   justify-content: space-between;
 }
 .txt_h4 {
+  font-size: 16px;
+
   display: flex;
   column-gap: 20px;
 }
