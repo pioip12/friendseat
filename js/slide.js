@@ -1,7 +1,7 @@
 $(function () {
   $(".main_wrapper").slick({
     infinite: true,
-    autoplay: true, //슬라이드 자동 시작(true or false) ▶기본값 false
+    // autoplay: true, //슬라이드 자동 시작(true or false) ▶기본값 false
     autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
