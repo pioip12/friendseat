@@ -423,12 +423,12 @@ span {
   margin: 0 auto;
   position: relative;
 }
-.left_grey {
+.left_grey_1 {
   cursor: pointer;
   position: relative;
   z-index: 999;
 }
-.right_grey {
+.right_grey_1 {
   cursor: pointer;
   position: relative;
   z-index: 999;
@@ -584,7 +584,7 @@ span {
   width: 240px;
   height: 45px;
   box-sizing: border-box;
-  padding: 1vh 2vw;
+  padding: 1.5vh 2vw;
   box-sizing: border-box;
   font-size: 16px;
   margin-top: 48px;
@@ -628,7 +628,7 @@ span {
 }
 .sec04_box {
   width: 100%;
-  height: 50vh;
+  height: 49vh;
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
@@ -1161,9 +1161,11 @@ footer p {
   justify-content: space-between;
 }
 .txt_h4 {
+  min-width: 400px;
   font-size: 16px;
 
   display: flex;
+  flex-wrap: wrap;
   column-gap: 20px;
 }
 .bottom_txt h4 {

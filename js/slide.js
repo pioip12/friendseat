@@ -27,27 +27,20 @@ $(function () {
     nextArrow: $(".right_grey_1"), //다음 화살표만 변경
     responsive: [
       {
-        breakpoint: 1174,
+        breakpoint: 1175,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
         },
       },
+
       {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          centerMode: false,
-        },
-      },
-      {
-        breakpoint: 487,
+        breakpoint: 488,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          initialSlide: 1,
           centerMode: true,
         },
       },
@@ -70,49 +63,5 @@ $(function () {
     $("#slick-slide-control00 ").css({
       backgroundColor: "#fff",
     });
-  });
-
-  $(".sec02_all_box").slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    initialSlide: 1,
-    centerMode: false,
-    centerPadding: "20px",
-    prevArrow: $(".left_grey_1"), //이전 화살표만 변경
-    nextArrow: $(".right_grey_1"), //다음 화살표만 변경
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          centerPadding: "20px",
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          centerMode: true,
-          initialSlide: 1,
-          centerMode: true,
-          centerPadding: "20px",
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 1,
-          centerMode: true,
-          centerPadding: "20px",
-        },
-      },
-    ],
   });
 });
