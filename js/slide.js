@@ -44,11 +44,11 @@ $(function () {
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 487,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          centerMode: false,
+          centerMode: true,
         },
       },
     ],
@@ -78,6 +78,7 @@ $(function () {
     slidesToScroll: 1,
     initialSlide: 1,
     centerMode: false,
+    centerPadding: "20px",
     prevArrow: $(".left_grey_1"), //이전 화살표만 변경
     nextArrow: $(".right_grey_1"), //다음 화살표만 변경
     responsive: [
@@ -88,14 +89,18 @@ $(function () {
           slidesToScroll: 1,
           infinite: true,
           dots: true,
+          centerPadding: "20px",
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 768,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
-          centerMode: false,
+          slidesToScroll: 1,
+          centerMode: true,
+          initialSlide: 1,
+          centerMode: true,
+          centerPadding: "20px",
         },
       },
       {
@@ -103,6 +108,9 @@ $(function () {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          initialSlide: 1,
+          centerMode: true,
+          centerPadding: "20px",
         },
       },
     ],

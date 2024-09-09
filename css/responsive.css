@@ -8,7 +8,7 @@
   .sec02_wrap {
     width: 100%;
     max-width: 1920px;
-    height: 68vh;
+    height: 55vh;
     margin: 0 auto;
     margin-top: 12rem;
     margin-bottom: 10rem;
@@ -16,8 +16,9 @@
   .txt_box h3 {
     font-size: 20px;
   }
+
   .txt_box_icon {
-    width: 13%;
+    width: fit-content;
     box-sizing: border-box;
   }
   .txt_box p {
@@ -94,21 +95,32 @@
     font-size: 22px;
   }
   .txt_box_icon {
-    width: 17%;
+    width: fit-content;
     box-sizing: border-box;
+  }
+  .txt_box_icon > a {
+    display: block;
+    box-sizing: border-box;
+    background-color: #7c7c7c;
+    width: 42px;
+    height: 42px;
+    padding: 9px 10px;
+    border-radius: 8px;
+    opacity: 0.7;
+  }
+
+  .sec02_all_box {
+    margin: 0 auto;
+    width: 83%;
+    height: 51vh;
   }
   .sec02_wrap {
     width: 100%;
     max-width: 1920px;
-    height: 63vh;
+    height: 49vh;
     margin: 0 auto;
     margin-top: 12rem;
     margin-bottom: 10rem;
-  }
-  .sec02_all_box {
-    margin: 0 auto;
-    width: 83%;
-    height: 42vh;
   }
   /* 섹션3 */
   .txt_wrap1 {
@@ -238,9 +250,15 @@
     font-size: 22px;
   }
 
-  .txt_box_icon {
-    width: 12%;
+  .txt_box_icon > a {
+    display: block;
     box-sizing: border-box;
+    background-color: #7c7c7c;
+    width: 42px;
+    height: 42px;
+    padding: 9px 10px;
+    border-radius: 8px;
+    opacity: 0.7;
   }
   .sec02_all_box {
     margin: 0 auto;
@@ -398,24 +416,23 @@
   .sec02_wrap {
     width: 100%;
     max-width: 1920px;
-    height: 62vh;
+    height: 50vh;
     margin: 0 auto;
     margin-top: 12rem;
     margin-bottom: 9rem;
   }
-
   .sec02_all_box {
     margin: 0 auto;
     width: 83%;
-    height: 40vh;
+    height: 45vh;
   }
 
   .txt_box_icon > a {
     display: block;
     box-sizing: border-box;
     background-color: #7c7c7c;
-    width: 45px;
-    height: 45px;
+    width: 42px;
+    height: 42px;
     padding: 9px 10px;
     border-radius: 8px;
     opacity: 0.7;
@@ -576,8 +593,9 @@
     margin-top: 12rem;
     margin-bottom: 9rem;
   }
+
   .sec02_wrap > h3 {
-    font-size: 24px;
+    font-size: 32px;
     padding: 0 5%;
   }
 
@@ -591,18 +609,19 @@
   .sec02_all_box {
     margin: 0 auto;
     width: 83%;
-    height: 38vh;
+    height: 36vh;
   }
   .txt_box_icon > a {
     display: block;
     box-sizing: border-box;
     background-color: #7c7c7c;
-    width: 45px;
-    height: 45px;
+    width: 42px;
+    height: 42px;
     padding: 9px 10px;
     border-radius: 8px;
     opacity: 0.7;
   }
+
   /* 섹션3 */
 
   .sec03_wrap {
@@ -783,48 +802,49 @@
     left: -10px;
     top: 1px;
   }
+  section {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
   /* 섹션1 */
 
   /* 두번째 섹션 */
-
   .sec02_wrap {
     width: 100%;
     max-width: 1920px;
-    height: 47vh;
+    height: 43vh;
     margin: 0 auto;
-    margin-top: 12rem;
-    margin-bottom: 5rem;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+  }
+  .sec02_wrap > h3 {
+    font-size: 32px;
+    padding: 0 5%;
+  }
+
+  .sec02_box {
+    width: 100%;
+  }
+
+  .txt_box_icon {
+    padding: 0;
   }
   .sec02_all_box {
     margin: 0 auto;
     width: 83%;
-    height: 39vh;
-  }
-  .best1.photo3 {
-    display: none;
-  }
-  .txt_box h3 {
-    font-size: 18px;
-  }
-
-  .txt_box p {
-    font-size: 20px;
-  }
-  .bottom_box {
-    width: 90%;
+    height: 38vh;
   }
   .txt_box_icon > a {
     display: block;
     box-sizing: border-box;
     background-color: #7c7c7c;
-    width: 45px;
-    height: 45px;
+    width: 42px;
+    height: 42px;
     padding: 9px 10px;
     border-radius: 8px;
     opacity: 0.7;
-  }
-  .txt_box_icon > a img {
-    width: 90%;
   }
   /* 섹션3 */
   .sec03_wrap .txt_wrap1 {
@@ -877,6 +897,7 @@
   /* 섹션4 */
   .sec04 {
     height: 56vh;
+    margin-bottom: 6rem;
   }
   .sec04 h2 {
     font-size: 28px;
@@ -959,6 +980,10 @@
   }
   .sec07_text h2 {
     font-size: 2.5rem;
+  }
+  .sec07_text {
+    margin-top: 0;
+    position: relative;
   }
   /* 섹션8 */
 
@@ -1045,27 +1070,66 @@ footer p {
     left: -10px;
     top: 1px;
   }
+
+  section {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+  }
   /* 섹션2 */
+
   .sec02_wrap {
     width: 100%;
     max-width: 1920px;
-    height: 60vh;
+    height: 44vh;
     margin: 0 auto;
-    margin-top: 12rem;
-    margin-bottom: 8rem;
+    margin-top: 5rem;
+    margin-bottom: 0rem;
+  }
+
+  .txt_box_icon {
+    width: 16%;
+    box-sizing: border-box;
+  }
+  .txt_box_icon > a {
+    display: block;
+    box-sizing: border-box;
+    background-color: #7c7c7c;
+    width: 36px;
+    height: 36px;
+    padding: 9px 10px;
+    border-radius: 8px;
+    opacity: 0.7;
   }
   .sec02_all_box {
     margin: 0 auto;
     width: 83%;
-    height: 52vh;
+    height: 38vh;
   }
-  .sec02_all_box:first-child {
-    margin-right: 0;
+
+  .left_grey {
+    z-index: 999;
+  }
+  .right_grey {
+    z-index: 999;
+  }
+
+  .sec02_wrap > h3 {
+    padding: 0;
+    width: 90%;
+    min-width: 350px;
+    font-size: 24px;
+    color: #000;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: left;
   }
   /* 섹션3 */
   .sec03 {
     min-width: 350px;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
   }
   .sec03_wrap h2 {
     min-width: 320px;
@@ -1141,14 +1205,20 @@ footer p {
     width: 90%;
     min-width: 350px;
   }
+
   .sec04 h2 {
+    width: 100%;
+    color: #475049;
     font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
   }
   .sec04_box {
     flex-direction: column;
   }
+
   .sec04_wrapper {
-    height: 58vh;
+    height: 56vh;
   }
 
   .box_wrapper {
@@ -1173,14 +1243,23 @@ footer p {
   /* 섹션5 */
   .sec05 > h2 {
     width: 90%;
+    min-width: 350px;
     color: #475049;
     font-size: 24px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
   /* 섹션7 */
 
   .sec07_text h2 {
     font-size: 32px;
     min-width: 350px;
+  }
+  .sec07 {
+    width: 100%;
+    height: 37vh;
+    position: relative;
+    margin-bottom: 4rem;
   }
   /* 섹션8 */
 
@@ -1228,6 +1307,10 @@ footer p {
 
   footer {
     width: 95%;
+  }
+  .footer_wrapper {
+    box-sizing: border-box;
+    padding: 0 10px;
   }
   footer p {
     font-size: 12px;
