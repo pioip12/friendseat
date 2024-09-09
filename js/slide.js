@@ -27,7 +27,7 @@ $(function () {
     nextArrow: $(".right_grey_1"), //다음 화살표만 변경
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1174,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
@@ -48,6 +48,7 @@ $(function () {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          centerMode: false,
         },
       },
     ],

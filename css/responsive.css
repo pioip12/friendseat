@@ -4,12 +4,29 @@
   /* 섹션1 */
 
   /* 섹션 2 */
+
+  .sec02_wrap {
+    width: 100%;
+    max-width: 1920px;
+    height: 68vh;
+    margin: 0 auto;
+    margin-top: 12rem;
+    margin-bottom: 10rem;
+  }
   .txt_box h3 {
     font-size: 20px;
   }
-
+  .txt_box_icon {
+    width: 13%;
+    box-sizing: border-box;
+  }
   .txt_box p {
     font-size: 22px;
+  }
+  .sec02_all_box {
+    margin: 0 auto;
+    width: 83%;
+    height: 50vh;
   }
   /* 섹션4 */
   .sec04 {
@@ -76,7 +93,23 @@
   .txt_box p {
     font-size: 22px;
   }
-
+  .txt_box_icon {
+    width: 17%;
+    box-sizing: border-box;
+  }
+  .sec02_wrap {
+    width: 100%;
+    max-width: 1920px;
+    height: 63vh;
+    margin: 0 auto;
+    margin-top: 12rem;
+    margin-bottom: 10rem;
+  }
+  .sec02_all_box {
+    margin: 0 auto;
+    width: 83%;
+    height: 42vh;
+  }
   /* 섹션3 */
   .txt_wrap1 {
     display: flex;
@@ -186,7 +219,14 @@
   /* 섹션1 */
 
   /* 섹션 2 */
-
+  .sec02_wrap {
+    width: 100%;
+    max-width: 1920px;
+    height: 58vh;
+    margin: 0 auto;
+    margin-top: 12rem;
+    margin-bottom: 10rem;
+  }
   .sec02_box {
     width: calc(50% - 20px);
   }
@@ -197,6 +237,17 @@
   .txt_box p {
     font-size: 22px;
   }
+
+  .txt_box_icon {
+    width: 12%;
+    box-sizing: border-box;
+  }
+  .sec02_all_box {
+    margin: 0 auto;
+    width: 83%;
+    height: 51vh;
+  }
+
   /* 섹션3 */
   .txt_wrap1 {
     display: flex;
@@ -344,6 +395,31 @@
     width: 90%;
   }
 
+  .sec02_wrap {
+    width: 100%;
+    max-width: 1920px;
+    height: 62vh;
+    margin: 0 auto;
+    margin-top: 12rem;
+    margin-bottom: 9rem;
+  }
+
+  .sec02_all_box {
+    margin: 0 auto;
+    width: 83%;
+    height: 40vh;
+  }
+
+  .txt_box_icon > a {
+    display: block;
+    box-sizing: border-box;
+    background-color: #7c7c7c;
+    width: 45px;
+    height: 45px;
+    padding: 9px 10px;
+    border-radius: 8px;
+    opacity: 0.7;
+  }
   /* 섹션3 */
 
   .sec03_wrap {
@@ -492,6 +568,14 @@
   /* 섹션1 */
 
   /* 두번째 섹션 */
+  .sec02_wrap {
+    width: 100%;
+    max-width: 1920px;
+    height: 44vh;
+    margin: 0 auto;
+    margin-top: 12rem;
+    margin-bottom: 9rem;
+  }
   .sec02_wrap > h3 {
     font-size: 24px;
     padding: 0 5%;
@@ -504,7 +588,21 @@
   .txt_box_icon {
     padding: 0;
   }
-
+  .sec02_all_box {
+    margin: 0 auto;
+    width: 83%;
+    height: 38vh;
+  }
+  .txt_box_icon > a {
+    display: block;
+    box-sizing: border-box;
+    background-color: #7c7c7c;
+    width: 45px;
+    height: 45px;
+    padding: 9px 10px;
+    border-radius: 8px;
+    opacity: 0.7;
+  }
   /* 섹션3 */
 
   .sec03_wrap {
@@ -688,6 +786,20 @@
   /* 섹션1 */
 
   /* 두번째 섹션 */
+
+  .sec02_wrap {
+    width: 100%;
+    max-width: 1920px;
+    height: 47vh;
+    margin: 0 auto;
+    margin-top: 12rem;
+    margin-bottom: 5rem;
+  }
+  .sec02_all_box {
+    margin: 0 auto;
+    width: 83%;
+    height: 39vh;
+  }
   .best1.photo3 {
     display: none;
   }
@@ -699,6 +811,19 @@
     font-size: 20px;
   }
   .bottom_box {
+    width: 90%;
+  }
+  .txt_box_icon > a {
+    display: block;
+    box-sizing: border-box;
+    background-color: #7c7c7c;
+    width: 45px;
+    height: 45px;
+    padding: 9px 10px;
+    border-radius: 8px;
+    opacity: 0.7;
+  }
+  .txt_box_icon > a img {
     width: 90%;
   }
   /* 섹션3 */
@@ -920,6 +1045,23 @@ footer p {
     left: -10px;
     top: 1px;
   }
+  /* 섹션2 */
+  .sec02_wrap {
+    width: 100%;
+    max-width: 1920px;
+    height: 60vh;
+    margin: 0 auto;
+    margin-top: 12rem;
+    margin-bottom: 8rem;
+  }
+  .sec02_all_box {
+    margin: 0 auto;
+    width: 83%;
+    height: 52vh;
+  }
+  .sec02_all_box:first-child {
+    margin-right: 0;
+  }
   /* 섹션3 */
   .sec03 {
     min-width: 350px;
@@ -1043,8 +1185,10 @@ footer p {
   /* 섹션8 */
 
   .sec08 {
+    box-sizing: border-box;
     padding: 7rem 5%;
     margin-bottom: 0;
+    overflow: hidden;
   }
   .sec08_wrapper {
     flex-direction: column;
@@ -1101,5 +1245,12 @@ footer p {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+  }
+  .txt_h4 {
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 12px;
   }
 }
