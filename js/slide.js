@@ -9,7 +9,7 @@ $(function () {
     centerMode: false,
     // 스크롤바 아래 점으로 페이지네이션 여부
 
-    dots: true,
+    dots: false,
     dotsClass: "main_button",
     draggable: true,
     pauseOnDotsHover: true,

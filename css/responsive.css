@@ -609,7 +609,7 @@
   }
   .sec01_wrap .txt_sec01 {
     position: absolute;
-    top: 30vh;
+    top: 23vh;
     left: 5vw;
   }
 
@@ -630,8 +630,8 @@
 
   .sec01_wrap .txt_sec01 {
     position: absolute;
-    top: 30vh;
-    left: 5vw;
+    top: 19rem;
+    left: 4vw;
   }
   .sec01_wrap b {
     font-size: 32px;
@@ -845,7 +845,7 @@
   }
   .sec01_wrap .txt_sec01 {
     position: absolute;
-    top: 19vh;
+    top: 14rem;
     left: 5vw;
   }
   .sec01_wrap h2 {
@@ -1135,8 +1135,8 @@
 
   .sec01_wrap .txt_sec01 {
     position: absolute;
-    top: 25vh;
-    left: 3vw;
+    top: 14rem;
+    left: 5vw;
   }
   .sec01_wrap h2 {
     font-size: 38px;
@@ -1646,6 +1646,8 @@ footer p {
   }
   /* 섹션4 */
   .sec04 {
+    height: 569px;
+    overflow: hidden;
     width: 90%;
     min-width: 350px;
   }
@@ -1694,7 +1696,21 @@ footer p {
     margin-bottom: 20px;
   }
   /* 섹션7 */
+  .sec07::before {
+    content: "";
+    background-image: url(../img/icon/logo.png);
+    background-position: 78%;
+    background-repeat: no-repeat;
+    background-size: inherit;
+  }
+  .sec07_text {
+    padding: 8rem 10vh;
 
+    margin-top: 4rem;
+  }
+  .sec07_text button {
+    margin-top: 32px;
+  }
   .sec07_text h2 {
     font-size: 32px;
     min-width: 350px;
@@ -1707,10 +1723,13 @@ footer p {
   }
   /* 섹션8 */
   .sec08 {
+    width: 100%;
     box-sizing: border-box;
     padding: 5rem 5%;
     margin-bottom: 0;
     overflow: hidden;
+    margin-top: 4rem;
+    height: 340px;
   }
   .sec08_wrapper {
     flex-direction: column;
