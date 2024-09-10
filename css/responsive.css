@@ -1,6 +1,24 @@
 /*노트북*/
 
 @media screen and (min-width: 1440px) and (max-width: 1600px) {
+  /* 헤더 */
+  nav > ul::after {
+    position: absolute;
+    top: 80px;
+    left: -80px;
+    content: "메뉴배경";
+    font-size: 0;
+    display: block;
+    width: 41vw;
+    height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    box-sizing: border-box;
+    /* border: 1px solid #f5f5f5; */
+    border-top: none;
+    transition: 0.3s;
+    border-radius: 0px 0px 20px 20px;
+  }
   /* 섹션1 */
   .sec01_wrap .txt_sec01 {
     position: absolute;
@@ -76,25 +94,23 @@
 
 @media screen and (min-width: 1275px) and (max-width: 1439px) {
   /* 헤더 */
-  nav > ul {
-    display: none;
-  }
-  .icons {
-    display: flex;
-    padding: 30px 0;
-    column-gap: 12px;
-  }
-  .hidden_menu {
+  nav > ul::after {
+    position: absolute;
+    top: 80px;
+    left: -80px;
+    content: "메뉴배경";
+    font-size: 0;
     display: block;
+    width: 42vw;
+    height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    box-sizing: border-box;
+    /* border: 1px solid #f5f5f5; */
+    border-top: none;
+    transition: 0.3s;
+    border-radius: 0px 0px 20px 20px;
   }
-  .icons a:first-child {
-    display: none;
-  }
-  .close {
-    left: -10px;
-    top: 1px;
-  }
-
   /* 섹션1 */
   .sec01_wrap .txt_sec01 {
     position: absolute;
@@ -232,25 +248,23 @@
 }
 @media screen and (min-width: 1175px) and (max-width: 1274px) {
   /* 헤더 */
-  nav > ul {
-    display: none;
-  }
-  .icons {
-    display: flex;
-    padding: 30px 0;
-    column-gap: 12px;
-  }
-  .hidden_menu {
+  nav > ul::after {
+    position: absolute;
+    top: 80px;
+    left: -80px;
+    content: "메뉴배경";
+    font-size: 0;
     display: block;
+    width: 43vw;
+    height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    box-sizing: border-box;
+    /* border: 1px solid #f5f5f5; */
+    border-top: none;
+    transition: 0.3s;
+    border-radius: 0px 0px 20px 20px;
   }
-  .icons a:first-child {
-    display: none;
-  }
-  .close {
-    left: -10px;
-    top: 1px;
-  }
-
   /* 섹션1 */
   .sec01_wrap .txt_sec01 {
     position: absolute;
@@ -836,6 +850,12 @@
     top: 1px;
   }
 
+  .top_searchbar form {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
   /* 섹션1 */
   .sec01 {
     max-width: 100%;
@@ -1123,6 +1143,13 @@
     height: auto;
     margin: 0 auto;
     margin-bottom: 6rem;
+  }
+
+  .top_searchbar form {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
   }
 
   /* 섹션1 */
