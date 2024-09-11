@@ -425,16 +425,28 @@ span {
   box-sizing: border-box;
   margin: 0 auto;
   position: relative;
+  justify-content: center;
 }
-.left_grey_1 {
-  cursor: pointer;
-  position: relative;
-  z-index: 999;
-}
+
+.left_grey_1,
 .right_grey_1 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  z-index: 10;
+  opacity: 0.7;
   cursor: pointer;
-  position: relative;
-  z-index: 999;
+}
+
+.left_grey_1 {
+  left: 10px; /* 왼쪽 화살표 위치 */
+}
+
+.right_grey_1 {
+  right: 10px; /* 오른쪽 화살표 위치 */
 }
 
 .sec02_all_box {

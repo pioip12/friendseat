@@ -1188,15 +1188,14 @@
     object-position: 67%;
   }
   /* 두번째 섹션 */
-
   .sec02_wrap {
     width: 100%;
-    max-width: 1920px;
-    height: 43vh;
+    height: 50vh;
     margin: 0 auto;
     margin-top: 6rem;
     margin-bottom: 1rem;
   }
+
   .sec02_wrap > h3 {
     padding: 0;
     width: 90%;
@@ -1223,7 +1222,7 @@
   .sec02_all_box {
     margin: 0 auto;
     width: 83%;
-    height: 38vh;
+    height: 46vh;
   }
   .txt_box {
     width: 100%;
@@ -1260,7 +1259,6 @@
 
   /* 섹션3 */
   .sec03_wrap .txt_wrap1 {
-    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     display: flex;
