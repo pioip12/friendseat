@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
-  
-    <script src="./js/index.js"></script>
-    <script src="./js/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/slick.css" />
+  <link rel="stylesheet" href="./css/slick-theme.css" />
+
   </head>
   <body>
     <div class="page_wrap">
@@ -137,7 +137,7 @@
                   <h4>30% <span class="sale">7,900원</span></h4>
                   </div>
                    <div class="txt_box_icon">
-                  <a href="#">
+                  <a>
                     <img src="./img/icon/buy.png" alt="장바구니">
                   </a>
                    </div>
@@ -235,6 +235,12 @@
               <img src="../img/icon/right_grey.png" alt=" 오른쪽 화살표" />
             </a>
           </div> 
+          <!-- 팝업창 -->
+          <div class="popup">
+            <div class="popup_wrap">
+                <div class="popup_txt">상품이 장바구니에 담겼습니다.</div>
+            </div>
+          </div>
         </section>
 
         <!-- 세번째 섹션 -->
@@ -268,61 +274,69 @@
           <h2>커뮤니티를 통해 맛과 즐거움을 나눠보세요.</h2>
           <div class="community_slide">
             <div class="slide_box1">
-              <div class="recipe_box">
-                <div class="img1"></div>
+             <div class="recipe_box">
+               <a href="./sub/community.html"> <div class="img1"></div>
                 <div class="txt_1">
                   <p>#간단한 레시피</p>
                   <h4>성공하는 초간단 레시피 모음</h4>
                   <h3>107</h3>
                 </div>
+              </a>
               </div>
+            
               <div class="recipe_box">
-                <div class="img2"></div>
+                <a href="./sub/community.html"> <div class="img2"></div>
                 <div class="txt_1">
                   <p>#건강한 한끼 #간단한 레시피</p>
                   <h4>성공하는 초간단 레시피 모음</h4>
                   <h3>107</h3>
                 </div>
+                </a>
               </div>
               <div class="recipe_box">
-                <div class="img3"></div>
+                <a href="./sub/community.html"> <div class="img3"></div>
                 <div class="txt_1">
                   <p>#건강한 한끼 #간단한 레시피</p>
                   <h4>성공하는 초간단 레시피 모음</h4>
                   <h3>107</h3>
                 </div>
+              </a>
               </div>
               <div class="recipe_box">
-                <div class="txt_2">
+               <div class="txt_2">
                   <p>더 많은 인기 컨텐츠를 만나보세요</p>
                   <a href="#"><button>자세히보기</button></a>
                 </div>
+             
               </div>
             </div>
             <div class="slide_box2">
               <div class="recipe_box">
-                <div class="img1"></div>
+                <a href="./sub/community.html"> <div class="img1"></div>
                 <div class="txt_1">
                   <p>#간단한 레시피</p>
                   <h4>성공하는 초간단 레시피 모음</h4>
                   <h3>107</h3>
                 </div>
+                </a>
               </div>
               <div class="recipe_box">
-                <div class="img2"></div>
+                <a href="./sub/community.html"><div class="img2"></div>
                 <div class="txt_1">
                   <p>#건강한 한끼 #간단한 레시피</p>
                   <h4>성공하는 초간단 레시피 모음</h4>
                   <h3>107</h3>
                 </div>
+              </a>
               </div>
               <div class="recipe_box">
-                <div class="img3"></div>
+                <a href="./sub/community.html"><div class="img3"></div>
                 <div class="txt_1">
                   <p>#건강한 한끼 #간단한 레시피</p>
                   <h4>성공하는 초간단 레시피 모음</h4>
                   <h3>107</h3>
                 </div>
+              </a>
               </div>
               <div class="recipe_box">
                 <div class="txt_2">
@@ -378,8 +392,8 @@
     </div>
   </body>
   <!-- slick -->
-  <link rel="stylesheet" href="./css/slick.css" />
-  <link rel="stylesheet" href="./css/slick-theme.css" />
+  <script src="./js/jquery.min.js"></script>
   <script src="./js/slick/slick.min.js"></script>
-  <script src="./js/slide.js"></script>
+  <script src="./js/slide.js"></script> 
+  <script src="./js/event.js"></script>
 </html>

@@ -507,7 +507,7 @@
   /* 섹션4 */
   .sec04 {
     width: 90%;
-    height: 552px;
+    height: 566px;
     overflow: hidden;
   }
   .txt_wrapper h3 {
@@ -1211,6 +1211,7 @@
 
   .sec02_wrapper {
     min-height: 37vh;
+    overflow: hidden;
   }
   .sec02_box {
     width: 100%;
@@ -1350,7 +1351,6 @@
     color: #475049;
     font-size: 28px;
     font-weight: bold;
-    width: 1600px;
     text-align: start;
     margin: 0 auto;
     margin-left: 5vw;
@@ -1488,6 +1488,12 @@ footer p {
     margin: 0 auto;
     margin-bottom: 4rem;
   }
+  .top_searchbar form {
+    width: 87%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
 
   /* 섹션1 */
   .sec01 {
@@ -1533,6 +1539,15 @@ footer p {
     margin: 0 auto;
     margin-top: 5rem;
     margin-bottom: 0rem;
+  }
+  .sec02_wrapper {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
   }
   .sec02_all_box {
     margin: 0 auto;
