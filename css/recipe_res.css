@@ -1,0 +1,122 @@
+@import "./common_res.css";
+/*노트북*/
+
+@media screen and (min-width: 1440px) and (max-width: 1600px) {
+  /* 섹션1 */
+  .sec01_wrap {
+    height: 430px;
+  }
+  .sec01_wrap:after {
+    background-position: -9vw 30%;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1275px) and (max-width: 1439px) {
+  /* 섹션1 */
+  .sec01_wrap {
+    height: 430px;
+  }
+  .sec01_wrap:after {
+    background-position: -9vw 30%;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1175px) and (max-width: 1274px) {
+  /* 섹션1 */
+  .sec01_wrap {
+    height: 420px;
+  }
+  .sec01_wrap:after {
+    background-position: -9vw 30%;
+    background-size: cover;
+  }
+}
+/* 노트북 medium */
+@media screen and (min-width: 1025px) and (max-width: 1174px) {
+  /* 섹션1 */
+  .sec01_wrap {
+    height: 420px;
+  }
+  .sec01_wrap:after {
+    background-position: -9vw 30%;
+    background-size: cover;
+  }
+}
+/* 태블릿 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* 섹션1 */
+  .sec01_wrap {
+    height: 420px;
+  }
+  .sec01_wrap:after {
+    background-position: -9vw 30%;
+    background-size: cover;
+  }
+}
+/* 모바일 large */
+@media screen and (min-width: 625px) and (max-width: 768px) {
+  /* 섹션1 */
+  .sec01_wrap {
+    height: 420px;
+  }
+  .sec01_wrap:after {
+    background-position: -9vw 30%;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 624px) {
+  /* 섹션1 */
+  .sec01_wrap:after {
+    background-position: 0 30%;
+    background-size: cover;
+  }
+  .sec01_wrap {
+    width: 100%;
+    height: 300px;
+  }
+
+  .visual_box {
+    padding: 0 4%;
+    top: 67%;
+  }
+  .visual_box > h2 {
+    font-size: 36px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+
+  .visual_box > p {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* 섹션1 */
+  .sec01_wrap {
+    width: 100%;
+    height: 300px;
+  }
+  .sec01_wrap:after {
+    background-position: -10vw 30%;
+    background-size: cover;
+  }
+  .visual_box {
+    padding: 0 4%;
+    top: 67%;
+  }
+  .visual_box > h2 {
+    font-size: 36px;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+
+  .visual_box > p {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 400;
+  }
+}

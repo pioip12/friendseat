@@ -7,213 +7,235 @@
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/recipe.css" />
     <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="../css/common_res.css" />
+    <link rel="stylesheet" href="../css/recipe_res.css" />
     <script src="../js/index.js"></script>
   </head>
   <body>
-    <header>
-      <div class="headerwrap">
-        <div class="header_wrapper">
-          <!-- 로고 -->
-          <h1>
-            <a href="../index.html">
-              <img src="../img/common/FRIENDSEAT.png" alt="로고" />
-            </a>
-          </h1>
-          <!-- 메뉴 -->
-          <nav>
-            <ul>
-              <li class="first_menu">
-                <a href="./my_recipe.html">맞춤레시피</a>
-                <ul class="submenu">
-                  <li><a href="#">건강정보</a></li>
-                  <li><a href="#">인기레시피</a></li>
-                  <li><a href="#">맞춤레시피</a></li>
-                </ul>
-              </li>
-              <li class="second_menu">
-                <a href="./market.html">건강마켓</a>
-                <ul class="submenu">
-                  <li><a href="#">베스트</a></li>
-                  <li><a href="#">신상품</a></li>
-                  <li><a href="#">건강반찬</a></li>
-                  <li><a href="#">식사대용</a></li>
-                  <li><a href="#">영양간식</a></li>
-                  <li><a href="#">맞춤식단</a></li>
-                </ul>
-              </li>
-              <li class="3rd_menu">
-                <a href="./community.html">커뮤니티</a>
-                <ul class="submenu">
-                  <li><a href="./community.html">커뮤니티</a></li>
-                  <li><a href="./community2.html">전문가의QnA</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="./notice.html">공지사항</a>
-                <ul class="submenu">
-                  <li><a href="./notice.html">공지사항</a></li>
-                  <li><a href="./notice_2.html">홍보자료</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-          <!-- 아이콘 -->
-          <div class="icons">
-            <a href="../sub/login.html"><div class="login"></div></a>
-            <a href="#" onclick="showDetail()"><div class="search"></div></a>
-            <a href="#" onclick="hideDetail()"><div class="close"></div></a>
+    <div class="all_wrapper">
+      <header>
+        <div class="headerwrap">
+          <div class="header_wrapper">
+            <!-- 로고 -->
+            <h1>
+              <a href="../index.html">
+                <img src="../img/common/FRIENDSEAT.png" alt="로고" />
+              </a>
+            </h1>
+            <!-- 메뉴 -->
+            <nav>
+              <ul>
+                <li class="first_menu">
+                  <a href="./my_recipe.html">맞춤레시피</a>
+                  <ul class="submenu">
+                    <li><a href="#">건강정보</a></li>
+                    <li><a href="#">인기레시피</a></li>
+                    <li><a href="#">맞춤레시피</a></li>
+                  </ul>
+                </li>
+                <li class="second_menu">
+                  <a href="./market.html">건강마켓</a>
+                  <ul class="submenu">
+                    <li><a href="#">베스트</a></li>
+                    <li><a href="#">신상품</a></li>
+                    <li><a href="#">건강반찬</a></li>
+                    <li><a href="#">식사대용</a></li>
+                    <li><a href="#">영양간식</a></li>
+                    <li><a href="#">맞춤식단</a></li>
+                  </ul>
+                </li>
+                <li class="3rd_menu">
+                  <a href="./community.html">커뮤니티</a>
+                  <ul class="submenu">
+                    <li><a href="./community.html">커뮤니티</a></li>
+                    <li><a href="./community2.html">전문가의QnA</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="./notice.html">공지사항</a>
+                  <ul class="submenu">
+                    <li><a href="./notice.html">공지사항</a></li>
+                    <li><a href="./notice_2.html">홍보자료</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+            <!-- 아이콘 -->
+            <div class="icons">
+              <a href="./sub/login.html"><div class="login"></div></a>
+              <a href="#" onclick="showDetail()"><div class="search"></div></a>
+              <a href="#" onclick="hideDetail()"><div class="close"></div></a>
+              <a href="#"><div class="hidden_menu"></div></a>
+            </div>
           </div>
         </div>
-      </div>
-    </header>
-    <section class="sec01_wrap">
-      <div class="visual_box">
-        <h2>뭘 먹을지 고민된다면?</h2>
-        <p>이런 메뉴는 어때요?</p>
-      </div>
-    </section>
-    <!-- 두번째 섹션 -->
-    <section class="sec02_wrap">
-      <h2>이번주 인기 레시피 🎈</h2>
-      <div class="sec02_box">
-        <div class="box_wrapper"></div>
-        <div class="txt_wrapper">
-          <h3>
-            프렌즈잇이 추천하는 당뇨인들을 위한<br />
-            건강레시피
-          </h3>
-          <h4>집에서 함께 맛있는 요리를 만들어보세요!</h4>
-          <p>1224</p>
-          <a href="#"><button type="button">자세히보기</button></a>
+        <div class="top_searchbar">
+          <form action="#" method="post">
+            <div class="input_box">
+              <input
+                type="text"
+                placeholder="검색어를 입력하세요"
+                id="search_input"
+                name="search_input"
+              />
+            </div>
+            <div class="search_btn">
+              <a href="#">
+                <img src="./img/icon/search.png" alt="검색" />
+              </a>
+            </div>
+          </form>
         </div>
-      </div>
-    </section>
-    <!-- 세번째 섹션 -->
-    <section class="sec03_wrap">
-      <h3>바쁜 현대인들을 위한, 인기 레시피 연관 상품✨</h3>
-      <div class="sec03_box">
-        <div class="sec03_photo">
-          <div class="sec03_photo_1">
-            <div class="sec03_photo_01"></div>
-          </div>
-          <div class="sec03_phototxt">
-            <h3>두부 스테이크</h3>
-            <p>부드러운 두부 스테이크입니다.</p>
-          </div>
+      </header>
+      <section class="sec01_wrap">
+        <div class="visual_box">
+          <h2>뭘 먹을지 고민된다면?</h2>
+          <p>이런 메뉴는 어때요?</p>
         </div>
-        <div class="sec03_photo">
-          <div class="sec03_photo_1">
-            <div class="sec03_photo_02"></div>
-          </div>
-          <div class="sec03_phototxt">
-            <h3>감자스프</h3>
-            <p>감자의 변신 따듯하고 부드러운 감자스프</p>
+      </section>
+      <!-- 두번째 섹션 -->
+      <section class="sec02_wrap">
+        <h2>이번주 인기 레시피 🎈</h2>
+        <div class="sec02_box">
+          <div class="box_wrapper"></div>
+          <div class="txt_wrapper">
+            <h3>
+              프렌즈잇이 추천하는 당뇨인들을 위한<br />
+              건강레시피
+            </h3>
+            <h4>집에서 함께 맛있는 요리를 만들어보세요!</h4>
+            <p>1224</p>
+            <a href="#"><button type="button">자세히보기</button></a>
           </div>
         </div>
-        <div class="sec03_photo">
-          <div class="sec03_photo_1">
-            <div class="sec03_photo_03"></div>
+      </section>
+      <!-- 세번째 섹션 -->
+      <section class="sec03_wrap">
+        <h3>바쁜 현대인들을 위한, 인기 레시피 연관 상품✨</h3>
+        <div class="sec03_box">
+          <div class="sec03_photo">
+            <div class="sec03_photo_1">
+              <div class="sec03_photo_01"></div>
+            </div>
+            <div class="sec03_phototxt">
+              <h3>두부 스테이크</h3>
+              <p>부드러운 두부 스테이크입니다.</p>
+            </div>
           </div>
-          <div class="sec03_phototxt">
-            <h3>단호박 닭가슴살 조림</h3>
-            <p>달콤한 단호박이 닭가슴살을 품었닭</p>
+          <div class="sec03_photo">
+            <div class="sec03_photo_1">
+              <div class="sec03_photo_02"></div>
+            </div>
+            <div class="sec03_phototxt">
+              <h3>감자스프</h3>
+              <p>감자의 변신 따듯하고 부드러운 감자스프</p>
+            </div>
+          </div>
+          <div class="sec03_photo">
+            <div class="sec03_photo_1">
+              <div class="sec03_photo_03"></div>
+            </div>
+            <div class="sec03_phototxt">
+              <h3>단호박 닭가슴살 조림</h3>
+              <p>달콤한 단호박이 닭가슴살을 품었닭</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- 네번째 섹션 -->
-    <section class="sec04_wrap">
-      <div class="top_title">
-        <h2>맞춤레시피</h2>
-        <div class="recipe_menu">
-          <a href="#" class="all">전체</a>
-          <a href="#">간단레시피</a>
-          <a href="#">건강반찬</a>
-          <a href="#">저칼로리</a>
-          <a href="#">맞춤질환레시피</a>
+      <!-- 네번째 섹션 -->
+      <section class="sec04_wrap">
+        <div class="top_title">
+          <h2>맞춤레시피</h2>
+          <div class="recipe_menu">
+            <a href="#" class="all">전체</a>
+            <a href="#">간단레시피</a>
+            <a href="#">건강반찬</a>
+            <a href="#">저칼로리</a>
+            <a href="#">맞춤질환레시피</a>
+          </div>
         </div>
-      </div>
-      <div class="change_box">
-        <a href="#">최신순</a>
-        <a href="#">조회순</a>
-        <a href="#">스크랩순</a>
-      </div>
-      <div class="recipe_photo">
-        <a href="#"
-          ><div class="photo_box">
-            <div class="photo1"></div>
-            <h3>베이컨 미니 양배추 샐러드</h3>
-            <p>가을에는 따듯한 웜샐러드를 만들어보세요</p>
-          </div></a
-        >
-        <a href="#"
-          ><div class="photo_box">
-            <div class="photo2"></div>
-            <h3>새우볶음밥 레시피</h3>
-            <p>싱싱한 새우와 야채가 어우러진 새우볶음밥레시피</p>
-          </div></a
-        >
-        <a href="#"
-          ><div class="photo_box">
-            <div class="photo3"></div>
-            <h3>토마토 스프 레시피</h3>
-            <p>토마토의 풍미와 부드러운 크림이 어우러진 클래식 토마토스프</p>
-          </div></a
-        >
-        <a href="#"
-          ><div class="photo_box">
-            <div class="photo4"></div>
-            <h3>영양만점 갈비찜 레시피</h3>
-            <p>부드럽게 익힌 고기에 깊은 양념 맛이 배어 있는 갈비찜</p>
-          </div></a
-        >
-        <a href="#"
-          ><div class="photo_box">
-            <div class="photo5"></div>
-            <h3>마파두부 레시피</h3>
-            <p>부드러운 두부와 깊은 소스가 어우러져 입맛을 사로잡는 레시피</p>
-          </div></a
-        >
-        <a href="#"
-          ><div class="photo_box">
-            <div class="photo6"></div>
-            <h3>시레기된장국 레시피</h3>
-            <p>영양가가 풍부하고 속을 따뜻하게 채워줄 시레기국 레시피</p>
-          </div></a
-        >
-        <a href="#"
-          ><div class="photo_box">
-            <div class="photo7"></div>
-            <h3>과카몰리 샌드위치 레시피</h3>
-            <p>신선한 아보카도와 채소가 어우러진 과카몰리 샌드위치</p>
-          </div></a
-        >
-        <a href="#"
-          ><div class="photo_box">
-            <div class="photo8"></div>
-            <h3>월남쌈 레시피</h3>
-            <p>건강하고 상큼한 맛을 즐길 수있는 월남쌈 레시피</p>
-          </div></a
-        >
-        <a href="#"
-          ><div class="photo_box">
-            <div class="photo9"></div>
-            <h3>가지볶음 레시피</h3>
-            <p>부드럽고 풍미 가득한 가지볶음을 만들어보세요</p>
-          </div></a
-        >
-      </div>
-      <div class="recipe_number">
-        <a href="#"></a>
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#"></a>
-      </div>
-    </section>
+        <div class="change_box">
+          <a href="#">최신순</a>
+          <a href="#">조회순</a>
+          <a href="#">스크랩순</a>
+        </div>
+        <div class="recipe_photo">
+          <a href="#"
+            ><div class="photo_box">
+              <div class="photo1"></div>
+              <h3>베이컨 미니 양배추 샐러드</h3>
+              <p>가을에는 따듯한 웜샐러드를 만들어보세요</p>
+            </div></a
+          >
+          <a href="#"
+            ><div class="photo_box">
+              <div class="photo2"></div>
+              <h3>새우볶음밥 레시피</h3>
+              <p>싱싱한 새우와 야채가 어우러진 새우볶음밥레시피</p>
+            </div></a
+          >
+          <a href="#"
+            ><div class="photo_box">
+              <div class="photo3"></div>
+              <h3>토마토 스프 레시피</h3>
+              <p>토마토의 풍미와 부드러운 크림이 어우러진 클래식 토마토스프</p>
+            </div></a
+          >
+          <a href="#"
+            ><div class="photo_box">
+              <div class="photo4"></div>
+              <h3>영양만점 갈비찜 레시피</h3>
+              <p>부드럽게 익힌 고기에 깊은 양념 맛이 배어 있는 갈비찜</p>
+            </div></a
+          >
+          <a href="#"
+            ><div class="photo_box">
+              <div class="photo5"></div>
+              <h3>마파두부 레시피</h3>
+              <p>부드러운 두부와 깊은 소스가 어우러져 입맛을 사로잡는 레시피</p>
+            </div></a
+          >
+          <a href="#"
+            ><div class="photo_box">
+              <div class="photo6"></div>
+              <h3>시레기된장국 레시피</h3>
+              <p>영양가가 풍부하고 속을 따뜻하게 채워줄 시레기국 레시피</p>
+            </div></a
+          >
+          <a href="#"
+            ><div class="photo_box">
+              <div class="photo7"></div>
+              <h3>과카몰리 샌드위치 레시피</h3>
+              <p>신선한 아보카도와 채소가 어우러진 과카몰리 샌드위치</p>
+            </div></a
+          >
+          <a href="#"
+            ><div class="photo_box">
+              <div class="photo8"></div>
+              <h3>월남쌈 레시피</h3>
+              <p>건강하고 상큼한 맛을 즐길 수있는 월남쌈 레시피</p>
+            </div></a
+          >
+          <a href="#"
+            ><div class="photo_box">
+              <div class="photo9"></div>
+              <h3>가지볶음 레시피</h3>
+              <p>부드럽고 풍미 가득한 가지볶음을 만들어보세요</p>
+            </div></a
+          >
+        </div>
+        <div class="recipe_number">
+          <a href="#"></a>
+          <a href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#"></a>
+        </div>
+      </section>
+    </div>
   </body>
   <footer>
     <div class="footer_wrapper">

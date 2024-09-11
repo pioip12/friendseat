@@ -5,7 +5,9 @@
   margin: 0;
   padding: 0;
 }
-
+.all_wrapper {
+  width: 100%;
+}
 body {
   font-family: "Noto Sans KR", sans-serif;
   color: #383838;
@@ -279,14 +281,33 @@ section {
 .sec01_wrap {
   width: 1920px;
   height: 478px;
-  background-image: url(../img/recipe/recipe_main.png);
-  background-repeat: no-repeat;
   margin: 0 auto;
+  position: relative;
+}
+.sec01_wrap:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
+    url(../img/recipe/recipe_main.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .visual_box {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0 5%;
   width: 100%;
-  height: 100%;
-  padding: 250px 120px;
+  height: auto;
+  position: absolute;
+  z-index: 100;
+  top: 48%;
 }
 
 .visual_box > h2 {
