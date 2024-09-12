@@ -5,9 +5,7 @@
   margin: 0;
   padding: 0;
 }
-.all_wrapper {
-  width: 100%;
-}
+
 body {
   font-family: "Noto Sans KR", sans-serif;
   color: #383838;
@@ -22,11 +20,11 @@ body::-webkit-scrollbar-thumb {
 .page_wrap {
   width: 100%;
 }
+
 header {
   width: 100%;
   height: auto;
   /* border-bottom: 1px solid #eeeeee; */
-
   position: fixed;
   z-index: 999;
 }
@@ -73,7 +71,7 @@ nav > ul::after {
   content: "메뉴배경";
   font-size: 0;
   display: block;
-  width: 128%;
+  width: 40vw;
   height: 0;
   overflow: hidden;
   background-color: #fff;
@@ -83,6 +81,10 @@ nav > ul::after {
   border-top: none;
   transition: 0.3s;
   border-radius: 0px 0px 20px 20px;
+}
+.hidden_menu {
+  padding: 28px 0;
+  display: none;
 }
 
 nav > ul:hover::after {
@@ -115,6 +117,26 @@ nav > ul:hover::after {
   background-image: url(../img/common/css_sprites_1.png);
   background-position: -1293px -628px;
 }
+.close {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/icon/close.png);
+  background-repeat: no-repeat;
+  position: relative;
+  left: -20px;
+  top: 1px;
+  display: none;
+}
+.hidden_menu {
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/icon/menu.png);
+  background-repeat: no-repeat;
+  position: relative;
+  display: none;
+  top: -2px;
+}
+
 .search:hover {
   background-image: url(../img/icon/search_green.png);
 
@@ -234,12 +256,6 @@ nav ul li:nth-child(4):hover::after {
   transform: scaleX(1);
 }
 
-section {
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-  margin-top: 130px;
-}
 /* 검색창 */
 .top_searchbar {
   width: 100%;
@@ -277,6 +293,12 @@ section {
   padding: 16px 0;
 }
 
+section {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 12rem;
+}
 /* 섹션1 */
 .sec01_wrap {
   width: 1920px;

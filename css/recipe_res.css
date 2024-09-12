@@ -1,7 +1,24 @@
-@import "./common_res.css";
 /*노트북*/
 
 @media screen and (min-width: 1440px) and (max-width: 1600px) {
+  /* 헤더 */
+  nav > ul::after {
+    position: absolute;
+    top: 80px;
+    left: -80px;
+    content: "메뉴배경";
+    font-size: 0;
+    display: block;
+    width: 41vw;
+    height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    box-sizing: border-box;
+    /* border: 1px solid #f5f5f5; */
+    border-top: none;
+    transition: 0.3s;
+    border-radius: 0px 0px 20px 20px;
+  }
   /* 섹션1 */
   .sec01_wrap {
     height: 430px;
@@ -37,6 +54,24 @@
 }
 
 @media screen and (min-width: 1275px) and (max-width: 1439px) {
+  /* 헤더 */
+  nav > ul::after {
+    position: absolute;
+    top: 80px;
+    left: -80px;
+    content: "메뉴배경";
+    font-size: 0;
+    display: block;
+    width: 42vw;
+    height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    box-sizing: border-box;
+    /* border: 1px solid #f5f5f5; */
+    border-top: none;
+    transition: 0.3s;
+    border-radius: 0px 0px 20px 20px;
+  }
   /* 섹션1 */
   .sec01_wrap {
     height: 430px;
@@ -71,6 +106,24 @@
   }
 }
 @media screen and (min-width: 1175px) and (max-width: 1274px) {
+  /* 헤더 */
+  nav > ul::after {
+    position: absolute;
+    top: 80px;
+    left: -80px;
+    content: "메뉴배경";
+    font-size: 0;
+    display: block;
+    width: 43vw;
+    height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    box-sizing: border-box;
+    /* border: 1px solid #f5f5f5; */
+    border-top: none;
+    transition: 0.3s;
+    border-radius: 0px 0px 20px 20px;
+  }
   /* 섹션1 */
   .sec01_wrap {
     height: 420px;
@@ -106,18 +159,44 @@
 }
 /* 노트북 medium */
 @media screen and (min-width: 1025px) and (max-width: 1174px) {
+  /* 헤더 */
+  nav > ul {
+    display: none;
+  }
+  .icons {
+    display: flex;
+    padding: 30px 0;
+    column-gap: 12px;
+  }
+  .hidden_menu {
+    display: block;
+  }
+  .icons a:first-child {
+    display: none;
+  }
+  .close {
+    left: -10px;
+    top: 1px;
+  }
   /* 섹션1 */
   .sec01_wrap {
-    height: 420px;
+    height: 320px;
   }
   .sec01_wrap:after {
-    background-position: -9vw 30%;
-    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
+      url(../img/recipe/recipe_app1.png);
+    background-position: -54px 50%;
+    background-size: 65%;
   }
+
   .sec02 {
     width: 90%;
     height: 642px;
     overflow: hidden;
+    margin-top: 100px;
+  }
+  .sec02 h2 {
+    margin-bottom: 30px;
   }
   .sec02_box {
     width: 100%;
@@ -140,13 +219,35 @@
 }
 /* 태블릿 */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* 헤더 */
+  nav > ul {
+    display: none;
+  }
+  .icons {
+    display: flex;
+    padding: 30px 0;
+    column-gap: 12px;
+  }
+  .hidden_menu {
+    display: block;
+  }
+  .icons a:first-child {
+    display: none;
+  }
+  .close {
+    left: -10px;
+    top: 1px;
+  }
+
   /* 섹션1 */
   .sec01_wrap {
-    height: 420px;
+    height: 320px;
   }
   .sec01_wrap:after {
-    background-position: -9vw 30%;
-    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
+      url(../img/recipe/recipe_app1.png);
+    background-position: -54px 50%;
+    background-size: 65%;
   }
   /* 섹션2 */
 
@@ -164,12 +265,13 @@
     width: 100%;
     height: 64vh;
     flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #f3f3f3;
   }
-
   .box_wrapper {
-    flex: 2;
-
     width: 100%;
+    border-radius: 20px;
   }
 
   .txt_wrapper h3 {
@@ -179,19 +281,45 @@
     font-size: 18px;
   }
   .txt_wrapper {
-    flex: 1;
     padding: 1vh 1vw;
   }
-  .box_wrapper {
-    border-radius: 20px 20px 0 0;
-    flex: 2;
-    transition: 0.3s;
+  .txt_wrapper a {
+    text-decoration: none;
+    color: #383838;
+    text-align: end;
   }
 }
 /* 모바일 large */
 @media screen and (min-width: 625px) and (max-width: 768px) {
+  /* 헤더 */
+  nav > ul {
+    display: none;
+  }
+  .icons {
+    display: flex;
+    padding: 30px 0;
+    column-gap: 12px;
+  }
+  .hidden_menu {
+    display: block;
+  }
+  .icons a:first-child {
+    display: none;
+  }
+  .close {
+    left: -10px;
+    top: 1px;
+  }
+
+  .top_searchbar form {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
   /* 섹션1 */
   .sec01_wrap {
+    width: 100%;
     height: 420px;
   }
   .sec01_wrap:after {
@@ -258,77 +386,72 @@
   .txt_wrapper a {
     text-align: end;
   }
-
-  /* 섹션4 */
-
-  .sec04 {
-    width: 90%;
-    height: 70vh;
-  }
-
-  .sec04_wrapper {
-    max-width: 1600px;
-    height: 71vh;
-    margin: 0 auto;
-  }
-  .sec04_box {
-    width: 100%;
-    height: 62vh;
-    flex-direction: column;
-  }
-
-  .box_wrapper {
-    flex: 2;
-  }
-
-  .txt_wrapper h3 {
-    font-size: 28px;
-  }
-  .txt_wrapper h4 {
-    font-size: 18px;
-  }
-  .txt_wrapper {
-    flex: 1;
-    padding: 1vh 1vw;
-  }
-  .box_wrapper {
-    width: 100%;
-    overflow: hidden;
-    background-image: url(../img/recipe/best_recipe.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 20px 20px 0 0;
-    flex: 2;
-    transition: 0.3s;
-  }
 }
 @media screen and (min-width: 481px) and (max-width: 624px) {
-  /* 섹션1 */
-  .sec01_wrap:after {
-    background-position: 0 30%;
-    background-size: cover;
+  /* 헤더 */
+  nav > ul {
+    display: none;
   }
+  .icons {
+    display: flex;
+    padding: 30px 0;
+    column-gap: 12px;
+  }
+  .hidden_menu {
+    display: block;
+  }
+  .icons a:first-child {
+    display: none;
+  }
+  .close {
+    left: -10px;
+    top: 1px;
+  }
+  section {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+
+  .top_searchbar form {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  /* 섹션1 */
   .sec01_wrap {
     width: 100%;
-    height: 300px;
+    height: 240px;
+  }
+  .sec01_wrap:after {
+    background-image: url(../img/recipe/recipe_app1.png);
+    background-position: -100px 144%;
+    background-size: inherit;
   }
 
   .visual_box {
     padding: 0 4%;
-    top: 67%;
+    top: 79%;
+    left: 2vw;
   }
   .visual_box > h2 {
-    font-size: 36px;
-    color: #fff;
-    font-weight: bold;
-    margin-bottom: 12px;
+    display: none;
   }
 
   .visual_box > p {
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
     font-weight: 400;
+  }
+  .visual_box > p::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 1px;
+    background-color: #fff;
+    margin-top: 8px;
   }
   /* 섹션2 */
 
@@ -385,44 +508,86 @@
 
   .txt_wrapper h4 {
     font-size: 18px;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
+    line-height: 20px;
   }
   .txt_wrapper a {
     text-align: end;
   }
 }
 @media screen and (max-width: 480px) {
+  /* 헤더 */
+  nav > ul {
+    display: none;
+  }
+  .icons {
+    display: flex;
+    padding: 30px 0;
+    column-gap: 12px;
+  }
+  .hidden_menu {
+    display: block;
+  }
+  .icons a:first-child {
+    display: none;
+  }
+  .close {
+    left: -10px;
+    top: 1px;
+  }
+
+  section {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+  }
+  .top_searchbar form {
+    width: 87%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
   /* 섹션1 */
   .sec01_wrap {
     width: 100%;
-    height: 300px;
+    height: 240px;
   }
   .sec01_wrap:after {
-    background-position: -10vw 30%;
-    background-size: cover;
+    background-image: url(../img/recipe/recipe_app1.png);
+    background-position: -100px 144%;
+    background-size: inherit;
   }
+
   .visual_box {
     padding: 0 4%;
-    top: 67%;
+    top: 79%;
+    left: 2vw;
   }
   .visual_box > h2 {
-    font-size: 36px;
-    color: #fff;
-    font-weight: bold;
-    margin-bottom: 12px;
+    display: none;
   }
 
   .visual_box > p {
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
     font-weight: 400;
+  }
+  .visual_box > p::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 1px;
+    background-color: #fff;
+    margin-top: 8px;
   }
   /* 섹션2 */
 
   .sec02 {
     width: 90%;
     height: 66vh;
-    margin-top: 80px;
+    margin-top: 60px;
   }
   .sec02 h2 {
     font-size: 28px;
@@ -485,7 +650,7 @@
     font-size: 21px;
     color: #383838;
     font-weight: bold;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
     line-height: 2.5rem;
     word-wrap: break-word;
   }
