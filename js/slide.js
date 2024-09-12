@@ -64,4 +64,35 @@ $(function () {
       backgroundColor: "#fff",
     });
   });
+
+  // 레시피 슬라이더
+  $(".sec03_allbox").slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    initialSlide: 1,
+    centerMode: false,
+    autoplay: true,
+    prevArrow: $(".left_grey1"), //이전 화살표만 변경
+    nextArrow: $(".right_grey1"), //다음 화살표만 변경
+    responsive: [
+      {
+        breakpoint: 1175,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+        },
+      },
+
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+    ],
+  });
 });

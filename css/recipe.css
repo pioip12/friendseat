@@ -297,7 +297,7 @@ section {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  margin-bottom: 12rem;
+  margin-bottom: 100px;
 }
 /* 섹션1 */
 .sec01_wrap {
@@ -305,6 +305,7 @@ section {
   height: 478px;
   margin: 0 auto;
   position: relative;
+  margin-bottom: 100px;
 }
 .sec01_wrap:after {
   content: "";
@@ -317,8 +318,8 @@ section {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
     url(../img/recipe/recipe_main.png);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: 0 5vh;
+  background-size: contain;
 }
 .visual_box {
   display: flex;
@@ -331,23 +332,23 @@ section {
   z-index: 100;
   top: 48%;
 }
-
 .visual_box > h2 {
-  font-size: 48px;
+  font-size: 28px;
   color: #fff;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-weight: 300;
+  margin-bottom: 10px;
 }
 .visual_box > p {
-  font-size: 24px;
+  font-size: 42px;
   color: #fff;
-  font-weight: 400;
+  font-weight: 600;
 }
 /* 섹션2 */
 .sec02 {
   width: 100%;
   height: 696px;
   overflow: hidden;
+  margin: 0 auto;
 }
 .sec02_wrapper {
   /* width: 83%; */
@@ -357,15 +358,17 @@ section {
 }
 .sec02_box {
   width: 100%;
-  height: 58vh;
+  height: 54vh;
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
   border-radius: 20px;
-  background-color: #fbf6ee;
+  background-color: #f3f3f3;
   transition: 0.3s;
+  box-sizing: border-box;
+  padding: 10px;
 }
 .sec02 h2 {
   width: 100%;
@@ -455,32 +458,43 @@ section {
 }
 /* 섹션3 */
 .sec03_wrap {
-  width: 1920px;
-  height: 542px;
+  margin-top: 80px;
+  width: 100%;
+  height: 620px;
+  background-image: url(../img/recipe/recipe_sec2_background.png);
+  position: relative;
+  top: 0;
+  left: 0;
 }
 .sec03_wrap > h3 {
+  width: 83%;
   box-sizing: border-box;
-  padding: 0 160px;
+  /* padding: 0 160px; */
   font-size: 24px;
   color: #000;
   font-weight: bold;
+  margin: 0 auto;
   margin-bottom: 42px;
 }
-.sec03_box {
+.sec03_allbox {
   margin: 0 auto;
-  width: 1600px;
+  width: 83%;
   height: 100%;
+}
+.sec03_photo {
+  width: 500px;
+  height: 500px;
+  width: calc(33.3% - 20px);
+  min-height: 300px;
+  margin: 0 auto;
   display: flex;
-  column-gap: 50px;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 1 calc(33.3% - 20px);
 }
 
-.sec03_photo {
-  width: 100%;
-  height: 476px;
-}
 .sec03_photo_1 {
-  width: 500px;
+  width: 100%;
   height: 354px;
 
   border-radius: 20px;
@@ -490,70 +504,113 @@ section {
   height: 100%;
   background-image: url(../img/recipe/best_recipe01.jpeg);
   background-repeat: no-repeat;
-  background-size: 115%;
+  background-size: cover;
+  background-position: center;
   transition: 0.2s;
   border-radius: 20px;
 }
 .sec03_photo_02 {
-  width: 500px;
-  height: 354px;
+  width: 100%;
+  height: 100%;
   background-image: url(../img/recipe/best_recipe02.jpeg);
   background-repeat: no-repeat;
-  background-size: 115%;
+  background-size: cover;
+  background-position: center center;
   transition: 0.2s;
   border-radius: 20px;
 }
 .sec03_photo_03 {
-  width: 500px;
-  height: 354px;
+  width: 100%;
+  height: 100%;
   background-image: url(../img/recipe/best_recipe03.jpeg);
   background-repeat: no-repeat;
-  background-size: 115%;
+  background-size: cover;
+  background-position: center;
   transition: 0.2s;
   border-radius: 20px;
 }
-.sec03_photo:hover .sec03_photo_01,
-.sec03_photo:hover .sec03_photo_02,
-.sec03_photo:hover .sec03_photo_03 {
-  background-size: 117%;
-}
+
 .sec03_phototxt {
   width: 100%;
   height: fit-content;
-  padding: 32px 0 0;
+  padding: 20px 0 0;
 }
+
 .sec03_photo h3 {
   font-size: 22px;
   font-weight: bold;
   color: #000;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
   transition: 0.2s;
 }
-.sec03_photo p {
+.sec03_phototxt > p {
   font-size: 18px;
   font-weight: 300;
   color: #525252;
   transition: 0.2s;
+  margin-top: 12px;
 }
-
-.sec03_phototxt p::after {
+.mini_box {
+  width: 180px;
+  height: 36px;
+  background-color: #cdcdcd;
+  border-radius: 20px;
+  margin-top: 18px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 9px;
+}
+.minibox_wrapper {
+  display: flex;
+  gap: 20px;
+}
+.minibox_wrapper span::before {
   content: "";
-  display: block;
-  width: 500px;
-  height: 2px;
-  position: relative;
-  top: 30px;
-  left: 0;
-  background-color: #dedede;
+  display: inline-block;
+  width: 1px;
+  height: 16px;
+  background-color: #000;
+  margin: -1px 8px;
 }
 
+.left_grey1 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  z-index: 10;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.right_grey1 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  z-index: 10;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.left_grey1 {
+  left: 10px; /* 왼쪽 화살표 위치 */
+}
+
+.right_grey1 {
+  right: 10px; /* 오른쪽 화살표 위치 */
+}
 /* 섹션4 */
 .sec04_wrap {
   width: 100%;
   height: 1752px;
 }
 .top_title {
-  width: 1600px;
+  width: 83%;
   height: fit-content;
   margin: 0 auto;
 }

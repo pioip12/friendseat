@@ -6,9 +6,12 @@
     <title>프렌즈잇</title>
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/recipe.css" />
-    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/common_res.css" />
     <link rel="stylesheet" href="../css/recipe_res.css" />
+    <link rel="stylesheet" href="../css/slick.css" />
+    <link rel="stylesheet" href="../css/slick-theme.css" />
+
     <script src="../js/index.js"></script>
   </head>
   <body>
@@ -90,7 +93,7 @@
       <!-- 첫번째 섹션 -->
       <section class="sec01_wrap">
         <div class="visual_box">
-          <h2>뭘 먹을지 고민된다면?</h2>
+          <h2>뭘 먹을지 고민된다면</h2>
           <p>이런 메뉴는 어때요?</p>
         </div>
       </section>
@@ -114,8 +117,11 @@
       </section>
       <!-- 세번째 섹션 -->
       <section class="sec03_wrap">
-        <h3>바쁜 현대인들을 위한, 인기 레시피 연관 상품✨</h3>
-        <div class="sec03_box">
+        <h3>이달의 저장 많은 레시피</h3>
+        <a href="#" class="left_grey1">
+          <img src="../img/icon/left_grey.png" alt=" 왼쪽 화살표" />
+        </a>
+        <div class="sec03_allbox">
           <div class="sec03_photo">
             <div class="sec03_photo_1">
               <div class="sec03_photo_01"></div>
@@ -123,6 +129,10 @@
             <div class="sec03_phototxt">
               <h3>두부 스테이크</h3>
               <p>부드러운 두부 스테이크입니다.</p>
+              <div class="minibox_wrapper">
+                <p class="mini_box">준비시간<span>5분</span></p>
+                <p class="mini_box">조리시간<span>20분</span></p>
+              </div>
             </div>
           </div>
           <div class="sec03_photo">
@@ -132,6 +142,10 @@
             <div class="sec03_phototxt">
               <h3>감자스프</h3>
               <p>감자의 변신 따듯하고 부드러운 감자스프</p>
+              <div class="minibox_wrapper">
+                <p class="mini_box">준비시간<span>5분</span></p>
+                <p class="mini_box">조리시간<span>20분</span></p>
+              </div>
             </div>
           </div>
           <div class="sec03_photo">
@@ -141,9 +155,55 @@
             <div class="sec03_phototxt">
               <h3>단호박 닭가슴살 조림</h3>
               <p>달콤한 단호박이 닭가슴살을 품었닭</p>
+              <div class="minibox_wrapper">
+                <p class="mini_box">준비시간<span>5분</span></p>
+                <p class="mini_box">조리시간<span>20분</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="sec03_photo">
+            <div class="sec03_photo_1">
+              <div class="sec03_photo_01"></div>
+            </div>
+            <div class="sec03_phototxt">
+              <h3>두부 스테이크</h3>
+              <p>부드러운 두부 스테이크입니다.</p>
+              <div class="minibox_wrapper">
+                <p class="mini_box">준비시간<span>5분</span></p>
+                <p class="mini_box">조리시간<span>20분</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="sec03_photo">
+            <div class="sec03_photo_1">
+              <div class="sec03_photo_02"></div>
+            </div>
+            <div class="sec03_phototxt">
+              <h3>감자스프</h3>
+              <p>감자의 변신 따듯하고 부드러운 감자스프</p>
+              <div class="minibox_wrapper">
+                <p class="mini_box">준비시간<span>5분</span></p>
+                <p class="mini_box">조리시간<span>20분</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="sec03_photo">
+            <div class="sec03_photo_1">
+              <div class="sec03_photo_03"></div>
+            </div>
+            <div class="sec03_phototxt">
+              <h3>단호박 닭가슴살 조림</h3>
+              <p>달콤한 단호박이 닭가슴살을 품었닭</p>
+              <div class="minibox_wrapper">
+                <p class="mini_box">준비시간<span>5분</span></p>
+                <p class="mini_box">조리시간<span>20분</span></p>
+              </div>
             </div>
           </div>
         </div>
+        <a href="#" class="right_grey1">
+          <img src="../img/icon/right_grey.png" alt=" 오른쪽 화살표" />
+        </a>
       </section>
 
       <!-- 네번째 섹션 -->
@@ -167,8 +227,14 @@
           <a href="#"
             ><div class="photo_box">
               <div class="photo1"></div>
-              <h3>베이컨 미니 양배추 샐러드</h3>
-              <p>가을에는 따듯한 웜샐러드를 만들어보세요</p>
+              <div class="photo_box_txt">
+                <h3>베이컨 미니 양배추 샐러드</h3>
+                <p>가을에는 따듯한 웜샐러드를 만들어보세요</p>
+                <div class="minibox_wrapper">
+                  <p class="mini_box">준비시간<span>5분</span></p>
+                  <p class="mini_box">조리시간<span>20분</span></p>
+                </div>
+              </div>
             </div></a
           >
           <a href="#"
@@ -239,25 +305,31 @@
         </div>
       </section>
     </div>
-  </body>
-  <footer>
-    <div class="footer_wrapper">
-      <img src="../img/common/footerlogo.png" alt="logo_black" />
-      <p>
-        사업자등록번호 102-61-43486 TEL 02-4155-1234 <br />
-        ADD 서울특별시 서초구 반포대로
-      </p>
-      <div class="bottom_txt">
-        <div class="txt_h4">
-          <h4>회사정보</h4>
-          <h4>이용약관</h4>
-          <h4>개인정보</h4>
-          <h4>처리방침</h4>
-          <h4>청소년 보호정책</h4>
-          <h4>통신판매업신고번호</h4>
+
+    <footer>
+      <div class="footer_wrapper">
+        <img src="../img/common/footerlogo.png" alt="logo_black" />
+        <p>
+          사업자등록번호 102-61-43486 TEL 02-4155-1234 <br />
+          ADD 서울특별시 서초구 반포대로
+        </p>
+        <div class="bottom_txt">
+          <div class="txt_h4">
+            <h4>회사정보</h4>
+            <h4>이용약관</h4>
+            <h4>개인정보</h4>
+            <h4>처리방침</h4>
+            <h4>청소년 보호정책</h4>
+            <h4>통신판매업신고번호</h4>
+          </div>
+          <p>Copyright &copy; friendseat.All rights reserved.</p>
         </div>
-        <p>Copyright &copy; friendseat.All rights reserved.</p>
       </div>
-    </div>
-  </footer>
+    </footer>
+    <!-- slick -->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/slick/slick.min.js"></script>
+    <script src="../js/slide.js"></script>
+    <script src="../js/event.js"></script>
+  </body>
 </html>
