@@ -301,7 +301,7 @@ section {
 }
 /* 섹션1 */
 .sec01_wrap {
-  width: 1920px;
+  width: 100%;
   height: 478px;
   margin: 0 auto;
   position: relative;
@@ -352,7 +352,7 @@ section {
 }
 .sec02_wrapper {
   /* width: 83%; */
-  max-width: 1600px;
+  max-width: 83%;
   height: 66vh;
   margin: 0 auto;
 }
@@ -375,7 +375,7 @@ section {
   color: #475049;
   font-size: 32px;
   font-weight: bold;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   word-wrap: break-word;
 }
 
@@ -482,7 +482,6 @@ section {
   height: 100%;
 }
 .sec03_photo {
-  width: 500px;
   height: 500px;
   width: calc(33.3% - 20px);
   min-height: 300px;
@@ -615,15 +614,16 @@ section {
   margin: 0 auto;
 }
 .top_title h2 {
-  font-size: 36px;
+  font-size: 32px;
   color: #5f5f5f;
-  margin-bottom: 36px;
+  margin-bottom: 32px;
   font-weight: bold;
 }
+
 .top_title .recipe_menu {
   display: flex;
-  column-gap: 92px;
-  margin-bottom: 60px;
+  column-gap: 46px;
+  margin-bottom: 18px;
 }
 .top_title .recipe_menu a {
   font-size: 16px;
@@ -668,18 +668,20 @@ section {
 }
 
 .recipe_photo {
-  width: 1600px;
+  width: 83%;
   height: fit-content;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 auto;
 }
+
 .recipe_photo .photo_box {
   width: 480px;
-  height: 430px;
-  margin-bottom: 76px;
+  height: 480px;
+  margin-bottom: 60px;
 }
+
 .photo1 {
   width: 480px;
   height: 360px;
@@ -830,7 +832,7 @@ section {
 }
 
 .recipe_number {
-  width: 1600px;
+  width: 83%;
   height: fit-content;
   margin: 0 auto;
   text-align: center;
@@ -868,7 +870,7 @@ section {
 
 /* footer */
 footer {
-  width: 1600px;
+  width: 83%;
   height: fit-content;
   margin: 0 auto;
   margin-top: 48px;
