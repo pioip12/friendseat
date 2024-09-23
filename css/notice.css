@@ -276,33 +276,51 @@ section {
 
 /* 섹션1 */
 .sec01_wrap {
-  width: 1920px;
+  width: 100%;
   height: 478px;
-  background-image: url(../img/recipe/recipe_main.png);
-  background-repeat: no-repeat;
   margin: 0 auto;
+  position: relative;
+  margin-bottom: 100px;
+}
+.sec01_wrap:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
+    url(../img/recipe/recipe_main.png);
+  background-repeat: no-repeat;
+  background-position: 0 5vh;
+  background-size: 105%;
 }
 .visual_box {
-  width: 100%;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
-  padding: 250px 120px;
+  padding: 0 5%;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 100;
+  top: 48%;
 }
-
 .visual_box > h2 {
-  font-size: 48px;
+  font-size: 28px;
   color: #fff;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-weight: 300;
+  margin-bottom: 10px;
 }
 .visual_box > p {
-  font-size: 24px;
+  font-size: 42px;
   color: #fff;
-  font-weight: 400;
+  font-weight: 600;
 }
 /* 섹션2 */
 .sec02_wrap {
-  width: 1920px;
+  width: 100%;
   height: auto;
   margin: 0 auto;
   margin-top: 125px;
@@ -310,7 +328,7 @@ section {
 }
 .sec02_wrap .top_txt {
   margin: 0 auto;
-  width: 1600px;
+  width: 83%;
   font-size: 24px;
   color: #000000;
 
@@ -319,13 +337,14 @@ section {
   margin-bottom: 125px;
 }
 .sec02_wrap .top_txt a {
-  width: 800px;
+  width: 50%;
   text-align: center;
   color: #404040;
   transition: 0.2s;
 }
+
 .sec02_wrap .top_txt a:last-child {
-  width: 800px;
+  width: 50%;
   text-align: center;
   color: #c9c9c9;
   transition: 0.2s;
@@ -337,27 +356,29 @@ section {
 .sec02_wrap .top_txt a:first-child::after {
   content: "";
   display: block;
-  width: 800px;
+  width: 100%;
   height: 5px;
   background-color: #b5d9a3;
   margin: 0 auto;
   position: relative;
   top: 32px;
 }
-
 .bottom_notice {
+  width: 83%;
+  height: fit-content;
+  margin: 0 auto;
+}
+
+.bottom_notice table {
+  margin: 0 auto;
   width: 100%;
   height: fit-content;
 }
-.bottom_notice table {
-  margin: 0 auto;
-  width: 1600px;
-  height: fit-content;
-}
+
 .bottom_notice table tr {
-  display: block;
+  display: flex;
   margin: 0 auto;
-  width: 1600px;
+  width: 100%;
   height: fit-content;
   margin-bottom: 6px;
   box-sizing: border-box;
@@ -372,29 +393,13 @@ section {
   border-bottom: 1px solid #000000;
 }
 
-.first_list {
-  display: inline-block;
-  width: 280px;
-  margin-bottom: 32px;
-}
-.first_list2 {
-  display: inline-block;
-  width: 998px;
-  margin-bottom: 32px;
-}
-.first_list3 {
-  display: inline-block;
-  width: 280px;
-  margin-bottom: 32px;
-}
 .list_wrap .first_list2 {
   text-align: left;
 }
 .list_wrap {
   background-color: transparent;
 }
-.bottom_searchbar {
-}
+
 /* 검색창 */
 .search_box {
   width: 240px;
@@ -412,6 +417,15 @@ section {
   font-size: 18px;
   color: #6d6d6d;
 }
+.first_list,
+.first_list3 {
+  display: inline-block;
+  width: 20%;
+  margin-bottom: 32px;
+}
+.first_list2 {
+  width: 60%;
+}
 .search_btn {
   width: 40px;
   float: right;
@@ -421,7 +435,7 @@ section {
   border: none;
   background-color: transparent;
   position: relative;
-  top: -21px;
+  top: -35px;
   cursor: pointer;
 }
 .search_btn img {
@@ -429,7 +443,7 @@ section {
   padding: 2px;
 }
 .bottom_searchbar {
-  width: 1600px;
+  width: 100%;
   margin: 0 auto;
   height: fit-content;
   display: flex;
@@ -443,7 +457,7 @@ section {
   outline: none;
 }
 .recipe_number {
-  width: 1600px;
+  width: 83%;
   height: fit-content;
   margin: 0 auto;
   text-align: center;
@@ -480,8 +494,9 @@ section {
   font-weight: 500;
 }
 /* footer */
+
 footer {
-  width: 1600px;
+  width: 83%;
   height: fit-content;
   margin: 0 auto;
   margin-top: 48px;
@@ -500,7 +515,11 @@ footer p {
   justify-content: space-between;
 }
 .txt_h4 {
+  min-width: 400px;
+  font-size: 16px;
+
   display: flex;
+  flex-wrap: wrap;
   column-gap: 20px;
 }
 .bottom_txt h4 {
