@@ -236,7 +236,6 @@ section {
   width: 100%;
   height: auto;
   margin: 0 auto;
-  margin-top: 130px;
 }
 /* 검색창 */
 .top_searchbar {
@@ -274,156 +273,220 @@ section {
   box-sizing: border-box;
   padding: 16px 0;
 }
-
 /* 섹션1 */
 .sec01_wrap {
-  width: 1920px;
+  width: 100%;
   height: 478px;
-  background-image: url(../img/recipe/recipe_main.png);
-  background-repeat: no-repeat;
   margin: 0 auto;
+  position: relative;
+  margin-bottom: 100px;
+}
+.sec01_wrap:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
+    url(../img/recipe/recipe_main.png);
+  background-repeat: no-repeat;
+  background-position: 0 5vh;
+  background-size: 105%;
 }
 .visual_box {
-  width: 100%;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
-  padding: 250px 120px;
+  padding: 0 5%;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 100;
+  top: 48%;
+}
+.visual_box > h2 {
+  font-size: 28px;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.visual_box > p {
+  font-size: 42px;
+  color: #fff;
+  font-weight: 600;
 }
 /* 섹션2 */
 .sec02_wrap {
-  width: 1920px;
-  height: 542px;
-  margin-top: 125px;
+  width: 100%;
+  max-width: 1920px;
+  height: 652px;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: relative;
 }
 .sec02_wrap > h3 {
   box-sizing: border-box;
-  padding: 0 160px;
-  font-size: 36px;
+  padding: 0 10%;
+  font-size: 32px;
   color: #000;
   font-weight: bold;
   margin-bottom: 42px;
   text-align: center;
 }
 .sec02_wrapper {
+  width: 95%;
   display: flex;
   align-items: center;
   box-sizing: border-box;
-}
-.left_grey {
-  cursor: pointer;
-}
-.right_grey {
-  cursor: pointer;
-}
-
-.sec02_box {
   margin: 0 auto;
-  width: 1600px;
-  height: 100%;
-  gap: 30px;
+  position: relative;
+  justify-content: center;
 }
 
-.sec02_photo {
-  flex: 1 1 calc(33.33%);
+.left_grey_1,
+.right_grey_1 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  z-index: 10;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.left_grey_1 {
+  left: 10px; /* 왼쪽 화살표 위치 */
+}
+
+.right_grey_1 {
+  right: 10px; /* 오른쪽 화살표 위치 */
+}
+
+.sec02_all_box {
+  margin: 0 auto;
+  width: 83%;
+  height: 545px;
+}
+.sec02_box {
+  width: calc(33.3% - 20px);
+  min-height: 300px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: left;
-  margin: 0 20px;
-  margin-right: 20px;
-}
-.sec02_photo_1 {
-  width: 465px;
-  height: 354px;
-  border-radius: 20px;
-}
-.sec02_photo_01,
-.sec02_photo_02,
-.sec02_photo_03 {
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: 0.2s;
-  border-radius: 20px;
-}
-.sec02_photo_01 {
-  background-image: url(../img/market/pasta.png);
+  align-items: flex-start;
+  /* margin-right: 20px; */
+  flex: 1 1 calc(33.3% - 20px);
+  border-radius: 12px;
+  background-color: white;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.sec02_photo_02 {
-  background-image: url(../img/market/bread.jpeg);
+.img_box {
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 18px;
+  border-radius: 12px 12px 0 0;
 }
-.sec02_photo_03 {
-  background-image: url(../img/market/salad.jpg);
-}
-.sec02_photo:hover .sec02_photo_01 {
-  background-size: 102%;
-}
-.sec02_photo:hover .sec02_photo_02,
-.sec02_photo:hover .sec02_photo_03 {
-  background-size: 112%;
-}
-.sec02_phototxt {
+.txt_box {
   width: 100%;
-  height: fit-content;
-  padding: 32px 0 0;
+  height: 160px;
+  display: flex;
+  gap: 1px;
+  box-sizing: border-box;
+  padding: 0px 10px;
 }
-.sec02_photo h3 {
-  font-size: 22px;
-  font-weight: bold;
+.img_box img {
+  width: 100%;
+}
+.txt_box_txt {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.txt_box_icon {
+  width: fit-content;
+  box-sizing: border-box;
+}
+.txt_box_icon > a {
+  display: block;
+  box-sizing: border-box;
+  background-color: #3b3a3a;
+  width: 50px;
+  height: 50px;
+  padding: 11px 13px;
+  border-radius: 8px;
+  opacity: 0.7;
+}
+.txt_box_icon > a img {
+  width: 100%;
+}
+.txt_box h3 {
+  font-size: 20px;
+  font-weight: 400;
   color: #000;
   margin-bottom: 18px;
   transition: 0.2s;
+  line-height: 1.2;
 }
-.sec02_photo p {
+.txt_box p {
   font-size: 24px;
-  color: #e00000;
-  font-weight: 700;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 12px;
   transition: 0.2s;
+  line-height: 1.2;
 }
-
+.txt_box h4 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ff1f1f;
+  margin-bottom: 18px;
+  transition: 0.2s;
+  line-height: 20px;
+}
+.sale {
+  text-decoration: line-through;
+  color: #5e5e5e;
+}
+.sec02_photo h3:hover {
+  text-decoration: underline;
+}
 /* 세번째 섹션 */
-.sec03_wrap {
-  width: 1600px;
-  height: 230px;
-  margin: 0 auto;
-  background-image: url(../img/market/ad.png);
-  background-repeat: no-repeat;
-  margin-bottom: 125px;
-  margin-top: 125px;
-}
-.ad_wrap {
-  width: 1600px;
-  height: 100%;
-  margin: 0 auto;
-}
 
+.sec03_wrap {
+  width: 83%;
+  height: 230px;
+  box-sizing: border-box;
+  margin-bottom: 100px;
+}
 .sec03_wrap .ad {
   width: 100%;
   height: 100%;
-  box-sizing: border-box;
-  padding: 4px 400px;
+  background-image: url(../img/market/ad2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0 auto;
 }
-.sec03_wrap h2 {
-  margin-top: 85px;
-  font-size: 36px;
-  color: #fff;
-  margin-bottom: 12px;
-}
-.sec03_wrap p {
-  font-size: 18px;
-  color: #fff;
-}
+
 /* 네번째 섹션 */
 .sec04_wrap {
-  width: 1600px;
+  width: 83%;
   height: fit-content;
-
   display: flex;
   justify-content: space-between;
+
+  margin: 0 auto;
 }
+/* 상품왼쪽메뉴 */
 .sec04_wrap .market_nav {
-  width: 340px;
+  width: 20%;
   height: fit-content;
 }
 
@@ -436,10 +499,9 @@ section {
 .sec04_wrap .market_nav > h2::after {
   content: "";
   display: block;
-  width: 310px;
+  width: 80%;
   height: 3px;
   background-color: #939393;
-
   position: relative;
   top: 24px;
 }
@@ -449,19 +511,24 @@ section {
   line-height: 32px;
   color: #939393;
 }
-
+/* 상품 박스 */
+.market_box {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: auto;
+}
 .market_box h2 {
   font-size: 24px;
   line-height: 30px;
   margin-bottom: 48px;
   font-weight: 700;
-  padding-left: 42px;
 }
 
 .market_box h2::after {
   content: "";
   display: block;
-  width: 1240px;
+  width: 100%;
   height: 3px;
   background-color: #939393;
   position: relative;
@@ -469,215 +536,97 @@ section {
 }
 .list_search {
   margin-bottom: 24px;
-  float: right;
+  margin-left: auto;
 }
 
 .photo_box {
-  width: 1280px;
-  height: 2175px;
+  width: 100%;
+  height: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: end;
-  column-gap: 20px;
+  justify-content: space-between;
 }
 
 .photobox1 {
-  width: 400px;
+  width: calc(33.3% - 20px);
   height: 480px;
+  margin-bottom: 36px;
 }
 
-.photobox1 .market_photobox1 {
-  width: 400px;
-  height: 390px;
-  overflow: hidden;
-  border-radius: 20px;
-  background-image: url(../img/market/market1.jpg);
+.photobox1 .market_photobox1,
+.photobox1 .market_photobox2,
+.photobox1 .market_photobox3,
+.photobox1 .market_photobox4,
+.photobox1 .market_photobox5,
+.photobox1 .market_photobox6,
+.photobox1 .market_photobox7,
+.photobox1 .market_photobox8,
+.photobox1 .market_photobox9,
+.photobox1 .market_photobox10,
+.photobox1 .market_photobox11,
+.photobox1 .market_photobox12 {
+  width: 100%;
+  height: 380px;
+  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: 125%;
-  background-position: -40px -3px;
+  border-radius: 20px;
+  overflow: hidden;
   margin-bottom: 36px;
-  transition: 0.2s;
   cursor: pointer;
 }
-.photobox1:hover .market_photobox1 {
-  background-size: 127%;
+.photobox1 .market_photobox1 {
+  background-image: url(../img/market/market1.jpg);
+  transition: 0.2s;
 }
 
 .photobox1 .market_photobox2 {
-  width: 400px;
-  height: 390px;
-  overflow: hidden;
-  border-radius: 20px;
   background-image: url(../img/market/market2.jpeg);
-  background-repeat: no-repeat;
-  background-size: 149%;
-  background-position: -101px -2px;
-  margin-bottom: 36px;
   transition: 0.2s;
-  cursor: pointer;
 }
-.photobox1:hover .market_photobox2 {
-  background-size: 151%;
-}
+
 .photobox1 .market_photobox3 {
-  width: 400px;
-  height: 390px;
-  overflow: hidden;
-  border-radius: 20px;
   background-image: url(../img/market/market3.jpg);
-  background-repeat: no-repeat;
-  background-size: 150%;
-  background-position: -112px -5px;
-  margin-bottom: 36px;
   transition: 0.2s;
-  cursor: pointer;
-}
-.photobox1:hover .market_photobox3 {
-  background-size: 151%;
 }
 .photobox1 .market_photobox4 {
-  width: 400px;
-  height: 390px;
-  overflow: hidden;
-  border-radius: 20px;
   background-image: url(../img/market/market4.jpg);
-  background-repeat: no-repeat;
-  background-size: 105%;
-  background-position: -10px -120px;
-  margin-bottom: 36px;
   transition: 0.2s;
-  cursor: pointer;
 }
-.photobox1:hover .market_photobox4 {
-  background-size: 107%;
-}
+
 .photobox1 .market_photobox5 {
-  width: 400px;
-  height: 390px;
-  overflow: hidden;
-  border-radius: 20px;
   background-image: url(../img/market/market5.jpg);
-  background-repeat: no-repeat;
-  background-size: 148%;
-  background-position: -162px -4px;
-  margin-bottom: 36px;
   transition: 0.2s;
-  cursor: pointer;
-}
-.photobox1:hover .market_photobox5 {
-  background-size: 151%;
 }
 .photobox1 .market_photobox6 {
-  width: 400px;
-  height: 390px;
-  overflow: hidden;
-  border-radius: 20px;
   background-image: url(../img/market/market6.jpeg);
-  background-repeat: no-repeat;
-  background-size: 150%;
-  background-position: -70px -9px;
-  margin-bottom: 36px;
   transition: 0.2s;
-  cursor: pointer;
-}
-.photobox1:hover .market_photobox6 {
-  background-size: 151%;
 }
 .photobox1 .market_photobox7 {
-  width: 400px;
-  height: 390px;
-  overflow: hidden;
-  border-radius: 20px;
   background-image: url(../img/market/market7.jpg);
-  background-repeat: no-repeat;
-  background-size: 150%;
-  background-position: -176px 0px;
-  margin-bottom: 36px;
   transition: 0.2s;
-  cursor: pointer;
-}
-.photobox1:hover .market_photobox7 {
-  background-size: 152%;
 }
 .photobox1 .market_photobox8 {
-  width: 400px;
-  height: 390px;
-  overflow: hidden;
-  border-radius: 20px;
   background-image: url(../img/market/market8.jpeg);
-  background-repeat: no-repeat;
-  background-size: 180%;
-  background-position: -150px -4px;
-  margin-bottom: 36px;
   transition: 0.2s;
-  cursor: pointer;
-}
-.photobox1:hover .market_photobox8 {
-  background-size: 182%;
 }
 .photobox1 .market_photobox9 {
-  width: 400px;
-  height: 390px;
-  overflow: hidden;
-  border-radius: 20px;
   background-image: url(../img/market/market9.jpg);
-  background-repeat: no-repeat;
-  background-size: 102%;
-  background-position: 4px -144px;
-  margin-bottom: 36px;
   transition: 0.2s;
-  cursor: pointer;
-}
-.photobox1:hover .market_photobox9 {
-  background-size: 104%;
 }
 .photobox1 .market_photobox10 {
-  width: 400px;
-  height: 390px;
-  overflow: hidden;
-  border-radius: 20px;
   background-image: url(../img/market/market10.PNG);
-  background-repeat: no-repeat;
-  background-size: 180%;
-  background-position: -180px -20px;
-  margin-bottom: 36px;
   transition: 0.2s;
-  cursor: pointer;
-}
-.photobox1:hover .market_photobox10 {
-  background-size: 182%;
 }
 .photobox1 .market_photobox11 {
-  width: 400px;
-  height: 390px;
-  overflow: hidden;
-  border-radius: 20px;
   background-image: url(../img/market/market11.jpeg);
-  background-repeat: no-repeat;
-  background-size: 125%;
-  background-position: -40px -3px;
-  margin-bottom: 36px;
   transition: 0.2s;
-  cursor: pointer;
-}
-.photobox1:hover .market_photobox11 {
-  background-size: 127%;
 }
 .photobox1 .market_photobox12 {
-  width: 400px;
-  height: 390px;
-  overflow: hidden;
-  border-radius: 20px;
   background-image: url(../img/market/market12.png);
-  background-repeat: no-repeat;
-  background-size: 106%;
-  background-position: -22px -180px;
-  margin-bottom: 36px;
   transition: 0.2s;
-  cursor: pointer;
-}
-.photobox1:hover .market_photobox12 {
-  background-size: 108%;
 }
 .photobox1 p {
   font-size: 18px;

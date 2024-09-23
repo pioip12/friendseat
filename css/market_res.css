@@ -1,0 +1,851 @@
+/*노트북*/
+
+@media screen and (min-width: 1440px) and (max-width: 1600px) {
+  /* 헤더 */
+  nav > ul::after {
+    position: absolute;
+    top: 80px;
+    left: -80px;
+    content: "메뉴배경";
+    font-size: 0;
+    display: block;
+    width: 41vw;
+    height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    box-sizing: border-box;
+    /* border: 1px solid #f5f5f5; */
+    border-top: none;
+    transition: 0.3s;
+    border-radius: 0px 0px 20px 20px;
+  }
+  /* 섹션1 */
+  .sec01_wrap {
+    height: 430px;
+  }
+  .sec01_wrap:after {
+    background-position: 0 9vh;
+    background-size: contain;
+  }
+  .sec01_wrap:after {
+    background-position: 0 5vh;
+    background-size: 105%;
+  }
+  .visual_box {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0 5%;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 100;
+    top: 48%;
+  }
+  .visual_box > h2 {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  .visual_box > p {
+    font-size: 42px;
+    color: #fff;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 1275px) and (max-width: 1439px) {
+  /* 헤더 */
+  nav > ul::after {
+    position: absolute;
+    top: 80px;
+    left: -80px;
+    content: "메뉴배경";
+    font-size: 0;
+    display: block;
+    width: 42vw;
+    height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    box-sizing: border-box;
+    /* border: 1px solid #f5f5f5; */
+    border-top: none;
+    transition: 0.3s;
+    border-radius: 0px 0px 20px 20px;
+  }
+  /* 섹션1 */
+  .sec01_wrap {
+    height: 380px;
+  }
+  .sec01_wrap:after {
+    background-position: 0px 7vh;
+    background-size: 100%;
+  }
+  .visual_box {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0 5%;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 100;
+    top: 48%;
+  }
+  .visual_box > h2 {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1175px) and (max-width: 1274px) {
+  /* 헤더 */
+  nav > ul::after {
+    position: absolute;
+    top: 80px;
+    left: -80px;
+    content: "메뉴배경";
+    font-size: 0;
+    display: block;
+    width: 43vw;
+    height: 0;
+    overflow: hidden;
+    background-color: #fff;
+    box-sizing: border-box;
+    /* border: 1px solid #f5f5f5; */
+    border-top: none;
+    transition: 0.3s;
+    border-radius: 0px 0px 20px 20px;
+  }
+  /* 섹션1 */
+  .sec01_wrap {
+    height: 380px;
+  }
+
+  .sec01_wrap:after {
+    background-position: 0px 7vh;
+    background-size: 102%;
+  }
+
+  .visual_box {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0 5%;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 100;
+    top: 48%;
+  }
+
+  .visual_box > h2 {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  .visual_box > p {
+    font-size: 42px;
+    color: #fff;
+    font-weight: 600;
+  }
+  /* 섹션4 */
+  .photobox1 {
+    width: calc(50% - 20px);
+    margin-bottom: 36px;
+  }
+}
+/* 노트북 medium */
+@media screen and (min-width: 1025px) and (max-width: 1174px) {
+  /* 헤더 */
+  nav > ul {
+    display: none;
+  }
+  .icons {
+    display: flex;
+    padding: 30px 0;
+    column-gap: 12px;
+  }
+  .hidden_menu {
+    display: block;
+  }
+  .icons a:first-child {
+    display: none;
+  }
+  .close {
+    left: -10px;
+    top: 1px;
+  }
+  /* 섹션1 */
+  .sec01_wrap {
+    height: 320px;
+  }
+
+  .sec01_wrap:after {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)),
+      url(../img/recipe/recipe_app1.png);
+    background-position: 0px 5vh;
+    background-size: 100%;
+  }
+  .visual_box {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0 5%;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 100;
+    top: 51%;
+  }
+  .visual_box > h2 {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  .visual_box > p {
+    font-size: 36px;
+    color: #fff;
+    font-weight: bold;
+  }
+  /* 섹션4 */
+
+  .photobox1 {
+    width: calc(50% - 20px);
+    margin-bottom: 36px;
+  }
+}
+/* 태블릿 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* 헤더 */
+  nav > ul {
+    display: none;
+  }
+  .icons {
+    display: flex;
+    padding: 30px 0;
+    column-gap: 12px;
+  }
+  .hidden_menu {
+    display: block;
+  }
+  .icons a:first-child {
+    display: none;
+  }
+  .close {
+    left: -10px;
+    top: 1px;
+  }
+
+  /* 섹션1 */
+  .sec01_wrap {
+    width: 100%;
+    height: 240px;
+    margin: 0 auto;
+  }
+
+  .sec01_wrap:after {
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0 0 0 / 9%)),
+      url(../img/recipe/recipe_main.png);
+    background-position: 0 3rem;
+    background-size: 100%;
+    margin: 0 auto;
+  }
+
+  .visual_box > h2 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 4px;
+  }
+  .visual_box > p {
+    font-size: 25px;
+    color: #fff;
+    font-weight: 600;
+  }
+  .visual_box {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 100;
+    top: 68%;
+    left: 4vw;
+  }
+  /* 섹션2 */
+  .sec02_wrap {
+    width: 100%;
+    max-width: 1920px;
+    height: 587px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    position: relative;
+  }
+  /* 섹션3 */
+  .sec03_wrap {
+    width: 83%;
+    height: 120px;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+  }
+  /* 섹션4 */
+
+  .photobox1 {
+    width: calc(50% - 20px);
+    margin-bottom: 36px;
+    height: 430px;
+  }
+  .photobox1 .market_photobox1,
+  .photobox1 .market_photobox2,
+  .photobox1 .market_photobox3,
+  .photobox1 .market_photobox4,
+  .photobox1 .market_photobox5,
+  .photobox1 .market_photobox6,
+  .photobox1 .market_photobox7,
+  .photobox1 .market_photobox8,
+  .photobox1 .market_photobox9,
+  .photobox1 .market_photobox10,
+  .photobox1 .market_photobox11,
+  .photobox1 .market_photobox12 {
+    width: 100%;
+    height: 320px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 36px;
+    cursor: pointer;
+  }
+}
+/* 모바일 large */
+@media screen and (min-width: 625px) and (max-width: 768px) {
+  /* 헤더 */
+  nav > ul {
+    display: none;
+  }
+  .icons {
+    display: flex;
+    padding: 30px 0;
+    column-gap: 12px;
+  }
+  .hidden_menu {
+    display: block;
+  }
+  .icons a:first-child {
+    display: none;
+  }
+  .close {
+    left: -10px;
+    top: 1px;
+  }
+
+  .top_searchbar form {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  /* 섹션1 */
+  .sec01_wrap {
+    width: 100%;
+    height: 240px;
+    margin: 0 auto;
+  }
+
+  .sec01_wrap:after {
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0 0 0 / 9%)),
+      url(../img/recipe/recipe_main.png);
+    background-position: 0px 80px;
+    background-size: 100%;
+    margin: 0 auto;
+  }
+  .visual_box {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 100;
+    top: 68%;
+    left: 4vw;
+  }
+  .visual_box > h2 {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 4px;
+  }
+  .visual_box > p {
+    font-size: 25px;
+    color: #fff;
+    font-weight: 600;
+  }
+  /* 섹션2 */
+  .sec02_wrap {
+    width: 100%;
+    max-width: 1920px;
+    height: 520px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    position: relative;
+  }
+  /* 섹션3 */
+  .sec03_wrap {
+    width: 83%;
+    height: 90px;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+  }
+  /* 섹션4 */
+  .sec04_wrap {
+    width: 83%;
+    height: fit-content;
+    display: block;
+    justify-content: space-between;
+
+    margin: 0 auto;
+  }
+  .sec04_wrap .market_nav {
+    /* display: flex; */
+    width: 100%;
+    height: fit-content;
+  }
+  .sec04_wrap .market_nav h2 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  .market_nav ol,
+  ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .market_box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .market_box h2 {
+    font-size: 0;
+    line-height: 30px;
+    margin-bottom: 0;
+    font-weight: 700;
+  }
+  .market_box h2::after {
+    display: none;
+  }
+  .sec04_wrap .market_nav > h2::after {
+    display: none;
+  }
+
+  .photobox1 {
+    width: calc(50% - 20px);
+    margin-bottom: 36px;
+    height: 400px;
+  }
+  .photobox1 .market_photobox1,
+  .photobox1 .market_photobox2,
+  .photobox1 .market_photobox3,
+  .photobox1 .market_photobox4,
+  .photobox1 .market_photobox5,
+  .photobox1 .market_photobox6,
+  .photobox1 .market_photobox7,
+  .photobox1 .market_photobox8,
+  .photobox1 .market_photobox9,
+  .photobox1 .market_photobox10,
+  .photobox1 .market_photobox11,
+  .photobox1 .market_photobox12 {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 36px;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 624px) {
+  /* 헤더 */
+  nav > ul {
+    display: none;
+  }
+  .icons {
+    display: flex;
+    padding: 30px 0;
+    column-gap: 12px;
+  }
+  .hidden_menu {
+    display: block;
+  }
+  .icons a:first-child {
+    display: none;
+  }
+  .close {
+    left: -10px;
+    top: 1px;
+  }
+  section {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+
+  .top_searchbar form {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  /* 섹션1 */
+  .sec01_wrap {
+    width: 100%;
+    height: 240px;
+    margin-bottom: 0;
+  }
+  .sec01_wrap:after {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0 0 0 / 9%)),
+      url(../img/recipe/recipe_app1.png);
+    background-position: center 6vh;
+    background-size: inherit;
+  }
+
+  .visual_box {
+    padding: 0 4%;
+    top: 79%;
+    left: 2vw;
+  }
+  .visual_box > h2 {
+    display: none;
+  }
+
+  .visual_box > p {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+  }
+  .visual_box > p::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 1px;
+    background-color: #fff;
+    margin-top: 8px;
+  }
+  /* 섹션2 */
+  .sec02_wrap {
+    width: 100%;
+    max-width: 1920px;
+    height: 390px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    position: relative;
+  }
+  .sec02_wrap > h3 {
+    box-sizing: border-box;
+    padding: 0 10%;
+    font-size: 24px;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-align: left;
+  }
+  .sec02_all_box {
+    margin: 0 auto;
+    width: 83%;
+    height: 352px;
+  }
+  .txt_box h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 18px;
+    transition: 0.2s;
+    line-height: 1.2;
+  }
+  .txt_box p {
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 2px;
+    transition: 0.2s;
+    line-height: 1.2;
+  }
+  .txt_box h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ff1f1f;
+    margin-bottom: 10px;
+    transition: 0.2s;
+    line-height: 20px;
+  }
+  .txt_box_icon > a {
+    display: block;
+    box-sizing: border-box;
+    background-color: #3b3a3a;
+    width: 40px;
+    height: 40px;
+    padding: 10px 11px;
+    border-radius: 8px;
+    opacity: 0.7;
+  }
+  /* 섹션3 */
+  .sec03_wrap {
+    width: 90%;
+    height: 65px;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+  }
+  /* 섹션4 */
+  .sec04_wrap {
+    width: 83%;
+    height: fit-content;
+    display: block;
+    justify-content: space-between;
+
+    margin: 0 auto;
+  }
+  .sec04_wrap .market_nav {
+    /* display: flex; */
+    width: 100%;
+    height: fit-content;
+  }
+  .sec04_wrap .market_nav h2 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  .market_nav ol,
+  ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .market_box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .market_box h2 {
+    font-size: 0;
+    line-height: 30px;
+    margin-bottom: 0;
+    font-weight: 700;
+  }
+  .market_box h2::after {
+    display: none;
+  }
+  .sec04_wrap .market_nav > h2::after {
+    display: none;
+  }
+
+  .photobox1 {
+    width: calc(50% - 20px);
+    margin-bottom: 36px;
+    height: 280px;
+  }
+
+  .photobox1 .market_photobox1,
+  .photobox1 .market_photobox2,
+  .photobox1 .market_photobox3,
+  .photobox1 .market_photobox4,
+  .photobox1 .market_photobox5,
+  .photobox1 .market_photobox6,
+  .photobox1 .market_photobox7,
+  .photobox1 .market_photobox8,
+  .photobox1 .market_photobox9,
+  .photobox1 .market_photobox10,
+  .photobox1 .market_photobox11,
+  .photobox1 .market_photobox12 {
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    cursor: pointer;
+  }
+  .photobox1 p {
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+    transition: 0.2s;
+    margin-bottom: 10px;
+  }
+  .photobox1 h3 {
+    font-size: 20px;
+    color: #e00000;
+    font-weight: 700;
+    transition: 0.2s;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* 헤더 */
+  nav > ul {
+    display: none;
+  }
+  .icons {
+    display: flex;
+    padding: 30px 0;
+    column-gap: 12px;
+  }
+  .hidden_menu {
+    display: block;
+  }
+  .icons a:first-child {
+    display: none;
+  }
+  .close {
+    left: -10px;
+    top: 1px;
+  }
+
+  section {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+  .top_searchbar form {
+    width: 87%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* 섹션1 */
+  .sec01_wrap {
+    width: 100%;
+    height: 240px;
+    margin-bottom: 0;
+  }
+
+  .sec01_wrap:after {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0 0 0 / 9%)),
+      url(../img/recipe/recipe_app1.png);
+    background-position: -90px 153%;
+    background-size: inherit;
+  }
+
+  .visual_box {
+    padding: 0 4%;
+    top: 79%;
+    left: 2vw;
+  }
+  .visual_box > h2 {
+    display: none;
+  }
+
+  .visual_box > p {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+  }
+  .visual_box > p::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 1px;
+    background-color: #fff;
+    margin-top: 8px;
+  }
+  /* 섹션4 */
+  .sec04_wrap {
+    width: 83%;
+    height: fit-content;
+    display: block;
+    justify-content: space-between;
+
+    margin: 0 auto;
+  }
+  .sec04_wrap .market_nav {
+    /* display: flex; */
+    width: 100%;
+    height: fit-content;
+  }
+  .sec04_wrap .market_nav h2 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  .market_nav ol,
+  ul {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .market_box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .market_box h2 {
+    font-size: 0;
+    line-height: 30px;
+    margin-bottom: 0;
+    font-weight: 700;
+  }
+  .market_box h2::after {
+    display: none;
+  }
+  .sec04_wrap .market_nav > h2::after {
+    display: none;
+  }
+
+  .photobox1 {
+    width: calc(50% - 20px);
+    margin-bottom: 36px;
+    height: 400px;
+  }
+  .photobox1 .market_photobox1,
+  .photobox1 .market_photobox2,
+  .photobox1 .market_photobox3,
+  .photobox1 .market_photobox4,
+  .photobox1 .market_photobox5,
+  .photobox1 .market_photobox6,
+  .photobox1 .market_photobox7,
+  .photobox1 .market_photobox8,
+  .photobox1 .market_photobox9,
+  .photobox1 .market_photobox10,
+  .photobox1 .market_photobox11,
+  .photobox1 .market_photobox12 {
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 36px;
+    cursor: pointer;
+  }
+}

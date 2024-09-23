@@ -27,6 +27,10 @@
     background-position: 0 9vh;
     background-size: contain;
   }
+  .sec01_wrap:after {
+    background-position: 0 5vh;
+    background-size: 105%;
+  }
   .visual_box {
     display: flex;
     flex-direction: column;
@@ -51,19 +55,24 @@
   }
   /* 섹션2 */
   .sec02 {
-    width: 90%;
+    width: 83%;
     height: 580px;
     overflow: hidden;
   }
+
   .sec02_box {
     width: 100%;
-    height: 52vh;
+    height: 44vh;
     box-sizing: border-box;
     padding: 10px;
     background-color: #f3f3f3;
   }
+
   .sec02_wrapper {
-    width: 100%;
+    /* width: 83%; */
+    max-width: 100%;
+    height: 66vh;
+    margin: 0 auto;
   }
   .sec02_wrap h2 {
     margin-left: 0;
@@ -80,8 +89,20 @@
   .box_wrapper {
     border-radius: 20px;
   }
-}
+  /* 섹션4 */
+  .recipe_photo {
+    width: 83%;
+    max-width: 1440px;
+  }
 
+  .recipe_photo .photo_box {
+    width: calc(33.33% - 20px);
+    height: 495px;
+  }
+  .minibox_wrapper p {
+    font-size: 16px;
+  }
+}
 @media screen and (min-width: 1275px) and (max-width: 1439px) {
   /* 헤더 */
   nav > ul::after {
@@ -103,11 +124,11 @@
   }
   /* 섹션1 */
   .sec01_wrap {
-    height: 430px;
+    height: 380px;
   }
   .sec01_wrap:after {
-    background-position: 0 11vh;
-    background-size: contain;
+    background-position: 0px 7vh;
+    background-size: 100%;
   }
   .visual_box {
     display: flex;
@@ -137,9 +158,10 @@
     height: 642px;
     overflow: hidden;
   }
+
   .sec02_box {
     width: 100%;
-    height: 52vh;
+    height: 520px;
     box-sizing: border-box;
     padding: 10px;
     background-color: #f3f3f3;
@@ -161,6 +183,26 @@
   }
   .box_wrapper {
     border-radius: 20px;
+  }
+  /* 섹션4 */
+  .recipe_photo .photo_box {
+    width: calc(33.33% - 20px); /* 3단 레이아웃 */
+    height: 500px;
+  }
+  .photo1,
+  .photo2,
+  .photo3,
+  .photo4,
+  .photo5,
+  .photo6,
+  .photo7,
+  .photo8,
+  .photo9 {
+    width: 100%;
+    height: 360px;
+  }
+  .minibox_wrapper p {
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 1175px) and (max-width: 1274px) {
@@ -184,11 +226,12 @@
   }
   /* 섹션1 */
   .sec01_wrap {
-    height: 430px;
+    height: 380px;
   }
+
   .sec01_wrap:after {
-    background-position: -12vw 5vh;
-    background-size: contain;
+    background-position: 0px 7vh;
+    background-size: 102%;
   }
 
   .visual_box {
@@ -223,7 +266,7 @@
   }
   .sec02_box {
     width: 100%;
-    height: 52vh;
+    height: 520px;
     box-sizing: border-box;
     padding: 10px;
     background-color: #f3f3f3;
@@ -233,6 +276,11 @@
   }
   .sec02_wrap h2 {
     margin-left: 0;
+  }
+  .sec02_wrapper {
+    max-width: 100%;
+    height: 66vh;
+    margin: 0 auto;
   }
 
   .txt_wrapper h3 {
@@ -245,6 +293,25 @@
   }
   .box_wrapper {
     border-radius: 20px;
+  }
+  /* 섹션4 */
+  .recipe_photo .photo_box {
+    width: calc(50% - 20px); /* 2단 레이아웃 */
+  }
+  .recipe_photo .photo_box:nth-child(3n) {
+    margin-right: 0px; /* 2단 레이아웃이므로 여백 조정 */
+  }
+  .photo1,
+  .photo2,
+  .photo3,
+  .photo4,
+  .photo5,
+  .photo6,
+  .photo7,
+  .photo8,
+  .photo9 {
+    width: 100%;
+    height: 320px;
   }
 }
 /* 노트북 medium */
@@ -364,6 +431,13 @@
     width: 90%;
     height: 100%;
   }
+  /* 섹션4 */
+  .recipe_photo .photo_box {
+    width: calc(50% - 20px); /* 2단 레이아웃 */
+  }
+  .recipe_photo .photo_box:nth-child(3n) {
+    margin-right: 0px; /* 2단 레이아웃이므로 여백 조정 */
+  }
 }
 /* 태블릿 */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -393,14 +467,16 @@
     height: 240px;
     margin: 0 auto;
   }
+
   .sec01_wrap:after {
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0 0 0 / 9%)),
       url(../img/recipe/recipe_main.png);
-    background-position: 0 20px;
-    background-size: cover;
+    background-position: 0 3rem;
+    background-size: 100%;
     margin: 0 auto;
   }
+
   .visual_box > h2 {
     font-size: 18px;
     color: #fff;
@@ -465,6 +541,13 @@
     color: #383838;
     text-align: end;
   }
+  /* 섹션4 */
+  .recipe_photo .photo_box {
+    width: calc(50% - 20px); /* 2단 레이아웃 */
+  }
+  .recipe_photo .photo_box:nth-child(3n) {
+    margin-right: 0px; /* 2단 레이아웃이므로 여백 조정 */
+  }
 }
 /* 모바일 large */
 @media screen and (min-width: 625px) and (max-width: 768px) {
@@ -505,8 +588,8 @@
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0 0 0 / 9%)),
       url(../img/recipe/recipe_main.png);
-    background-position: 0 20px;
-    background-size: cover;
+    background-position: 0px 80px;
+    background-size: 100%;
     margin: 0 auto;
   }
   .visual_box {
@@ -533,10 +616,9 @@
     font-weight: 600;
   }
   /* 섹션2 */
-
   .sec02 {
     width: 90%;
-    height: 66vh;
+    height: 580px;
     margin-top: 80px;
   }
   .sec02_wrapper {
@@ -557,6 +639,7 @@
     box-sizing: border-box;
     padding: 10px;
   }
+
   .sec02 h2 {
     font-size: 28px;
     margin-bottom: 24px;
@@ -592,7 +675,52 @@
   .txt_wrapper a {
     text-align: end;
   }
+
+  /* 섹션4 */
+  .recipe_photo .photo_box {
+    width: calc(50% - 20px);
+    height: 490px;
+  }
 }
+.recipe_photo .photo_box:nth-child(3n) {
+  margin-right: 0px; /* 2단 레이아웃이므로 여백 조정 */
+}
+
+.photo1,
+.photo2,
+.photo3,
+.photo4,
+.photo5,
+.photo6,
+.photo7,
+.photo8,
+.photo9 {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 17px;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+}
+.mini_box {
+  padding: 11px;
+}
+.minibox_wrapper p {
+  background-color: #dddddd;
+  color: #000;
+  font-size: 12px;
+  height: 36px;
+}
+.minibox_wrapper span::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background-color: #000;
+  margin: -2px 8px;
+}
+
 @media screen and (min-width: 481px) and (max-width: 624px) {
   /* 헤더 */
   nav > ul {
@@ -635,7 +763,7 @@
   .sec01_wrap:after {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0 0 0 / 9%)),
       url(../img/recipe/recipe_app1.png);
-    background-position: center 8vh;
+    background-position: center 6vh;
     background-size: inherit;
   }
 
@@ -662,14 +790,18 @@
     margin-top: 8px;
   }
   /* 섹션2 */
+
   .sec02 {
     width: 90%;
-    height: 60vh;
+    height: 580px;
     margin-top: 80px;
   }
+
   .sec02_wrapper {
     height: 65vh;
+    max-width: 100%;
   }
+
   .sec02_box {
     height: 520px;
 
@@ -685,9 +817,10 @@
     box-sizing: border-box;
     padding: 10px;
   }
+
   .sec02 h2 {
-    font-size: 28px;
-    margin-bottom: 24px;
+    font-size: 24px;
+    margin-bottom: 16px;
   }
 
   .sec02_wrapper {
@@ -721,12 +854,118 @@
   .txt_wrapper a {
     text-align: end;
   }
-}
-/* 섹션3 */
-.sec03_photo_1 {
-  width: 100%;
-  height: 28vh;
-  border-radius: 20px;
+
+  /* 섹션3 */
+  .sec03_wrap {
+    margin-top: 80px;
+    width: 100%;
+    height: 535px;
+    background-image: url(../img/recipe/recipe_sec2_background.png);
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .sec03_photo_1 {
+    width: 100%;
+    height: 28vh;
+    border-radius: 20px;
+  }
+  .sec03_wrap > h3 {
+    width: 90%;
+    box-sizing: border-box;
+    /* padding: 0 160px; */
+    font-size: 24px;
+    color: #5f5f5f;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-bottom: 14px;
+  }
+  /* 섹션4 */
+
+  .recipe_photo .photo_box {
+    width: calc(50% - 20px);
+    height: 270px;
+  }
+  .recipe_photo .photo_box:nth-child(3n) {
+    margin-right: 0px; /* 2단 레이아웃이므로 여백 조정 */
+  }
+  .photo_box .photo1,
+  .photo_box .photo2,
+  .photo_box .photo3,
+  .photo_box .photo4,
+  .photo_box .photo5,
+  .photo_box .photo6,
+  .photo_box .photo7,
+  .photo_box .photo8,
+  .photo_box .photo9 {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 17px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+  }
+
+  .top_title .recipe_menu {
+    display: flex;
+    column-gap: 30px;
+    margin-bottom: 18px;
+    justify-content: space-between;
+  }
+  .top_title .recipe_menu a {
+    font-size: 13px;
+    font-weight: 500;
+    color: #a5a4a4;
+    transition: 0.3s;
+  }
+  .top_title h2 {
+    font-size: 24px;
+    color: #5f5f5f;
+    margin-bottom: 14px;
+    font-weight: bold;
+  }
+  .top_title {
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+  }
+
+  .change_box {
+    width: 90%;
+    height: 20px;
+    margin: 0 auto;
+    margin-bottom: 14px;
+    text-align: end;
+    font-size: 13px;
+  }
+  .recipe_photo {
+    width: 90%;
+    height: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .photo_box h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 12px;
+    transition: 0.2s;
+  }
+  .photo_box > p {
+    font-size: 16px;
+    color: #818181;
+    font-weight: 300;
+    transition: 0.2s;
+    line-height: 18px;
+  }
+  .photo_box_txt .minibox_wrapper {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -803,8 +1042,9 @@
 
   .sec02 {
     width: 90%;
-    height: 66vh;
+    height: 580px;
     margin-top: 80px;
+    min-width: 400px;
   }
   .sec02 h2 {
     font-size: 28px;
@@ -816,6 +1056,8 @@
     word-wrap: break-word;
   }
   .sec02_wrapper {
+    width: 100%;
+    max-width: 100%;
     height: 100%;
   }
   .sec02_box {
@@ -894,5 +1136,91 @@
     cursor: pointer;
     color: #696969;
     transition: 0.3s;
+  }
+  /* 섹션4 */
+
+  .recipe_photo .photo_box {
+    width: calc(50% - 20px);
+    height: 270px;
+  }
+  .recipe_photo .photo_box:nth-child(3n) {
+    margin-right: 0px; /* 2단 레이아웃이므로 여백 조정 */
+  }
+  .photo_box .photo1,
+  .photo_box .photo2,
+  .photo_box .photo3,
+  .photo_box .photo4,
+  .photo_box .photo5,
+  .photo_box .photo6,
+  .photo_box .photo7,
+  .photo_box .photo8,
+  .photo_box .photo9 {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 17px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+  }
+
+  .top_title .recipe_menu {
+    display: flex;
+    column-gap: 30px;
+    margin-bottom: 18px;
+    justify-content: space-between;
+  }
+  .top_title .recipe_menu a {
+    font-size: 13px;
+    font-weight: 500;
+    color: #a5a4a4;
+    transition: 0.3s;
+  }
+  .top_title h2 {
+    font-size: 24px;
+    color: #5f5f5f;
+    margin-bottom: 14px;
+    font-weight: bold;
+  }
+  .top_title {
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+  }
+
+  .change_box {
+    width: 90%;
+    height: 20px;
+    margin: 0 auto;
+    margin-bottom: 14px;
+    text-align: end;
+    font-size: 13px;
+  }
+  .recipe_photo {
+    width: 90%;
+    height: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .photo_box h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 12px;
+    transition: 0.2s;
+  }
+  .photo_box > p {
+    font-size: 15px;
+    color: #818181;
+    font-weight: 300;
+    transition: 0.2s;
+    line-height: 18px;
+  }
+  .photo_box_txt .minibox_wrapper {
+    display: none;
   }
 }
